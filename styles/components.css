@@ -48,6 +48,7 @@ width: 100%;
     border: none;
       border-radius: 1.5625rem;
       outline: none;
+      cursor: pointer;
 }
 /* Light Titles */
 .light-titles {
@@ -59,6 +60,7 @@ width: 100%;
   font-weight: 700;
   line-height: 49.5px;
   letter-spacing: -0.92px;
+  max-width: 41.0625rem;
 }
 
 /* Secondary Subtitle */
@@ -81,6 +83,7 @@ width: 100%;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -1.26px;
+  max-width: 25.625rem;
 }
 
 /* Second Section Card Title 2 */

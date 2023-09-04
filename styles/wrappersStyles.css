@@ -8,3 +8,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.top-wave{
+    position: absolute;
+    height: 42.4063rem;
+    background-color: var(--brand);
+    z-index: -1;
+}
+.top-wave img{
+    max-width: 100%;
+}

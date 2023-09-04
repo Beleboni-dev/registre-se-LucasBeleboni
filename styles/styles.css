@@ -1,124 +1,120 @@
 /* Estilos para o header */
 .header {
-    /* Adicione seus estilos aqui */
+  padding-top: 6.25rem;
 }
 
 #logo {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para a primeira seção */
 .first_section {
-background-color: var(--light1);
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .first_section-left-content {
-display: flex;
-flex-direction: column;
-gap: 2.875rem  ;
-max-width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.875rem;
+  max-width: 490px;
 }
 
 .first_section-right-content {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .first_section-right-content img {
-margin-bottom: 1.38rem
-;
+  margin-bottom: 1.38rem;
 }
 .first_section-logos {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .first_section_form-wrapper {
-background-color: var(--light2);
-max-width: 24.3125rem;
-border-radius: 3rem;
-padding: 3rem 2.69rem 1.06rem;
+  background-color: var(--light2);
+  max-width: 24.3125rem;
+  border-radius: 3rem;
+  padding: 3rem 2.69rem 1.06rem;
 }
 
 /* Estilos para o formulário da primeira seção */
 .registration_form {
-display: flex;
-flex-direction: column;
-gap: .44rem;
-justify-content: center;
-align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  gap: 0.44rem;
+  justify-content: center;
+  align-items: center;
 }
 .registration_form input {
-    color: var(--dark3);
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: Raleway;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: -0.02rem;
-    outline: none;
-    border: none;
-    width: 100%;
-    height: 3.125rem;
-    border-radius: 0.9375rem;
-    padding-left: 1rem;
+  color: var(--dark3);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 3.125rem;
+  border-radius: 0.9375rem;
+  padding-left: 1rem;
 }
 #form-input-brand {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #form-input-name {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #form-input-whatsapp {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #form-input-line-of-business {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #btn-form {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o formulário da segunda seção */
 #registration-form-steep-one {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #form-select-business-internship {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #form-select-business-size {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #form-input-social-media-site {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #form-input-email {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
-.selected-steep-wrapper{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 1.13rem;
-    gap: 1.1875rem;
+.selected-steep-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.13rem;
+  gap: 1.1875rem;
 }
 
 .circle {
-width: .5rem;
-height: .5rem;
-border-radius: 50%;
-background-color: var(--light1);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--light1);
 }
-
 
 .unselected-steep {
   background-color: var(--dark9);
@@ -126,164 +122,203 @@ background-color: var(--light1);
 
 /* Estilos para a segunda seção */
 .second_section {
-background-color: var(--brand);
+  background-color: var(--brand);
+  padding-bottom: 3.5rem;
 }
 
+.second_section-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5625rem;
+  width: 100%;
+}
 .second_section-title {
-    /* Adicione seus estilos aqui */
+  margin-top: 7rem;
 }
-
 .second_section-text {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
-/* Estilos para a seção "O que acontece se eu não registrar?" */
-.second_section-left-content {
-    /* Adicione seus estilos aqui */
+.second_section-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.75rem;
+}
+.second_section-card {
+  border-radius: 3.125rem;
+  border: 1px solid #eaecf0;
+  background: #fff;
+  box-shadow: 0px 12px 16px 0px rgba(16, 24, 40, 0.08);
+  width: 29.9375rem;
+  height: 36.5625rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+padding: 3.5rem 0 3.5rem 0;
 }
 
 .second_section-left-content-title {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .order-list {
-    /* Adicione seus estilos aqui */
+margin-top: 2.875rem;
+display: flex;
+flex-direction: column;
+gap: 1.25rem;
 }
 
 .second_section-left-content-item {
-    /* Adicione seus estilos aqui */
+max-width: 22.625rem;
 }
 
 .second_section-left-content-btn {
-    /* Adicione seus estilos aqui */
+        background-color: var(--dark2);
+}
+
+.secondary-button{
+           height: 3.75rem;
+            border-radius: 1.5625rem;
+            padding: 0.625rem 1.125rem;
+            margin-top: 2.0625rem;
+            border: none;
+            outline: none;
 }
 
 /* Estilos para a seção "Por que optar pela Registre.se?" */
 .second_section-right-content {
-    /* Adicione seus estilos aqui */
+  border-radius: 3.125rem;
+  border: 1px solid #eaecf0;
+  background: #fff;
+  box-shadow: 0px 12px 16px 0px rgba(16, 24, 40, 0.08);
+  width: 29.9375rem;
+  height: 36.5625rem;
+  flex-shrink: 0;
 }
 
 .second_section-right-content-title {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .second_section-right-content-list {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .second_section-right-content-item {
-    /* Adicione seus estilos aqui */
+max-width: 22.625rem;
 }
 
 .second_section-right-content-btn {
-    /* Adicione seus estilos aqui */
+background-color: var(--light2);
 }
 /* Estilos para a terceira seção */
 .third_section {
-
 }
 
 .third_section h2 {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .third_section p {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .third_section img {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para as avaliações no Google */
 .third_section-google-reviews {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .review {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .review img {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .review p {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .review img.author-avatar {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 p.author-name {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 p.author-reviews {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para a quarta seção */
 .fourth_section {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fourth_section-title {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fourth_section-text {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fourth_section-brand-logos {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fourth_section-brand-logos img {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fourth_section-btn {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 /* Estilos para a quinta seção */
 .fifth_section {
-background-color: var(--light2);
+  background-color: var(--light2);
 }
 
 .fifth_section-registration-process-wrapper {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fifth_section-registration-text-wrapper {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fifth_section-registration-title {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .fifth_section-registration-text {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .registration-form {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para os formulários de registro */
 .registration_form {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #registration-form-steep-one {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 #registration-form-steep-two {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para os elementos dos formulários de registro */
@@ -295,166 +330,166 @@ background-color: var(--light2);
 #form-select-business-size,
 #form-input-social-media-site,
 #form-input-email {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o botão de registro */
 .button.btn_form {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para a sexta seção */
 .sixth_section {
-background-color: var(--dark8);
+  background-color: var(--dark8);
 }
 
 .sixth_section-registration-process-wrapper {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .sixth_section-registration-text-wrapper {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 h2 {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para os cartões de processo */
 .sixth_section-process-cards {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .sixth_section-process-card {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 h3 {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o botão "Entenda o passo a passo" */
 #btn-steep-by-steep-video {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o avatar e logotipo */
 .sixth_section-frame-wrapper {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 /* Estilos para a sétima seção */
 .seventh_section {
-background-color: var(--dark8);
+  background-color: var(--dark8);
 }
 
 .seventh_section-title {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para os cartões de benefícios */
 .seventh_section-benefits-cards {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .seventh_section-benefit-card {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .seventh_section-benefit-card p {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .seventh_section-benefit-card-image-wrapper {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o botão "Quero registrar Minha Marca!" */
 .seventh_section-benefits-button {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .seventh_section-btn.secondary-button {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para a seção de FAQ */
 .faq_section {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para as perguntas frequentes */
 .faq h2 {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .question {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .question summary {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .question p {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para a seção final */
 .final_section {
-background-color: var(--light2);
+  background-color: var(--light2);
 }
 
 .final_section h2 {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o botão "Quero registrar Minha Marca!" na seção final */
 .final_section-register-button-wrapper {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .final_section-btn.secondary-button {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o rodapé */
 footer {
-background-color: var(--dark2);
+  background-color: var(--dark2);
 }
 
 /* Estilos para o topo do rodapé */
 .footer-top {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .footer-logo {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .footer-contact {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 .footer-social-icons {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para os ícones de mídia social */
 .footer-social-icons a {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para o conteúdo do rodapé */
 .footer p {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para os logotipos no rodapé */
 .footer-logos {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
 
 /* Estilos para os logotipos da WIPO e do INPI no rodapé */
 .footer-logos img {
-    /* Adicione seus estilos aqui */
+  /* Adicione seus estilos aqui */
 }
