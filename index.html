@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Registre.se</title>
+        <link rel="stylesheet" href="./styles/globalStyles.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./scripts/index.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <img src="./images/logos/logo.svg" alt="Logo registre.se" id="logo">
+        </header>
+
+        <section class="first_section">
+            <div class="first_section-left-content">
+                <h2>Seja dono da sua marca e se proteja da concorrência!</h2>
+                <span>Garantimos o registro da sua marca no INPI em menos de 24
+                    horas.</span>
+                <div class="first_section-logos">
+                    <img src="./images/logos/logo-nip-gov-br.svg"
+                        alt="Logo NIP e GOV BR">
+                </div>
+            </div>
+            <div class="first_section-right-content">
+                <img src="./images/logos/site-blindado-logo.svg"
+                    alt="Imagem de Segurança">
+                <div class="first_section_form-wrapper">
+                    <h2>Inicie agora o seu processo de registro e esteja seguro.</h2>
+                    <form class="registration_form"
+                        id="registration-form-steep-one">
+                        <input type="text" id="form-input-brand"
+                            placeholder="Nome da sua marca®" required>
+                        <input type="text" id="form-input-name"
+                            placeholder="Seu nome" required>
+                        <input type="tel" id="form-input-whatsapp"
+                            placeholder="DDD + Whatsapp" required>
+                        <input type="text" placeholder="Ramo de Atuação"
+                            id="form-input-line-of-business" required>
+                        <button class="button btn_form" type="submit"
+                            id="btn-form">Iniciar registro</button>
+                    </form>
+                    <form class="registration_form"
+                        id="registration-form-steep-two" style="display: none;">
+                        <select id="form-select-business-internship" required>
+                            <option value disabled selected>Estágio do negócio</option>
+                            <option value="option1">Estou me planejando para
+                                começar</option>
+                            <option value="option2">Comecei recentemente</option>
+                            <option value="option3">Já atuo no mercado há um
+                                certo tempo</option>
+                        </select>
+                        <select id="form-select-business-size" required>
+                            <option value disabled selected>Porte</option>
+                            <option value="option1">Atuo como pessoa física</option>
+                            <option value="option2">CNPJ em criação</option>
+                            <option value="option3">MEI</option>
+                            <option value="option4">ME</option>
+                            <option value="option5">EPP</option>
+                            <option value="option6">DEMAIS</option>
+                            <option value="option7">Associação</option>
+                        </select>
+                        <input type="text" id="form-input-social-media-site"
+                            placeholder="Redes sociais e/ou site">
+                        <input type="email" id="form-input-email"
+                            placeholder="Seu E-mail">
+                        <button class="button btn_form" id type="submit">Concluir
+                            registro</button>
+                    </form>
+                    <div class="circle selected-steep"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second_section">
+
+            <h2 class="second_section-title">Processo 100% online, ágil,
+                transparente e sem burocracia.</h2>
+            <span class="second_section-text">Corpo jurídico com mais de 15 anos
+                de experiência em propriedade
+                industrial.</span>
+
+            <div class="second_section-left-content">
+                <h2 class="second_section-left-content-title">O que acontece se
+                    eu não registrar? ⚠️</h2>
+                <ol class="second_section-left-content-list order-list">
+                    <li class="second_section-left-content-item">Abrir mão do
+                        valor que sua marca já gerou para seus
+                        clientes.</li>
+                    <li class="second_section-left-content-item">Ser copiado
+                        pela concorrência sem ter meios de reação.</li>
+                    <li class="second_section-left-content-item">Ser forçado a
+                        mudar o nome da sua marca de forma
+                        abrupta.</li>
+                    <li class="second_section-left-content-item">Correr o risco
+                        de um processo por uso indevido de marca.</li>
+                    <li class="second_section-left-content-item">Perder os
+                        investimentos em comunicação e ter de
+                        recomeçar do zero.</li>
+                </ol>
+                <button class="second_section-left-content-btn secondary-button"
+                    id="btn-open-registration-modal">Quero registrar Minha
+                    Marca!</button>
+            </div>
+
+            <div class="second_section-right-content">
+                <h2 class="second_section-right-content-title">Por que optar
+                    pela Registre.se? ✅</h2>
+                <ol class="second_section-right-content-list order-list">
+                    <li class="second_section-right-content-item">100% de
+                        avaliações 5 estrelas no Google.</li>
+                    <li class="second_section-right-content-item">Mais de 600
+                        marcas protegidas em todo o Brasil.</li>
+                    <li class="second_section-right-content-item">Atendimento
+                        humanizado e personalizado para suas
+                        necessidades.</li>
+                    <li class="second_section-right-content-item">Taxa de
+                        aprovação de 86%.</li>
+                    <li class="second_section-right-content-item">Garantia
+                        contratual em caso de reprovação pelo INPI.</li>
+                    <li class="second_section-right-content-item">ZERO
+                        reclamações no Reclame Aqui.</li>
+                </ol>
+                <button
+                    class="second_section-right-content-btn secondary-button"
+                    id="btn-open-registration-modal">Quero registrar Minha
+                    Marca!</button>
+            </div>
+
+        </section>
+
+        <section class="third_section">
+            <h2>O que dizem nossos clientes no Google</h2>
+            <p>Quem registrou, recomenda: Registre.se!</p>
+            <img src="./images/logos/logo-google-5-estrelas-qtd-avaliacoes.svg"
+                alt="logo Google estrelas e avaliações">
+
+            <div class="third_section-google-reviews">
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>Registre-se encontrei na internet, no buscar do Google.
+                        Primeira do topo, sem medo e pelo conteúdo
+                        que vi no
+                        site, me impressionei, deixei meu contato e no outro
+                        dia, fui atendido pelo Luan, fechamos o
+                        contrato e já demos
+                        início ao processo do registro da minha marca.</p>
+                    <img src="./images/google-reviewers/maicon-davi.svg"
+                        alt="Foto de Maicon Davi">
+                    <p class="author-name">Maicon Davi</p>
+                    <p class="author-reviews">3 avaliações</p>
+                </div>
+
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>Atendimento muito rápido e profissionais super atenciosos
+                        e simpáticos. Desde o primeiro contato
+                        estavam sempre
+                        dispostos a responder todas as dúvidas de maneira
+                        efetiva com uma organização no processo de
+                        atendimento
+                        impecável.</p>
+                    <img src="./images/google-reviewers/lucas-malanote.svg"
+                        alt="Foto de Lucas Malanote">
+                    <p class="author-name">Lucas Malanote</p>
+                    <p class="author-reviews">2 avaliações</p>
+                </div>
+
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>Tive uma experiência incrível com o registro da minha
+                        marca. O atendimento foi excepcional desde o
+                        primeiro
+                        contato e tive suporte constante da equipe durante todo
+                        o processo. Recomendo demais! 🖤</p>
+                    <img src="./images/google-reviewers/ana-caroline-ramos.svg"
+                        alt="Foto de Ana Caroline Ramos">
+                    <p class="author-name">Ana Caroline Ramos</p>
+                    <p class="author-reviews">6 avaliações</p>
+                </div>
+
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>Processo de registro de Marca iniciado bem, de forma
+                        clara e objetiva. Dão passo a passo explicação
+                        de todo o
+                        processo de maneira que é compreensível e ajuda em nossa
+                        organização! Parabéns!</p>
+                    <img src="./images/google-reviewers/eduardo-cidade.svg"
+                        alt="Foto de Eduardo Cidade">
+                    <p class="author-name">Eduardo Cidade</p>
+                    <p class="author-reviews">42 avaliações</p>
+                </div>
+
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>A Registre-se não é só uma empresa que te ajuda com seu
+                        registro, é a melhor parceira para o serviço.
+                        Colaboradores acolhedores, que sabem o que fazem,
+                        tirando não só as dúvidas mais deixando vc
+                        esclarecido sobre o
+                        assunto. Entre todas as que procurei sem sombra de
+                        dúvidas a melhor. Ponto.</p>
+                    <img src="./images/google-reviewers/gladson-santos.svg"
+                        alt="Foto de Gladson Santos">
+                    <p class="author-name">Gladson Santos</p>
+                    <p class="author-reviews">3 avaliações</p>
+                </div>
+
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>Entrar em contato com a Registre-se foi um achado no
+                        Google... eles me deram respaldo com a pesquisa
+                        de nomes
+                        antes de definir a minha marca. Atendimento incrível,
+                        especialmente na pessoa do Rafael que foi a
+                        primeira
+                        pessoa com quem tive contato. Gratidão pessoal!!</p>
+                    <img src="./images/google-reviewers/katia-smaniotto.svg"
+                        alt="Foto de Katia Smaniotto">
+                    <p class="author-name">Katia Smaniotto</p>
+                    <p class="author-reviews">355 avaliações</p>
+                </div>
+
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>Atendimento nota MIL! Cheguei com alguns medos,
+                        inseguranças sobre o processo de registro, e o Kadu,
+                        a Eduarda e
+                        toda a equipe foram elucidando todas as dúvidas e me
+                        ajudaram a proteger a minha marca. Atendimento
+                        humanizado,
+                        um enorme diferencial para mim.</p>
+                    <img src="./images/google-reviewers/kauana-publicidade.svg"
+                        alt="Foto de Kauana Publicidade">
+                    <p class="author-name">Kauana Publicidade</p>
+                    <p class="author-reviews">1 avaliações</p>
+                </div>
+
+                <div class="review">
+                    <img src="./images/logos/logo-google-5-estrelas.svg"
+                        alt="Logo do Google e 5 estrelas">
+
+                    <p>Só tenho a agradecer a empresa por estar me auxiliando a
+                        realizar o meu registro de marca de maneira
+                        atenciosa e profissional. Cada passo dado com muita
+                        transparência o que nos inspira confiança e
+                        credibilidade.</p>
+                    <img src="./images/google-reviewers/michaelle-bruno.svg"
+                        alt="Foto de Maicon Davi">
+                    <p class="author-name">Michaelle Bruno</p>
+                    <p class="author-reviews">5 avaliações</p>
+                </div>
+            </section>
+
+            <section class="fourth_section">
+                <h2 class="fourth_section-title">Inicie seu registro e esteja
+                    seguro</h2>
+                <p class="fourth_section-text">Faça como as mais de 600 marcas
+                    que já passaram por aqui.</p>
+
+                <div class="fourth_section-brand-logos">
+                    <img src="./images/brands/green-valley.svg"
+                        alt="Logo da Marca Green Valley">
+                    <img src="./images/brands/bem-mais.svg"
+                        alt="Logo da Marca Bem+">
+                    <img src="./images/brands/campano.svg"
+                        alt="Logo da Marca Campano">
+                    <img src="./images/brands/i-move-line.svg"
+                        alt="Logo da Marca I Move Line">
+                    <img src="./images/brands/odontiq.svg"
+                        alt="Logo da Marca Odontiq">
+                    <img src="./images/brands/nc3e.svg" alt="Logo da Marca NC3E">
+                    <img src="./images/brands/pit-zaria.svg"
+                        alt="Logo da Marca Pit-zaria">
+                    <img src="./images/brands/ponto-com.svg"
+                        alt="Logo da Marca Ponto Com">
+                    <img src="./images/brands/postos-catarina.svg"
+                        alt="Logo da Marca Postos Catarina">
+                    <img src="./images/brands/postos-rr.svg"
+                        alt="Logo da Marca Postos RR">
+                </div>
+                <button
+                    class="fourth_section-btn secondary-button"
+                    id="btn-open-registration-modal">Quero registrar Minha
+                    Marca!</button>
+            </section>
+            <section class="fifth_section">
+                <div class="fifth_section-registration-process-wrapper">
+                    <div class="fifth_section-registration-text-wrapper">
+                        <h2 class="fifth_section-registration-title">Inicie hoje
+                            mesmo o seu processo de registro no INPI</h2>
+                        <p class="fifth_section-registration-text">Conte com a
+                            nossa assessoria para garantir o sucesso
+                            do seu pedido e ganhe tempo para focar no que
+                            importa: O seu negócio.</p>
+                    </div>
+                    <div class="registration-form">
+                        <form class="registration_form"
+                            id="registration-form-steep-one">
+                            <input type="text" id="form-input-brand"
+                                placeholder="Nome da sua marca®" required>
+                            <input type="text" id="form-input-name"
+                                placeholder="Seu nome" required>
+                            <input type="tel" id="form-input-whatsapp"
+                                placeholder="DDD + Whatsapp" required>
+                            <input type="text" placeholder="Ramo de Atuação"
+                                id="form-input-line-of-business" required>
+                            <button class="button btn_form" type="submit"
+                                id="btn-form">Iniciar registro</button>
+                        </form>
+                        <form class="registration_form"
+                            id="registration-form-steep-two"
+                            style="display: none;">
+                            <select id="form-select-business-internship"
+                                required>
+                                <option value disabled selected>Estágio do
+                                    negócio</option>
+                                <option value="option1">Estou me planejando para
+                                    começar</option>
+                                <option value="option2">Comecei recentemente</option>
+                                <option value="option3">Já atuo no mercado há um
+                                    certo tempo</option>
+                            </select>
+                            <select id="form-select-business-size" required>
+                                <option value disabled selected>Porte</option>
+                                <option value="option1">Atuo como pessoa física</option>
+                                <option value="option2">CNPJ em criação</option>
+                                <option value="option3">MEI</option>
+                                <option value="option4">ME</option>
+                                <option value="option5">EPP</option>
+                                <option value="option6">DEMAIS</option>
+                                <option value="option7">Associação</option>
+                            </select>
+                            <input type="text" id="form-input-social-media-site"
+                                placeholder="Redes sociais e/ou site">
+                            <input type="email" id="form-input-email"
+                                placeholder="Seu E-mail">
+                            <button class="button btn_form" id type="submit">Concluir
+                                registro</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="sixth_section">
+                <div class="sixth_section-registration-process-wrapper">
+                    <div class="sixth_section-registration-text-wrapper">
+                        <h2>Como funciona o processo aqui na Registre.se</h2>
+                    </div>
+                    <div class="sixth_section-process-cards">
+                        <div class="sixth_section-process-card">
+                            <h3>1. Análise de viabilidade</h3>
+                            <p>Nossos especialistas farão uma pesquisa
+                                aprofundada em busca de marcas que podem ser um
+                                obstáculo
+                                para o seu registro.</p>
+                        </div>
+                        <div class="sixth_section-process-card">
+                            <h3>2. Estratégia e documentação</h3>
+                            <p>Com base no resultado da pesquisa, iremos traçar
+                                estratégias para maximizar as chances de sucesso
+                                do
+                                seu pedido de registro.</p>
+                        </div>
+                        <div class="sixth_section-process-card">
+                            <h3>3. Protocolo do pedido no INPI</h3>
+                            <p>Em menos de 24 horas, organizamos toda a
+                                documentação, preparamos o processo e
+                                protocolamos o seu
+                                pedido de registro.</p>
+                        </div>
+                        <div class="sixth_section-process-card">
+                            <h3>4. Vigilância do processo</h3>
+                            <p>Vamos monitorar todas as publicações do INPI e te
+                                informar por WhatsApp e e-mail por 10 anos, sem
+                                surpresas.</p>
+                        </div>
+                    </div>
+                    <div class="sixth_section-process-button-wrapper">
+                        <button id="btn-steep-by-steep-video"><i class="fa-regular fa-circle-play"></i> Entenda o passo a passo</button>
+                    </div>
+                </div>
+                <div class="sixth_section-frame-wrapper">
+                    <img src="./images/brands/sixth-section-registre-se.svg" alt="Logo Registre.se e Avatar">
+                </div>
+            </section>
+            <section class="seventh_section">
+                <h2 class="seventh_section-title">Os 5 principais benefícios da marca registrada® para o seu
+                    negócio</h2>
+                <div class="seventh_section-benefits-cards">
+                    <div class="seventh_section-benefit-card">
+                        <p>1. Garantia de propriedade.<br>Sua marca só é
+                            realmente sua quando você tem o certificado emitido
+                            pelo
+                            INPI.</p>
+                    </div>
+                    <div class="seventh_section-benefit-card">
+                        <p>2. Exclusividade.<br>Sabemos que você não quer um
+                            concorrente usando uma marca similar ou até igual a
+                            sua. Somente com sua marca registrada você pode se
+                            proteger da concorrência desleal.</p>
+                    </div>
+                    <div class="seventh_section-benefit-card">
+                        <p>3. Credibilidade.<br>O R de registrado é um símbolo
+                            reconhecido pelos seus clientes e demonstra o
+                            profissionalismo do seu negócio.</p>
+                    </div>
+                    <div class="seventh_section-benefit-card">
+                        <p>4. Direito de uso.<br>Somente o certificado do INPI
+                            lhe dá tranquilidade para usar sua marca sem
+                            infringir o direito de terceiros.</p>
+                    </div>
+                    <div class="seventh_section-benefit-card">
+                        <p>5. Um investimento único que protege a sua marca pra
+                            sempre.<br>O certificado é válido por 10 anos em
+                            todo território nacional e com possibilidade
+                            ilimitada de renovação.</p>
+                    </div>
+                </div>
+                <div class="seventh_section-benefits-button">
+                                   <button
+                    class="seventh_section-btn secondary-button"
+                    id="btn-open-registration-modal">Quero registrar Minha
+                    Marca!</button>
+                </div>
+            </section>
+            <section>
+                <div class="faq">
+                    <h2>Sobre o processo de registro de marca</h2>
+                    <div class="question">
+                        <h3>Estou usando minha marca sem registro. Devo me
+                            preocupar?</h3>
+                        <p>Sim, é importante registrar sua marca para protegê-la
+                            legalmente. O registro confere direitos
+                            exclusivos e
+                            evita que terceiros usem ou copiem sua marca
+                            indevidamente.</p>
+                    </div>
+                    <div class="question">
+                        <h3>O que é o INPI (Instituto de Propriedade
+                            Intelectual)?</h3>
+                        <p>O INPI é o Instituto Nacional da Propriedade
+                            Industrial, responsável pelo registro e proteção de
+                            marcas no
+                            Brasil. É onde seu pedido de registro será analisado
+                            e processado.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Qual valor das taxas?</h3>
+                        <p>O valor das taxas de registro de marca pode variar
+                            dependendo do tipo de marca e dos serviços
+                            solicitados. É
+                            recomendável verificar as taxas atuais no site do
+                            INPI.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Quanto tempo demora para registrar?</h3>
+                        <p>O tempo de registro pode variar, mas geralmente leva
+                            de 12 a 24 meses. O processo envolve análise,
+                            publicação
+                            e possível oposição por terceiros.</p>
+                    </div>
+                    <div class="question">
+                        <h3>O que fazer se sua marca já for registrada?</h3>
+                        <p>Se sua marca já estiver registrada por outra pessoa,
+                            você pode buscar um acordo ou negociar para usar
+                            a marca
+                            sob certas condições. Caso contrário, pode ser
+                            necessário escolher uma marca alternativa.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Como saber se posso registrar minha marca?</h3>
+                        <p>É importante realizar uma busca no banco de marcas do
+                            INPI para verificar se a marca que deseja
+                            registrar já
+                            está em uso. Além disso, é aconselhável contar com o
+                            auxílio de profissionais para avaliar a
+                            viabilidade do
+                            registro.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h2>Sobre a Registre.se</h2>
+                    <div class="question">
+                        <h3>Quem é a Registre.se?</h3>
+                        <p>A Registre.se é uma empresa especializada em registro
+                            de marcas. Nossa equipe de especialistas
+                            oferece
+                            assessoria personalizada para garantir o sucesso do
+                            seu pedido de registro.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Qual valor para registro da marca?</h3>
+                        <p>O valor para registro de marca pode variar dependendo
+                            do tipo de serviço e das taxas do INPI. Entre
+                            em
+                            contato conosco para obter uma cotação
+                            personalizada.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Como funciona o pedido de registro?</h3>
+                        <p>Nós cuidamos de todo o processo de registro, desde a
+                            análise de viabilidade até o protocolo no INPI.
+                            Você
+                            pode contar conosco para tornar o processo simples e
+                            eficiente.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Vou pagar taxas extras?</h3>
+                        <p>O valor das taxas do INPI não está incluído em nossos
+                            serviços, mas podemos ajudá-lo a entender e
+                            pagar essas
+                            taxas de forma adequada.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Como é o atendimento?</h3>
+                        <p>Oferecemos atendimento personalizado e dedicado a
+                            cada cliente. Nossa equipe está disponível para
+                            esclarecer
+                            suas dúvidas e fornecer suporte durante todo o
+                            processo.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Por que é mais simples com a Registre.se?</h3>
+                        <p>Com a Registre.se, você conta com especialistas que
+                            conhecem o processo de registro de marcas.
+                            Simplificamos
+                            o processo para você, economizando tempo e esforço.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h2>Não perca mais tempo, registre a sua marca hoje mesmo!</h2>
+                <div class="register-button">
+                    <a href="#" class="btn">Quero registrar Minha Marca!</a>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="logo-footer.png" alt="Logo da Registre.se">
+                    </div>
+                    <div class="footer-contact">
+                        <p>Telefone: (11) 1234-5678</p>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright © 2023. Todos os direitos reservados.</p>
+                    <p>Registre.se Assessoria Ltda.</p>
+                    <p>CNPJ: 15.011.336/0001-27</p>
+                    <div class="footer-logos">
+                        <img src="wipo-logo.png" alt="Logo da WIPO">
+                        <img src="inpi-logo.png" alt="Logo do INPI">
+                    </div>
+                </div>
+            </footer>
+        </body>
+
+    </html>
