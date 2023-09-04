@@ -9,7 +9,8 @@
 
 /* Estilos para a primeira seção */
 .first_section {
-    /* Adicione seus estilos aqui */
+background-color: var(--light1);
+margin-top: 1rem;
 }
 
 .first_section-left-content {
@@ -85,7 +86,7 @@
 
 /* Estilos para a segunda seção */
 .second_section {
-    /* Adicione seus estilos aqui */
+background-color: var(--brand);
 }
 
 .second_section-title {
@@ -139,7 +140,7 @@
 }
 /* Estilos para a terceira seção */
 .third_section {
-    /* Adicione seus estilos aqui */
+
 }
 
 .third_section h2 {
@@ -209,7 +210,7 @@ p.author-reviews {
 }
 /* Estilos para a quinta seção */
 .fifth_section {
-    /* Adicione seus estilos aqui */
+background-color: var(--light2);
 }
 
 .fifth_section-registration-process-wrapper {
@@ -264,7 +265,7 @@ p.author-reviews {
 
 /* Estilos para a sexta seção */
 .sixth_section {
-    /* Adicione seus estilos aqui */
+background-color: var(--dark8);
 }
 
 .sixth_section-registration-process-wrapper {
@@ -303,7 +304,7 @@ h3 {
 }
 /* Estilos para a sétima seção */
 .seventh_section {
-    /* Adicione seus estilos aqui */
+background-color: var(--dark8);
 }
 
 .seventh_section-title {
@@ -360,7 +361,7 @@ h3 {
 
 /* Estilos para a seção final */
 .final_section {
-    /* Adicione seus estilos aqui */
+background-color: var(--light2);
 }
 
 .final_section h2 {
@@ -378,7 +379,7 @@ h3 {
 
 /* Estilos para o rodapé */
 footer {
-    /* Adicione seus estilos aqui */
+background-color: var(--dark2);
 }
 
 /* Estilos para o topo do rodapé */
