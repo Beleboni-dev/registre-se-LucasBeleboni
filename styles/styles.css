@@ -1,0 +1,419 @@
+/* Estilos para o header */
+.header {
+    /* Adicione seus estilos aqui */
+}
+
+#logo {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a primeira seção */
+.first_section {
+    /* Adicione seus estilos aqui */
+}
+
+.first_section-left-content {
+    /* Adicione seus estilos aqui */
+}
+
+.first_section-right-content {
+    /* Adicione seus estilos aqui */
+}
+
+.first_section-logos {
+    /* Adicione seus estilos aqui */
+}
+
+.first_section_form-wrapper {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o formulário da primeira seção */
+.registration_form {
+    /* Adicione seus estilos aqui */
+}
+
+#form-input-brand {
+    /* Adicione seus estilos aqui */
+}
+
+#form-input-name {
+    /* Adicione seus estilos aqui */
+}
+
+#form-input-whatsapp {
+    /* Adicione seus estilos aqui */
+}
+
+#form-input-line-of-business {
+    /* Adicione seus estilos aqui */
+}
+
+#btn-form {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o formulário da segunda seção */
+#registration-form-steep-one {
+    /* Adicione seus estilos aqui */
+}
+
+#form-select-business-internship {
+    /* Adicione seus estilos aqui */
+}
+
+#form-select-business-size {
+    /* Adicione seus estilos aqui */
+}
+
+#form-input-social-media-site {
+    /* Adicione seus estilos aqui */
+}
+
+#form-input-email {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para as bolinhas de seleção */
+.circle {
+    /* Adicione seus estilos aqui */
+}
+
+.selected-steep {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a segunda seção */
+.second_section {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-title {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-text {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a seção "O que acontece se eu não registrar?" */
+.second_section-left-content {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-left-content-title {
+    /* Adicione seus estilos aqui */
+}
+
+.order-list {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-left-content-item {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-left-content-btn {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a seção "Por que optar pela Registre.se?" */
+.second_section-right-content {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-right-content-title {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-right-content-list {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-right-content-item {
+    /* Adicione seus estilos aqui */
+}
+
+.second_section-right-content-btn {
+    /* Adicione seus estilos aqui */
+}
+/* Estilos para a terceira seção */
+.third_section {
+    /* Adicione seus estilos aqui */
+}
+
+.third_section h2 {
+    /* Adicione seus estilos aqui */
+}
+
+.third_section p {
+    /* Adicione seus estilos aqui */
+}
+
+.third_section img {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para as avaliações no Google */
+.third_section-google-reviews {
+    /* Adicione seus estilos aqui */
+}
+
+.review {
+    /* Adicione seus estilos aqui */
+}
+
+.review img {
+    /* Adicione seus estilos aqui */
+}
+
+.review p {
+    /* Adicione seus estilos aqui */
+}
+
+.review img.author-avatar {
+    /* Adicione seus estilos aqui */
+}
+
+p.author-name {
+    /* Adicione seus estilos aqui */
+}
+
+p.author-reviews {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a quarta seção */
+.fourth_section {
+    /* Adicione seus estilos aqui */
+}
+
+.fourth_section-title {
+    /* Adicione seus estilos aqui */
+}
+
+.fourth_section-text {
+    /* Adicione seus estilos aqui */
+}
+
+.fourth_section-brand-logos {
+    /* Adicione seus estilos aqui */
+}
+
+.fourth_section-brand-logos img {
+    /* Adicione seus estilos aqui */
+}
+
+.fourth_section-btn {
+    /* Adicione seus estilos aqui */
+}
+/* Estilos para a quinta seção */
+.fifth_section {
+    /* Adicione seus estilos aqui */
+}
+
+.fifth_section-registration-process-wrapper {
+    /* Adicione seus estilos aqui */
+}
+
+.fifth_section-registration-text-wrapper {
+    /* Adicione seus estilos aqui */
+}
+
+.fifth_section-registration-title {
+    /* Adicione seus estilos aqui */
+}
+
+.fifth_section-registration-text {
+    /* Adicione seus estilos aqui */
+}
+
+.registration-form {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para os formulários de registro */
+.registration_form {
+    /* Adicione seus estilos aqui */
+}
+
+#registration-form-steep-one {
+    /* Adicione seus estilos aqui */
+}
+
+#registration-form-steep-two {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para os elementos dos formulários de registro */
+#form-input-brand,
+#form-input-name,
+#form-input-whatsapp,
+#form-input-line-of-business,
+#form-select-business-internship,
+#form-select-business-size,
+#form-input-social-media-site,
+#form-input-email {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o botão de registro */
+.button.btn_form {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a sexta seção */
+.sixth_section {
+    /* Adicione seus estilos aqui */
+}
+
+.sixth_section-registration-process-wrapper {
+    /* Adicione seus estilos aqui */
+}
+
+.sixth_section-registration-text-wrapper {
+    /* Adicione seus estilos aqui */
+}
+
+h2 {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para os cartões de processo */
+.sixth_section-process-cards {
+    /* Adicione seus estilos aqui */
+}
+
+.sixth_section-process-card {
+    /* Adicione seus estilos aqui */
+}
+
+h3 {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o botão "Entenda o passo a passo" */
+#btn-steep-by-steep-video {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o avatar e logotipo */
+.sixth_section-frame-wrapper {
+    /* Adicione seus estilos aqui */
+}
+/* Estilos para a sétima seção */
+.seventh_section {
+    /* Adicione seus estilos aqui */
+}
+
+.seventh_section-title {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para os cartões de benefícios */
+.seventh_section-benefits-cards {
+    /* Adicione seus estilos aqui */
+}
+
+.seventh_section-benefit-card {
+    /* Adicione seus estilos aqui */
+}
+
+.seventh_section-benefit-card p {
+    /* Adicione seus estilos aqui */
+}
+
+.seventh_section-benefit-card-image-wrapper {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o botão "Quero registrar Minha Marca!" */
+.seventh_section-benefits-button {
+    /* Adicione seus estilos aqui */
+}
+
+.seventh_section-btn.secondary-button {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a seção de FAQ */
+.faq_section {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para as perguntas frequentes */
+.faq h2 {
+    /* Adicione seus estilos aqui */
+}
+
+.question {
+    /* Adicione seus estilos aqui */
+}
+
+.question summary {
+    /* Adicione seus estilos aqui */
+}
+
+.question p {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para a seção final */
+.final_section {
+    /* Adicione seus estilos aqui */
+}
+
+.final_section h2 {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o botão "Quero registrar Minha Marca!" na seção final */
+.final_section-register-button-wrapper {
+    /* Adicione seus estilos aqui */
+}
+
+.final_section-btn.secondary-button {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o rodapé */
+footer {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o topo do rodapé */
+.footer-top {
+    /* Adicione seus estilos aqui */
+}
+
+.footer-logo {
+    /* Adicione seus estilos aqui */
+}
+
+.footer-contact {
+    /* Adicione seus estilos aqui */
+}
+
+.footer-social-icons {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para os ícones de mídia social */
+.footer-social-icons a {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para o conteúdo do rodapé */
+.footer p {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para os logotipos no rodapé */
+.footer-logos {
+    /* Adicione seus estilos aqui */
+}
+
+/* Estilos para os logotipos da WIPO e do INPI no rodapé */
+.footer-logos img {
+    /* Adicione seus estilos aqui */
+}
