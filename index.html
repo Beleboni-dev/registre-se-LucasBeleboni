@@ -11,8 +11,8 @@
         <title>Registre.se</title>
         <link rel="stylesheet" href="./styles/globalReset.css">
         <link rel="stylesheet" href="./styles/globalStyles.css">
-        <link rel="stylesheet" href="./styles/components.css">
         <link rel="stylesheet" href="./styles/wrappersStyles.css">
+        <link rel="stylesheet" href="./styles/components.css">
         <link rel="stylesheet" href="./styles/styles.css">
         <script src="./scripts/index.js" defer></script>
     </head>
@@ -25,71 +25,73 @@
             </div>
         </header>
         <section class="first_section">
-            <div class="wrapper">
+            <div class="wrapper first_section-wrapper">
                 <div class="first_section-left-content">
-                    <h2>Seja dono da sua marca e se proteja da concorrência!</h2>
-                    <span>Garantimos o registro da sua marca no INPI em menos de
+                    <h2 class="main-title">Seja dono da sua marca e se proteja da concorrência!</h2>
+                    <span class="main-subtitle">Garantimos o registro da sua marca no INPI em menos de
                         24
                         horas.</span>
                     <div class="first_section-logos">
                         <img src="./images/logos/logo-nip-gov-br.svg"
                             alt="Logo NIP e GOV BR">
                     </div>
-                    <div class="first_section-right-content">
-                        <img src="./images/logos/site-blindado-logo.svg"
-                            alt="Imagem de Segurança">
-                        <div class="first_section_form-wrapper">
-                            <h2>Inicie agora o seu processo de registro e esteja
-                                seguro.</h2>
-                            <form class="registration_form"
-                                id="registration-form-steep-one">
-                                <input type="text" id="form-input-brand"
-                                    placeholder="Nome da sua marca®" required>
-                                <input type="text" id="form-input-name"
-                                    placeholder="Seu nome" required>
-                                <input type="tel" id="form-input-whatsapp"
-                                    placeholder="DDD + Whatsapp" required>
-                                <input type="text" placeholder="Ramo de Atuação"
-                                    id="form-input-line-of-business" required>
-                                <button class="button btn_form" type="submit"
-                                    id="btn-form">Iniciar registro</button>
-                            </form>
-                            <form class="registration_form"
-                                id="registration-form-steep-two"
-                                style="display: none;">
-                                <select id="form-select-business-internship"
-                                    required>
-                                    <option value disabled selected>Estágio do
-                                        negócio</option>
-                                    <option value="option1">Estou me planejando
-                                        para
-                                        começar</option>
-                                    <option value="option2">Comecei recentemente</option>
-                                    <option value="option3">Já atuo no mercado
-                                        há um
-                                        certo tempo</option>
-                                </select>
-                                <select id="form-select-business-size" required>
-                                    <option value disabled selected>Porte</option>
-                                    <option value="option1">Atuo como pessoa
-                                        física</option>
-                                    <option value="option2">CNPJ em criação</option>
-                                    <option value="option3">MEI</option>
-                                    <option value="option4">ME</option>
-                                    <option value="option5">EPP</option>
-                                    <option value="option6">DEMAIS</option>
-                                    <option value="option7">Associação</option>
-                                </select>
-                                <input type="text"
-                                    id="form-input-social-media-site"
-                                    placeholder="Redes sociais e/ou site">
-                                <input type="email" id="form-input-email"
-                                    placeholder="Seu E-mail">
-                                <button class="button btn_form" id type="submit">Concluir
-                                    registro</button>
-                            </form>
-                            <div class="circle selected-steep"></div>
-                            <div class="circle"></div>
+                </div>
+                <div class="first_section-right-content">
+                    <img src="./images/logos/site-blindado-logo.svg"
+                        alt="Imagem de Segurança">
+                    <div class="first_section_form-wrapper">
+                        <h2 class="form-title">Inicie agora o seu processo de registro e esteja
+                            seguro.</h2>
+                        <form class="registration_form"
+                            id="registration-form-steep-one">
+                            <input type="text" id="form-input-brand"
+                                placeholder="Nome da sua marca®" required>
+                            <input type="text" id="form-input-name"
+                                placeholder="Seu nome" required>
+                            <input type="tel" id="form-input-whatsapp"
+                                placeholder="DDD + Whatsapp" required>
+                            <input type="text" placeholder="Ramo de Atuação"
+                                id="form-input-line-of-business" required>
+                            <button class="button btn_form button-text" type="submit"
+                                id="btn-form">Iniciar registro</button>
+                        </form>
+                        <form class="registration_form"
+                            id="registration-form-steep-two"
+                            style="display: none;">
+                            <select id="form-select-business-internship"
+                                required>
+                                <option value disabled selected>Estágio do
+                                    negócio</option>
+                                <option value="option1">Estou me planejando
+                                    para
+                                    começar</option>
+                                <option value="option2">Comecei recentemente</option>
+                                <option value="option3">Já atuo no mercado
+                                    há um
+                                    certo tempo</option>
+                            </select>
+                            <select id="form-select-business-size" required>
+                                <option value disabled selected>Porte</option>
+                                <option value="option1">Atuo como pessoa
+                                    física</option>
+                                <option value="option2">CNPJ em criação</option>
+                                <option value="option3">MEI</option>
+                                <option value="option4">ME</option>
+                                <option value="option5">EPP</option>
+                                <option value="option6">DEMAIS</option>
+                                <option value="option7">Associação</option>
+                            </select>
+                            <input type="text"
+                                id="form-input-social-media-site"
+                                placeholder="Redes sociais e/ou site">
+                            <input type="email" id="form-input-email"
+                                placeholder="Seu E-mail">
+                            <button class="button btn_form" id type="submit">Concluir
+                                registro</button>
+                        </form>
+                        <div class="selected-steep-wrapper">
+                            <div class="circle "></div>
+                            <div class="circle unselected-steep"></div>
                         </div>
                     </div>
                 </div>
@@ -330,7 +332,7 @@
                 </section>
                 <section class="fourth_section">
                     <div class="wrapper">
-                        
+
                         <h2 class="fourth_section-title">Inicie seu registro e
                             esteja
                             seguro</h2>
@@ -361,7 +363,8 @@
                         </div>
                         <button
                             class="fourth_section-btn secondary-button"
-                            id="btn-open-registration-modal">Quero registrar Minha
+                            id="btn-open-registration-modal">Quero registrar
+                            Minha
                             Marca!</button>
                     </div>
                 </section>
@@ -372,24 +375,30 @@
                                 <h2 class="fifth_section-registration-title">Inicie
                                     hoje
                                     mesmo o seu processo de registro no INPI</h2>
-                                <p class="fifth_section-registration-text">Conte com
+                                <p class="fifth_section-registration-text">Conte
+                                    com
                                     a
                                     nossa assessoria para garantir o sucesso
-                                    do seu pedido e ganhe tempo para focar no que
+                                    do seu pedido e ganhe tempo para focar no
+                                    que
                                     importa: O seu negócio.</p>
                             </div>
                             <div class="registration-form">
                                 <form class="registration_form"
                                     id="registration-form-steep-one">
                                     <input type="text" id="form-input-brand"
-                                        placeholder="Nome da sua marca®" required>
+                                        placeholder="Nome da sua marca®"
+                                        required>
                                     <input type="text" id="form-input-name"
                                         placeholder="Seu nome" required>
                                     <input type="tel" id="form-input-whatsapp"
                                         placeholder="DDD + Whatsapp" required>
-                                    <input type="text" placeholder="Ramo de Atuação"
-                                        id="form-input-line-of-business" required>
-                                    <button class="button btn_form" type="submit"
+                                    <input type="text"
+                                        placeholder="Ramo de Atuação"
+                                        id="form-input-line-of-business"
+                                        required>
+                                    <button class="button btn_form"
+                                        type="submit"
                                         id="btn-form">Iniciar registro</button>
                                 </form>
                                 <form class="registration_form"
@@ -397,17 +406,22 @@
                                     style="display: none;">
                                     <select id="form-select-business-internship"
                                         required>
-                                        <option value disabled selected>Estágio do
+                                        <option value disabled selected>Estágio
+                                            do
                                             negócio</option>
-                                        <option value="option1">Estou me planejando
+                                        <option value="option1">Estou me
+                                            planejando
                                             para
                                             começar</option>
-                                        <option value="option2">Comecei recentemente</option>
-                                        <option value="option3">Já atuo no mercado
+                                        <option value="option2">Comecei
+                                            recentemente</option>
+                                        <option value="option3">Já atuo no
+                                            mercado
                                             há um
                                             certo tempo</option>
                                     </select>
-                                    <select id="form-select-business-size" required>
+                                    <select id="form-select-business-size"
+                                        required>
                                         <option value disabled selected>Porte</option>
                                         <option value="option1">Atuo como pessoa
                                             física</option>
@@ -423,7 +437,8 @@
                                         placeholder="Redes sociais e/ou site">
                                     <input type="email" id="form-input-email"
                                         placeholder="Seu E-mail">
-                                    <button class="button btn_form" id type="submit">Concluir
+                                    <button class="button btn_form" id
+                                        type="submit">Concluir
                                         registro</button>
                                 </form>
                             </div>
@@ -440,7 +455,8 @@
                                 <div class="sixth_section-process-card">
                                     <h3>1. Análise de viabilidade</h3>
                                     <p>Nossos especialistas farão uma pesquisa
-                                        aprofundada em busca de marcas que podem ser
+                                        aprofundada em busca de marcas que podem
+                                        ser
                                         um
                                         obstáculo
                                         para o seu registro.</p>
@@ -463,9 +479,11 @@
                                 </div>
                                 <div class="sixth_section-process-card">
                                     <h3>4. Vigilância do processo</h3>
-                                    <p>Vamos monitorar todas as publicações do INPI
+                                    <p>Vamos monitorar todas as publicações do
+                                        INPI
                                         e te
-                                        informar por WhatsApp e e-mail por 10 anos,
+                                        informar por WhatsApp e e-mail por 10
+                                        anos,
                                         sem
                                         surpresas.</p>
                                 </div>
@@ -478,14 +496,16 @@
                             </div>
                         </div>
                         <div class="sixth_section-frame-wrapper">
-                            <img src="./images/brands/sixth-section-registre-se.svg"
+                            <img
+                                src="./images/brands/sixth-section-registre-se.svg"
                                 alt="Logo Registre.se e Avatar">
                         </div>
                     </div>
                 </section>
                 <section class="seventh_section">
                     <div class="wrapper">
-                        <h2 class="seventh_section-title">Os 5 principais benefícios
+                        <h2 class="seventh_section-title">Os 5 principais
+                            benefícios
                             da
                             marca registrada® para o seu
                             negócio</h2>
@@ -498,10 +518,12 @@
                                     INPI.</p>
                             </div>
                             <div class="seventh_section-benefit-card">
-                                <p>2. Exclusividade.<br>Sabemos que você não quer um
+                                <p>2. Exclusividade.<br>Sabemos que você não
+                                    quer um
                                     concorrente usando uma marca similar ou até
                                     igual a
-                                    sua. Somente com sua marca registrada você pode
+                                    sua. Somente com sua marca registrada você
+                                    pode
                                     se
                                     proteger da concorrência desleal.</p>
                                 <div
@@ -514,7 +536,8 @@
                             <div class="seventh_section-benefit-card">
                                 <p>3. Credibilidade.<br>O R de registrado é um
                                     símbolo
-                                    reconhecido pelos seus clientes e demonstra o
+                                    reconhecido pelos seus clientes e demonstra
+                                    o
                                     profissionalismo do seu negócio.</p>
                                 <div
                                     class="seventh_section-benefit-card-image-wrapper">
@@ -524,15 +547,18 @@
                                 </div>
                             </div>
                             <div class="seventh_section-benefit-card">
-                                <p>4. Direito de uso.<br>Somente o certificado do
+                                <p>4. Direito de uso.<br>Somente o certificado
+                                    do
                                     INPI
                                     lhe dá tranquilidade para usar sua marca sem
                                     infringir o direito de terceiros.</p>
                             </div>
                             <div class="seventh_section-benefit-card">
-                                <p>5. Um investimento único que protege a sua marca
+                                <p>5. Um investimento único que protege a sua
+                                    marca
                                     pra
-                                    sempre.<br>O certificado é válido por 10 anos em
+                                    sempre.<br>O certificado é válido por 10
+                                    anos em
                                     todo território nacional e com possibilidade
                                     ilimitada de renovação.</p>
                                 <div
@@ -550,28 +576,33 @@
                                 Minha
                                 Marca!</button>
                         </div>
-                                        </section>
-                    </div>
+                    </section>
+                </div>
                 <section class="faq_section">
-<div class="wrapper">
-    
+                    <div class="wrapper">
+
                         <div class="faq">
                             <h2>Sobre o processo de registro de marca</h2>
                             <details class="question">
-                                <summary>Estou usando minha marca sem registro. Devo
+                                <summary>Estou usando minha marca sem registro.
+                                    Devo
                                     me preocupar?</summary>
                                 <p>Sim, é importante registrar sua marca para
                                     protegê-la legalmente. O registro confere
-                                    direitos exclusivos e evita que terceiros usem
+                                    direitos exclusivos e evita que terceiros
+                                    usem
                                     ou copiem sua marca indevidamente.</p>
                             </details>
                             <details class="question">
-                                <summary>O que é o INPI (Instituto de Propriedade
+                                <summary>O que é o INPI (Instituto de
+                                    Propriedade
                                     Intelectual)?</summary>
                                 <p>O INPI é o Instituto Nacional da Propriedade
-                                    Industrial, responsável pelo registro e proteção
+                                    Industrial, responsável pelo registro e
+                                    proteção
                                     de
-                                    marcas no Brasil. É onde seu pedido de registro
+                                    marcas no Brasil. É onde seu pedido de
+                                    registro
                                     será
                                     analisado e processado.</p>
                             </details>
@@ -580,105 +611,124 @@
                                 <p>O valor das taxas de registro de marca pode
                                     variar
                                     dependendo do tipo de marca e dos serviços
-                                    solicitados. É recomendável verificar as taxas
+                                    solicitados. É recomendável verificar as
+                                    taxas
                                     atuais no site do INPI.</p>
                             </details>
                             <details class="question">
                                 <summary>Quanto tempo demora para registrar?</summary>
-                                <p>O tempo de registro pode variar, mas geralmente
+                                <p>O tempo de registro pode variar, mas
+                                    geralmente
                                     leva
-                                    de 12 a 24 meses. O processo envolve análise,
-                                    publicação e possível oposição por terceiros.</p>
+                                    de 12 a 24 meses. O processo envolve
+                                    análise,
+                                    publicação e possível oposição por
+                                    terceiros.</p>
                             </details>
                             <details class="question">
-                                <summary>O que fazer se sua marca já for registrada?</summary>
+                                <summary>O que fazer se sua marca já for
+                                    registrada?</summary>
                                 <p>Se sua marca já estiver registrada por outra
                                     pessoa,
-                                    você pode buscar um acordo ou negociar para usar
+                                    você pode buscar um acordo ou negociar para
+                                    usar
                                     a
-                                    marca sob certas condições. Caso contrário, pode
+                                    marca sob certas condições. Caso contrário,
+                                    pode
                                     ser
                                     necessário escolher uma marca alternativa.</p>
                             </details>
                             <details class="question">
-                                <summary>Como saber se posso registrar minha marca?</summary>
+                                <summary>Como saber se posso registrar minha
+                                    marca?</summary>
                                 <p>É importante realizar uma busca no banco de
                                     marcas do
                                     INPI para verificar se a marca que deseja
                                     registrar
                                     já está em uso. Além disso, é aconselhável
                                     contar
-                                    com o auxílio de profissionais para avaliar a
+                                    com o auxílio de profissionais para avaliar
+                                    a
                                     viabilidade do registro.</p>
                             </details>
                         </div>
-    
+
                         <div class="faq">
                             <h2>Sobre a Registre.se</h2>
                             <details class="question">
                                 <summary>Quem é a Registre.se?</summary>
                                 <p>A Registre.se é uma empresa especializada em
                                     registro
-                                    de marcas. Nossa equipe de especialistas oferece
-                                    assessoria personalizada para garantir o sucesso
+                                    de marcas. Nossa equipe de especialistas
+                                    oferece
+                                    assessoria personalizada para garantir o
+                                    sucesso
                                     do
                                     seu pedido de registro.</p>
                             </details>
-    
+
                             <details class="question">
                                 <summary>Qual valor para registro da marca?</summary>
                                 <p>O valor para registro de marca pode variar
                                     dependendo
-                                    do tipo de serviço e das taxas do INPI. Entre em
+                                    do tipo de serviço e das taxas do INPI.
+                                    Entre em
                                     contato conosco para obter uma cotação
                                     personalizada.</p>
                             </details>
-    
+
                             <details class="question">
                                 <summary>Como funciona o pedido de registro?</summary>
                                 <p>Nós cuidamos de todo o processo de registro,
                                     desde a
-                                    análise de viabilidade até o protocolo no INPI.
+                                    análise de viabilidade até o protocolo no
+                                    INPI.
                                     Você
                                     pode contar conosco para tornar o processo
                                     simples e
                                     eficiente.</p>
                             </details>
-    
+
                             <details class="question">
                                 <summary>Vou pagar taxas extras?</summary>
-                                <p>O valor das taxas do INPI não está incluído em
+                                <p>O valor das taxas do INPI não está incluído
+                                    em
                                     nossos
                                     serviços, mas podemos ajudá-lo a entender e
                                     pagar
                                     essas taxas de forma adequada.</p>
                             </details>
-    
+
                             <details class="question">
                                 <summary>Como é o atendimento?</summary>
-                                <p>Oferecemos atendimento personalizado e dedicado a
-                                    cada cliente. Nossa equipe está disponível para
+                                <p>Oferecemos atendimento personalizado e
+                                    dedicado a
+                                    cada cliente. Nossa equipe está disponível
+                                    para
                                     esclarecer suas dúvidas e fornecer suporte
                                     durante
                                     todo o processo.</p>
                             </details>
-    
+
                             <details class="question">
-                                <summary>Por que é mais simples com a Registre.se?</summary>
-                                <p>Com a Registre.se, você conta com especialistas
+                                <summary>Por que é mais simples com a
+                                    Registre.se?</summary>
+                                <p>Com a Registre.se, você conta com
+                                    especialistas
                                     que
                                     conhecem o processo de registro de marcas.
-                                    Simplificamos o processo para você, economizando
+                                    Simplificamos o processo para você,
+                                    economizando
                                     tempo e esforço.</p>
                             </details>
-    
-                        </div>
-</div>
-                </section>
 
+                        </div>
+                    </div>
+                </section>
                 <section class="final_section">
                     <div class="wrapper">
-                        <h2>Não perca mais tempo, registre a sua marca hoje mesmo!</h2>
+                        <h2>Não perca mais tempo, registre a sua marca hoje
+                            mesmo!</h2>
                         <div class="final_section-register-button-wrapper">
                             <button
                                 class="final_section-btn secondary-button"

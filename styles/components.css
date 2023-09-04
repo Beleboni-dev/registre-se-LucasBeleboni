@@ -2,7 +2,7 @@
 .main-title {
   color: var(--brand2);
   font-family: "Raleway", sans-serif;
-  font-size: 54px;
+  font-size: 3.375rem;
   font-style: normal;
   font-weight: 700;
   line-height: 52.5px;
@@ -13,18 +13,48 @@
 .main-subtitle {
   color: var(--dark2);
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  max-width: 21.575rem;
 }
 
+.form-title{
+  color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+::placeholder{
+  color: #767676;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02rem;
+}
+
+.btn_form{
+width: 100%;
+  background-color: var(--dark2);
+    height: 3.125rem;
+    border: none;
+      border-radius: 1.5625rem;
+      outline: none;
+}
 /* Light Titles */
 .light-titles {
   color: #fff;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 46px;
+  font-size: 2.875rem;
   font-style: normal;
   font-weight: 700;
   line-height: 49.5px;
@@ -35,7 +65,7 @@
 .secondary-subtitle {
   color: var(--dark2);
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -46,7 +76,7 @@
   color: var(--dark2);
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -58,7 +88,7 @@
   color: #269ab6;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -75,7 +105,7 @@
   line-height: normal;
 }
 
-/* Button Text */
+/* Button Text */ 
 .button-text {
   color: #fff;
   text-align: center;

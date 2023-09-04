@@ -12,6 +12,7 @@
     --dark6: #5C5C5C;
     --dark7: #808080;
     --dark8: #F8F2F2;
+    --dark9: #A8A8A8;
 
 
     --light1: #FFFFFF;
@@ -21,7 +22,6 @@
     --light5: #2188A0;
 }
 
-main {
-    max-width: 66.625rem;
-    margin: 0 auto;
+body {
+padding-top: 6.25rem;
 }

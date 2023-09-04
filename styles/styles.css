@@ -14,26 +14,56 @@ margin-top: 1rem;
 }
 
 .first_section-left-content {
-    /* Adicione seus estilos aqui */
+display: flex;
+flex-direction: column;
+gap: 2.875rem  ;
+max-width: 490px;
 }
 
 .first_section-right-content {
-    /* Adicione seus estilos aqui */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center ;
 }
-
+.first_section-right-content img {
+margin-bottom: 1.38rem
+;
+}
 .first_section-logos {
     /* Adicione seus estilos aqui */
 }
 
 .first_section_form-wrapper {
-    /* Adicione seus estilos aqui */
+background-color: var(--light2);
+max-width: 24.3125rem;
+border-radius: 3rem;
+padding: 3rem 2.69rem 1.06rem;
 }
 
 /* Estilos para o formulário da primeira seção */
 .registration_form {
-    /* Adicione seus estilos aqui */
-}
+display: flex;
+flex-direction: column;
+gap: .44rem;
+justify-content: center;
+align-items: center;
 
+}
+.registration_form input {
+    color: var(--dark3);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 3.125rem;
+    border-radius: 0.9375rem;
+    padding-left: 1rem;
+}
 #form-input-brand {
     /* Adicione seus estilos aqui */
 }
@@ -74,14 +104,24 @@ margin-top: 1rem;
 #form-input-email {
     /* Adicione seus estilos aqui */
 }
-
-/* Estilos para as bolinhas de seleção */
-.circle {
-    /* Adicione seus estilos aqui */
+.selected-steep-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.13rem;
+    gap: 1.1875rem;
 }
 
-.selected-steep {
-    /* Adicione seus estilos aqui */
+.circle {
+width: .5rem;
+height: .5rem;
+border-radius: 50%;
+background-color: var(--light1);
+}
+
+
+.unselected-steep {
+  background-color: var(--dark9);
 }
 
 /* Estilos para a segunda seção */
