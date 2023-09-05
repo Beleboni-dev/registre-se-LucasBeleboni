@@ -39,7 +39,20 @@
   position: absolute;
   bottom: 1.5rem;
 }
-
+.fourth_section-title-wrapper{
+  margin-top: 4.69rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth_section-brand-logos-wrapper{
+    margin-top: 1.75rem;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.94rem;
+      justify-content: center;
+}
 @media (max-width: 80rem) {
   .third_section-google-reviews-wrapper {
     width: 90%;
@@ -47,7 +60,16 @@
     margin: 0 auto;
     margin-top: 1.75rem;
   }
+    .fourth_section-brand-logos-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        margin-top: 1.75rem;
+    }
   .review {
     min-width: 100%;
   }
+  #responsive-omit{
+    display: none;
+  }
+
 }
