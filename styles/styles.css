@@ -200,12 +200,18 @@ p.author-reviews {
   /* Adicione seus estilos aqui */
 }
 
-.fourth_section-brand-logos img {
-  /* Adicione seus estilos aqui */
+.fourth_section-brand-logos-wrapper img {
+max-width: 180px;
+  display: flex;
+    /* Tornar as imagens elementos flexíveis */
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    align-items: center;
+    /* Centralizar verticalmente */
 }
 
 .fourth_section-btn {
-  /* Adicione seus estilos aqui */
+background-color: var(--dark2);
 }
 /* Estilos para a quinta seção */
 .fifth_section {
