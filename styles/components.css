@@ -161,7 +161,7 @@
   color: #000;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 700;
   line-height: 19px;
@@ -172,7 +172,7 @@
   color: #7b7b7b;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
@@ -183,7 +183,7 @@
   color: #1c3622;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 49.5px;
@@ -194,32 +194,36 @@
 .fourth-section-subtitle {
   color: #1c3622;
   font-family: "Raleway", sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   font-weight: 500;
   line-height: 49.5px;
   letter-spacing: -0.66px;
+
 }
 
 /* Fifth Section Title */
 .fifth-section-title {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 54px;
+  font-size: 3.375rem;
   font-style: normal;
   font-weight: 700;
   line-height: 50.5px;
   letter-spacing: -1.08px;
+  max-width: 31rem;
 }
 
 /* Fifth Section Subtitle */
 .fifth-section-subtitle {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-top: 2.0625rem;
+    max-width: 31rem;
 }
 
 /* Sixth Section Title */
@@ -232,6 +236,7 @@
   font-weight: 700;
   line-height: 49.5px;
   letter-spacing: -1.44px;
+  max-width: 39.125rem;
 }
 
 /* Sixth Section Card Titles */
@@ -239,7 +244,7 @@
   color: #fcfcfc;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -268,6 +273,7 @@
   font-weight: 700;
   line-height: 49.5px;
   letter-spacing: -1.44px;
+
 }
 
 /* Seventh Section Card Titles (1st and 4th) */

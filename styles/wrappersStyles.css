@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: clamp(48rem, 80%, 66.625rem);
+  max-width: clamp(48rem, 80%, 70.1875rem);
   margin: 0 auto;
 }
 .first_section-wrapper {
@@ -9,7 +9,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.first_section_form-wrapper {
+.form-wrapper {
   background-color: var(--light2);
   max-width: clamp(18rem, 23rem, 24.3125rem);
   border-radius: 3rem;
@@ -57,11 +57,43 @@
 }
 .fifth_section-registration-process-wrapper{
   margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.fifth_section_form-wrapper{
+min-width: 24rem ;
+}
+.sixth_section-registration-text-wrapper {
+margin-top: 3.36rem;
+display: flex;
+justify-content: center;
+}
+.sixth_section-process-button-wrapper{
+  margin-top: 3.62rem;
+  display: flex;
+  width: 100%;
+justify-content: center;
+}
+.sixth_section-frame-wrapper{
+  position: absolute;
+  right: 2rem;
+  top: 20rem;
+}
+.wave-wrapper{
+  position: absolute;
+}
+#wave-section6-bg{
+  max-width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 @media (max-width: 80rem) {
   .third_section-google-reviews-wrapper {
     width: 90%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     margin-top: 1.75rem;
   }
@@ -70,9 +102,7 @@
     margin: 0 auto;
     margin-top: 1.75rem;
   }
-  .review {
-    min-width: 100%;
-  }
+
   #responsive-omit {
     display: none;
   }
