@@ -2,136 +2,140 @@
 .main-title {
   color: var(--brand2);
   font-family: "Raleway", sans-serif;
-  font-size: 3.375rem;
+  font-size: clamp(2rem, 8vw, 3.375rem);
   font-style: normal;
   font-weight: 700;
-  line-height: 52.5px;
+  line-height: 1.2;
   letter-spacing: -1.08px;
 }
-
 /* Main Subtitle */
 .main-subtitle {
   color: var(--dark2);
   font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 4vw, 1.25rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   max-width: 21.575rem;
 }
-
-.form-title{
-  color: #FFF;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 1.25rem;
+/* Form Title */
+.form-title {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.25rem;
 }
-::placeholder{
+/* Placeholder Text */
+::placeholder {
   color: #767676;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: Raleway;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.02rem;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: clamp(0.875rem, 3.5vw, 1rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02rem;
 }
-
-.btn_form{
-width: 100%;
-  background-color: var(--dark2);
-    height: 3.125rem;
-    border: none;
-      border-radius: 1.5625rem;
-      outline: none;
-      cursor: pointer;
+/* Button Text */
+.button-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1.375rem, 4vw, 2.2rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: capitalize;
 }
 /* Light Titles */
 .light-titles {
   color: #fff;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 2.875rem;
+  font-size: clamp(1.75rem, 5vw, 2.875rem);
   font-style: normal;
   font-weight: 700;
-  line-height: 49.5px;
+  line-height: 1.2;
   letter-spacing: -0.92px;
   max-width: 41.0625rem;
 }
-
 /* Secondary Subtitle */
 .secondary-subtitle {
   color: var(--dark2);
   font-family: "Raleway", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(0.875rem, 3.5vw, 1.125rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-
 /* Second Section Card Title */
 .second-section-card-title {
   color: var(--dark2);
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 2.375rem;
+  font-size: clamp(1.5rem, 5vw, 2.375rem);
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: -1.26px;
   max-width: 25.625rem;
 }
-
 /* Second Section Card Title 2 */
 .second-section-card-title2 {
   color: #269ab6;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 2.375rem;
+  font-size: clamp(1.5rem, 5vw, 2.375rem);
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: -1.26px;
 }
-
 /* Second Section Card Text */
 .second-section-card-text {
   color: #7d7d7d;
   font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-size: clamp(1rem, 4vw, 1.125rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-
-/* Button Text */ 
+.btn_form {
+  width: 100%;
+  background-color: var(--dark2);
+  height: 3.125rem;
+  border: none;
+  border-radius: 1.5625rem;
+  outline: none;
+  cursor: pointer;
+}
 .button-text {
   color: #fff;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 22px;
+  font-size: clamp(1rem, 4vw, 1.375rem);
+  /* Mínimo de 1.375rem, máximo de 4vw e valor padrão de 2.2rem */
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.1;
+  /* Use uma unidade semelhante a 'em' para a linha de base, se preferir */
   text-transform: capitalize;
 }
-
 /* Testimonial Section Title */
 .testimonial-section-title {
   color: #1a2f1f;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 46px;
+  font-size: clamp(1.5rem, 4vw, 2.875rem);
   font-style: normal;
   font-weight: 700;
   line-height: 86.4%;
   letter-spacing: -0.92px;
 }
-
 /* Testimonial Section Subtitle */
 .testimonial-section-subtitle {
   color: #1c3622;
@@ -141,13 +145,12 @@ width: 100%;
   font-weight: 500;
   line-height: 86.4%;
 }
-
 /* Testimonial Text */
 .testimonial-text {
   color: #000;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
@@ -165,7 +168,7 @@ width: 100%;
 }
 
 /* Author's Review Count */
-.author-review-count {
+.author-reviews {
   color: #7b7b7b;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Inter", sans-serif;

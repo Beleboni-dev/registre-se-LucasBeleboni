@@ -1,22 +1,23 @@
 /* Estilos para o header */
 .header {
   padding-top: 6.25rem;
+  background-color: var(--light1);
 }
 
 #logo {
-  /* Adicione seus estilos aqui */
+  width: clamp(13.1875rem, 10vw, 23rem);
 }
 
 /* Estilos para a primeira seção */
 .first_section {
-  margin-top: 1rem;
+  background-color: var(--light1);
 }
 
 .first_section-left-content {
   display: flex;
   flex-direction: column;
   gap: 2.875rem;
-  max-width: 490px;
+  max-width: clamp(10rem, 30rem, 30.625rem);
 }
 
 .first_section-right-content {
@@ -28,18 +29,6 @@
 .first_section-right-content img {
   margin-bottom: 1.38rem;
 }
-.first_section-logos {
-  /* Adicione seus estilos aqui */
-}
-
-.first_section_form-wrapper {
-  background-color: var(--light2);
-  max-width: 24.3125rem;
-  border-radius: 3rem;
-  padding: 3rem 2.69rem 1.06rem;
-}
-
-/* Estilos para o formulário da primeira seção */
 .registration_form {
   display: flex;
   flex-direction: column;
@@ -61,46 +50,6 @@
   border-radius: 0.9375rem;
   padding-left: 1rem;
 }
-#form-input-brand {
-  /* Adicione seus estilos aqui */
-}
-
-#form-input-name {
-  /* Adicione seus estilos aqui */
-}
-
-#form-input-whatsapp {
-  /* Adicione seus estilos aqui */
-}
-
-#form-input-line-of-business {
-  /* Adicione seus estilos aqui */
-}
-
-#btn-form {
-  /* Adicione seus estilos aqui */
-}
-
-/* Estilos para o formulário da segunda seção */
-#registration-form-steep-one {
-  /* Adicione seus estilos aqui */
-}
-
-#form-select-business-internship {
-  /* Adicione seus estilos aqui */
-}
-
-#form-select-business-size {
-  /* Adicione seus estilos aqui */
-}
-
-#form-input-social-media-site {
-  /* Adicione seus estilos aqui */
-}
-
-#form-input-email {
-  /* Adicione seus estilos aqui */
-}
 .selected-steep-wrapper {
   display: flex;
   width: 100%;
@@ -108,24 +57,19 @@
   margin-top: 1.13rem;
   gap: 1.1875rem;
 }
-
 .circle {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background-color: var(--light1);
 }
-
 .unselected-steep {
   background-color: var(--dark9);
 }
-
-/* Estilos para a segunda seção */
 .second_section {
   background-color: var(--brand);
   padding-bottom: 3.5rem;
 }
-
 .second_section-title-wrapper {
   display: flex;
   flex-direction: column;
@@ -137,13 +81,10 @@
 .second_section-title {
   margin-top: 7rem;
 }
-.second_section-text {
-  /* Adicione seus estilos aqui */
-}
-
 .second_section-cards-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 3.75rem;
 }
 .second_section-card {
@@ -152,43 +93,33 @@
   background: #fff;
   box-shadow: 0px 12px 16px 0px rgba(16, 24, 40, 0.08);
   width: 29.9375rem;
-  height: 36.5625rem;
+  max-height: 36.5625rem;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-align-items: center;
-padding: 3.5rem 0 3.5rem 0;
+  align-items: center;
+  padding: 3.5rem 0 3.5rem 0;
 }
-
-.second_section-left-content-title {
-  /* Adicione seus estilos aqui */
-}
-
 .order-list {
-margin-top: 2.875rem;
-display: flex;
-flex-direction: column;
-gap: 1.25rem;
+  margin-top: 2.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
-
 .second_section-left-content-item {
-max-width: 22.625rem;
+  max-width: 22.625rem;
 }
-
 .second_section-left-content-btn {
-        background-color: var(--dark2);
+  background-color: var(--dark2);
 }
-
-.secondary-button{
-           height: 3.75rem;
-            border-radius: 1.5625rem;
-            padding: 0.625rem 1.125rem;
-            margin-top: 2.0625rem;
-            border: none;
-            outline: none;
+.secondary-button {
+  height: 3.75rem;
+  border-radius: 1.5625rem;
+  padding: 0.625rem 1.125rem;
+  margin-top: 2.0625rem;
+  border: none;
+  outline: none;
 }
-
-/* Estilos para a seção "Por que optar pela Registre.se?" */
 .second_section-right-content {
   border-radius: 3.125rem;
   border: 1px solid #eaecf0;
@@ -198,22 +129,13 @@ max-width: 22.625rem;
   height: 36.5625rem;
   flex-shrink: 0;
 }
-
-.second_section-right-content-title {
-  /* Adicione seus estilos aqui */
-}
-
-.second_section-right-content-list {
-  /* Adicione seus estilos aqui */
-}
-
 .second_section-right-content-item {
-max-width: 22.625rem;
+  max-width: 22.625rem;
+}
+.second_section-right-content-btn {
+  background-color: var(--light2);
 }
 
-.second_section-right-content-btn {
-background-color: var(--light2);
-}
 /* Estilos para a terceira seção */
 .third_section {
 }
@@ -231,12 +153,14 @@ background-color: var(--light2);
 }
 
 /* Estilos para as avaliações no Google */
-.third_section-google-reviews {
-  /* Adicione seus estilos aqui */
-}
 
 .review {
-  /* Adicione seus estilos aqui */
+  width: 16rem;
+  height: 22.5625rem;
+  border-radius: 1.875rem;
+  background: #f2f3f5;
+  padding: 1.5rem;
+  position: relative;
 }
 
 .review img {

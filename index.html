@@ -8,6 +8,11 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
         <title>Registre.se</title>
         <link rel="stylesheet" href="./styles/globalReset.css">
         <link rel="stylesheet" href="./styles/globalStyles.css">
@@ -18,93 +23,99 @@
     </head>
 
     <body>
-        <div class="top-wave">
-            <img src="./images/backgrounds/top-wave-bg.svg" alt="background wave do topo">
-        </div>
-        <header class="header">
-            <div class="wrapper">
-                <img src="./images/logos/logo.svg" alt="Logo registre.se"
-                    id="logo">
-            </div>
-        </header>
-        <section class="first_section">
-            <div class="wrapper first_section-wrapper">
-                <div class="first_section-left-content">
-                    <h2 class="main-title">Seja dono da sua marca e se proteja da concorrência!</h2>
-                    <span class="main-subtitle">Garantimos o registro da sua marca no INPI em menos de
-                        24
-                        horas.</span>
-                    <div class="first_section-logos">
-                        <img src="./images/logos/logo-nip-gov-br.svg"
-                            alt="Logo NIP e GOV BR">
-                    </div>
+        <div class="top-sections">
+            <header class="header">
+                <div class="wrapper">
+                    <img src="./images/logos/logo.svg" alt="Logo registre.se"
+                        id="logo">
                 </div>
-                <div class="first_section-right-content">
-                    <img src="./images/logos/site-blindado-logo.svg"
-                        alt="Imagem de Segurança">
-                    <div class="first_section_form-wrapper">
-                        <h2 class="form-title">Inicie agora o seu processo de registro e esteja
-                            seguro.</h2>
-                        <form class="registration_form"
-                            id="registration-form-steep-one">
-                            <input type="text" id="form-input-brand"
-                                placeholder="Nome da sua marca®" required>
-                            <input type="text" id="form-input-name"
-                                placeholder="Seu nome" required>
-                            <input type="tel" id="form-input-whatsapp"
-                                placeholder="DDD + Whatsapp" required>
-                            <input type="text" placeholder="Ramo de Atuação"
-                                id="form-input-line-of-business" required>
-                            <button class="button btn_form button-text" type="submit"
-                                id="btn-form">Iniciar registro</button>
-                        </form>
-                        <form class="registration_form"
-                            id="registration-form-steep-two"
-                            style="display: none;">
-                            <select id="form-select-business-internship"
-                                required>
-                                <option value disabled selected>Estágio do
-                                    negócio</option>
-                                <option value="option1">Estou me planejando
-                                    para
-                                    começar</option>
-                                <option value="option2">Comecei recentemente</option>
-                                <option value="option3">Já atuo no mercado
-                                    há um
-                                    certo tempo</option>
-                            </select>
-                            <select id="form-select-business-size" required>
-                                <option value disabled selected>Porte</option>
-                                <option value="option1">Atuo como pessoa
-                                    física</option>
-                                <option value="option2">CNPJ em criação</option>
-                                <option value="option3">MEI</option>
-                                <option value="option4">ME</option>
-                                <option value="option5">EPP</option>
-                                <option value="option6">DEMAIS</option>
-                                <option value="option7">Associação</option>
-                            </select>
-                            <input type="text"
-                                id="form-input-social-media-site"
-                                placeholder="Redes sociais e/ou site">
-                            <input type="email" id="form-input-email"
-                                placeholder="Seu E-mail">
-                            <button class="button btn_form button-text" id type="submit">Concluir
-                                registro</button>
-                        </form>
-                        <div class="selected-steep-wrapper">
-                            <div class="circle "></div>
-                            <div class="circle unselected-steep"></div>
+            </header>
+            <section class="first_section">
+                <div class="wrapper first_section-wrapper">
+                    <div class="first_section-left-content">
+                        <h2 class="main-title">Seja dono da sua marca e se
+                            proteja da concorrência!</h2>
+                        <span class="main-subtitle">Garantimos o registro da sua
+                            marca no INPI em menos de
+                            24
+                            horas.</span>
+                        <div class="first_section-logos">
+                            <img src="./images/logos/logo-nip-gov-br.svg"
+                                alt="Logo NIP e GOV BR">
                         </div>
                     </div>
-                </div>
-            </section>
+                    <div class="first_section-right-content">
+                        <img src="./images/logos/site-blindado-logo.svg"
+                            alt="Imagem de Segurança">
+                        <div class="first_section_form-wrapper">
+                            <h2 class="form-title">Inicie agora o seu processo
+                                de registro e esteja
+                                seguro.</h2>
+                            <form class="registration_form"
+                                id="registration-form-steep-one">
+                                <input type="text" id="form-input-brand"
+                                    placeholder="Nome da sua marca®" required>
+                                <input type="text" id="form-input-name"
+                                    placeholder="Seu nome" required>
+                                <input type="tel" id="form-input-whatsapp"
+                                    placeholder="DDD + Whatsapp" required>
+                                <input type="text" placeholder="Ramo de Atuação"
+                                    id="form-input-line-of-business" required>
+                                <button class="button btn_form button-text"
+                                    type="submit"
+                                    id="btn-form">Iniciar registro</button>
+                            </form>
+                            <form class="registration_form"
+                                id="registration-form-steep-two"
+                                style="display: none;">
+                                <select id="form-select-business-internship"
+                                    required>
+                                    <option value disabled selected>Estágio do
+                                        negócio</option>
+                                    <option value="option1">Estou me planejando
+                                        para
+                                        começar</option>
+                                    <option value="option2">Comecei recentemente</option>
+                                    <option value="option3">Já atuo no mercado
+                                        há um
+                                        certo tempo</option>
+                                </select>
+                                <select id="form-select-business-size" required>
+                                    <option value disabled selected>Porte</option>
+                                    <option value="option1">Atuo como pessoa
+                                        física</option>
+                                    <option value="option2">CNPJ em criação</option>
+                                    <option value="option3">MEI</option>
+                                    <option value="option4">ME</option>
+                                    <option value="option5">EPP</option>
+                                    <option value="option6">DEMAIS</option>
+                                    <option value="option7">Associação</option>
+                                </select>
+                                <input type="text"
+                                    id="form-input-social-media-site"
+                                    placeholder="Redes sociais e/ou site">
+                                <input type="email" id="form-input-email"
+                                    placeholder="Seu E-mail">
+                                <button class="button btn_form button-text" id
+                                    type="submit">Concluir
+                                    registro</button>
+                            </form>
+                            <div class="selected-steep-wrapper">
+                                <div class="circle "></div>
+                                <div class="circle unselected-steep"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div> <!-- top sections -->
             <section class="second_section">
-                <div class="wrapper">
+                <div class="wrapper  second_section-wrapper">
                     <div class="second_section-title-wrapper">
-                        <h2 class="second_section-title light-titles">Processo 100% online, ágil,
+                        <h2 class="second_section-title light-titles">Processo
+                            100% online, ágil,
                             transparente e sem burocracia.</h2>
-                        <span class="second_section-text secondary-subtitle">Corpo jurídico com mais de
+                        <span class="second_section-text secondary-subtitle">Corpo
+                            jurídico com mais de
                             <strong>
                                 15 anos
                                 de experiência
@@ -113,10 +124,13 @@
                     </div>
                     <div class="second_section-cards-wrapper">
                         <div class="second_section-card">
-                            <h2 class="second_section-left-content-title second-section-card-title">O que
+                            <h2
+                                class="second_section-left-content-title second-section-card-title">O
+                                que
                                 acontece se
                                 eu não registrar? ⚠️</h2>
-                            <ol class="second_section-left-content-list order-list second-section-card-text ">
+                            <ol
+                                class="second_section-left-content-list order-list second-section-card-text ">
                                 <li class="second_section-left-content-item">Abrir
                                     mão do
                                     valor que sua marca já gerou para seus
@@ -144,12 +158,15 @@
                         </div>
                         <div class="second_section-card">
                             <div class="second_section-title-wrapper">
-                                <h2 class="second_section-right-content-title second-section-card-title2">Por que
+                                <h2
+                                    class="second_section-right-content-title second-section-card-title2">Por
+                                    que
                                     optar
                                     pela Registre.se? ✅</h2>
                             </div>
 
-                            <ol class="second_section-right-content-list order-list second-section-card-text">
+                            <ol
+                                class="second_section-right-content-list order-list second-section-card-text">
                                 <li class="second_section-right-content-item">100%
                                     de
                                     avaliações 5 estrelas no Google.</li>
@@ -178,18 +195,21 @@
             </section>
             <section class="third_section">
                 <div class="wrapper">
+                    <div class="testimonial-title-wrapper">
+                        <h2 class="testimonial-section-title">O que dizem nossos
+                            clientes no Google</h2>
+                        <p class="testimonial-section-subtitle">Quem registrou,
+                            recomenda: Registre.se!</p>
+                        <img
+                            src="./images/logos/logo-google-5-estrelas-qtd-avaliacoes.svg"
+                            alt="logo Google estrelas e avaliações">
+                    </div>
 
-                    <h2>O que dizem nossos clientes no Google</h2>
-                    <p>Quem registrou, recomenda: Registre.se!</p>
-                    <img
-                        src="./images/logos/logo-google-5-estrelas-qtd-avaliacoes.svg"
-                        alt="logo Google estrelas e avaliações">
+                    <div class="third_section-google-reviews-wrapper">
 
-                    <div class="third_section-google-reviews">
-                        <div class="review">
+                        <div class="review testimonial-text">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
-
                             <p>Registre-se encontrei na internet, no buscar do
                                 Google.
                                 Primeira do topo, sem medo e pelo conteúdo
@@ -199,13 +219,18 @@
                                 dia, fui atendido pelo Luan, fechamos o
                                 contrato e já demos
                                 início ao processo do registro da minha marca.</p>
-                            <img src="./images/google-reviewers/maicon-davi.svg"
-                                alt="Foto de Maicon Davi">
-                            <p class="author-name">Maicon Davi</p>
-                            <p class="author-reviews">3 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/maicon-davi.svg"
+                                    alt="Foto de Maicon Davi">
+                                <div>
+                                    <p class="author-name">Maicon Davi</p>
+                                    <p class="author-reviews">3 avaliações</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="review">
+                        <div class="review testimonial-text ">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
 
@@ -218,14 +243,18 @@
                                 efetiva com uma organização no processo de
                                 atendimento
                                 impecável.</p>
-                            <img
-                                src="./images/google-reviewers/lucas-malanote.svg"
-                                alt="Foto de Lucas Malanote">
-                            <p class="author-name">Lucas Malanote</p>
-                            <p class="author-reviews">2 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/lucas-malanote.svg"
+                                    alt="Foto de Lucas Malanote">
+                                <div>
+                                    <p class="author-name">Lucas Malanote</p>
+                                    <p class="author-reviews">2 avaliações</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="review">
+                        <div class="review testimonial-text">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
 
@@ -236,14 +265,18 @@
                                 contato e tive suporte constante da equipe
                                 durante todo
                                 o processo. Recomendo demais! 🖤</p>
-                            <img
-                                src="./images/google-reviewers/ana-caroline-ramos.svg"
-                                alt="Foto de Ana Caroline Ramos">
-                            <p class="author-name">Ana Caroline Ramos</p>
-                            <p class="author-reviews">6 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/ana-caroline-ramos.svg"
+                                    alt="Foto de Ana Caroline Ramos">
+                                <div>
+                                    <p class="author-name">Ana Caroline Ramos</p>
+                                    <p class="author-reviews">6 avaliações</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="review">
+                        <div class="review testimonial-text">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
 
@@ -254,14 +287,18 @@
                                 processo de maneira que é compreensível e ajuda
                                 em nossa
                                 organização! Parabéns!</p>
-                            <img
-                                src="./images/google-reviewers/eduardo-cidade.svg"
-                                alt="Foto de Eduardo Cidade">
-                            <p class="author-name">Eduardo Cidade</p>
-                            <p class="author-reviews">42 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/eduardo-cidade.svg"
+                                    alt="Foto de Eduardo Cidade">
+                                <div>
+                                    <p class="author-name">Eduardo Cidade</p>
+                                    <p class="author-reviews">42 avaliações</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="review">
+                        <div class="review testimonial-text">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
 
@@ -275,14 +312,18 @@
                                 assunto. Entre todas as que procurei sem sombra
                                 de
                                 dúvidas a melhor. Ponto.</p>
-                            <img
-                                src="./images/google-reviewers/gladson-santos.svg"
-                                alt="Foto de Gladson Santos">
-                            <p class="author-name">Gladson Santos</p>
-                            <p class="author-reviews">3 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/gladson-santos.svg"
+                                    alt="Foto de Gladson Santos">
+                                <div>
+                                    <p class="author-name">Gladson Santos</p>
+                                    <p class="author-reviews">3 avaliações</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="review">
+                        <div class="review testimonial-text">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
 
@@ -295,14 +336,18 @@
                                 especialmente na pessoa do Rafael que foi a
                                 primeira
                                 pessoa com quem tive contato. Gratidão pessoal!!</p>
-                            <img
-                                src="./images/google-reviewers/katia-smaniotto.svg"
-                                alt="Foto de Katia Smaniotto">
-                            <p class="author-name">Katia Smaniotto</p>
-                            <p class="author-reviews">355 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/katia-smaniotto.svg"
+                                    alt="Foto de Katia Smaniotto">
+                                <div>
+                                    <p class="author-name">Katia Smaniotto</p>
+                                    <p class="author-reviews">355 avaliações</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="review">
+                        <div class="review testimonial-text">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
 
@@ -315,14 +360,18 @@
                                 ajudaram a proteger a minha marca. Atendimento
                                 humanizado,
                                 um enorme diferencial para mim.</p>
-                            <img
-                                src="./images/google-reviewers/kauana-publicidade.svg"
-                                alt="Foto de Kauana Publicidade">
-                            <p class="author-name">Kauana Publicidade</p>
-                            <p class="author-reviews">1 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/kauana-publicidade.svg"
+                                    alt="Foto de Kauana Publicidade">
+                                <div>
+                                    <p class="author-name">Kauana Publicidade</p>
+                                    <p class="author-reviews">1 avaliações</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="review">
+                        <div class="review testimonial-text">
                             <img src="./images/logos/logo-google-5-estrelas.svg"
                                 alt="Logo do Google e 5 estrelas">
 
@@ -333,12 +382,17 @@
                                 muita
                                 transparência o que nos inspira confiança e
                                 credibilidade.</p>
-                            <img
-                                src="./images/google-reviewers/michaelle-bruno.svg"
-                                alt="Foto de Maicon Davi">
-                            <p class="author-name">Michaelle Bruno</p>
-                            <p class="author-reviews">5 avaliações</p>
+                            <div class="testimonial-author-wrapper">
+                                <img
+                                    src="./images/google-reviewers/michaelle-bruno.svg"
+                                    alt="Foto de Maicon Davi">
+                                <div>
+                                    <p class="author-name">Michaelle Bruno</p>
+                                    <p class="author-reviews">5 avaliações</p>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </section>
                 <section class="fourth_section">
