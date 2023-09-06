@@ -159,8 +159,13 @@
 }
 
 .sixth_section {
+  background-color: var(--dark8);
   width: 100%;
-  position: relative;
+    background-image: url("../images/backgrounds/top-wave-bg.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 80vh;
 }
 
 .sixth_section-process-cards {
