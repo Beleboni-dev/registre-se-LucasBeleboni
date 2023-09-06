@@ -268,7 +268,7 @@
   color: #1c3622;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 49.5px;
@@ -277,21 +277,20 @@
 }
 
 /* Seventh Section Card Titles (1st and 4th) */
-.seventh-section-card-title-1,
-.seventh-section-card-title-4 {
-  color: var(--verde-claro-100, #37c150);
+.seventh-section-card-title-primary {
+color: var(--verde-claro-100, #37C150);
   font-variant-numeric: lining-nums proportional-nums;
-  font-family: "Raleway", sans-serif;
-  font-size: 36px;
+  font-family: Raleway, sans-serif;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.045rem;
+  max-width: 13rem;
 }
 
 /* Seventh Section Card Texts (1st and 4th) */
-.seventh-section-card-text-1,
-.seventh-section-card-text-4 {
+.seventh-section-card-text-primary {
   color: rgba(22, 48, 25, 0.8);
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Raleway", sans-serif;
@@ -300,12 +299,12 @@
   font-weight: 400;
   line-height: 138%;
   letter-spacing: -0.36px;
+    max-width: 16rem;
+    margin-top: 1rem;
 }
 
 /* Seventh Section Card Titles (2nd, 3rd, and 5th) */
-.seventh-section-card-title-2,
-.seventh-section-card-title-3,
-.seventh-section-card-title-5 {
+.seventh-section-card-title-secondary {
   color: #163019;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Raleway", sans-serif;
@@ -314,12 +313,27 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.72px;
+ max-width: 13rem;
+
 }
 
+.seventh_section--title-modifier{
+  max-width: 55%;
+}
+.seventh_section--text-modifier{
+  max-width: 45%;
+    color: rgba(22, 48, 25, 0.8);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%;
+      letter-spacing: -0.36px;
+      margin-top: 1rem;
+}
 /* Seventh Section Card Texts (2nd, 3rd, and 5th) */
-.seventh-section-card-text-2,
-.seventh-section-card-text-3,
-.seventh-section-card-text-5 {
+.seventh-section-card-text-secondary {
   color: rgba(22, 48, 25, 0.8);
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Raleway", sans-serif;
@@ -328,6 +342,8 @@
   font-weight: 400;
   line-height: 138%;
   letter-spacing: -0.36px;
+      max-width: 19rem;
+        margin-top: 1rem;
 }
 
 /* FAQ Section Titles */

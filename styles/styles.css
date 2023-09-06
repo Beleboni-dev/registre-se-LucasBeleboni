@@ -145,9 +145,9 @@
   position: relative;
 }
 .fourth_section-btn {
-background-color: var(--dark2);
+  background-color: var(--dark2);
 }
-.fourth_section-brand-logos-wrapper img{
+.fourth_section-brand-logos-wrapper img {
   max-width: 11.7rem;
 }
 /* Estilos para a quinta seção */
@@ -155,83 +155,30 @@ background-color: var(--dark2);
   background-color: var(--light2);
 }
 
-.fifth_section-registration-process-wrapper {
-  /* Adicione seus estilos aqui */
-}
-
-.fifth_section-registration-text-wrapper {
-  /* Adicione seus estilos aqui */
-}
-
-.fifth_section-registration-title {
-  /* Adicione seus estilos aqui */
-}
-
-.fifth_section-registration-text {
-  /* Adicione seus estilos aqui */
-}
-
-.registration-form {
-  /* Adicione seus estilos aqui */
-}
-
-/* Estilos para os formulários de registro */
-.registration_form {
-  /* Adicione seus estilos aqui */
-}
-
-#registration-form-steep-one {
-  /* Adicione seus estilos aqui */
-}
-
-#registration-form-steep-two {
-  /* Adicione seus estilos aqui */
-}
-
-/* Estilos para os elementos dos formulários de registro */
-#form-input-brand,
-#form-input-name,
-#form-input-whatsapp,
-#form-input-line-of-business,
-#form-select-business-internship,
-#form-select-business-size,
-#form-input-social-media-site,
-#form-input-email {
-  /* Adicione seus estilos aqui */
-}
-
-/* Estilos para o botão de registro */
-.button.btn_form {
-  /* Adicione seus estilos aqui */
-}
-
-/* Estilos para a sexta seção */
 .sixth_section {
-width: 100%;
-position: relative;
+  width: 100%;
+  position: relative;
 }
 
-/* Estilos para os cartões de processo */
 .sixth_section-process-cards {
   margin-top: 3.3125rem;
-display: flex;
-justify-content: center;
-gap: 1.3rem;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  flex-wrap: wrap;
 }
-
 .sixth_section-process-card {
-max-width: 15.8125rem;
-border-radius: 1.875rem;
-padding: 2rem 2.31rem 1.69rem 2.56rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 2.25rem;
+  max-width: 15.8125rem;
+  border-radius: 1.875rem;
+  padding: 2rem 2.31rem 1.69rem 2.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
 }
 
-.process-card-1{
-background-color: var(--light3);
+.process-card-1 {
+  background-color: var(--light3);
 }
 .process-card-2 {
   background-color: var(--light4);
@@ -243,11 +190,10 @@ background-color: var(--light3);
   background-color: var(--light5);
 }
 
-/* Estilos para o botão "Entenda o passo a passo" */
-.sixth_section-process-btn{
+.sixth_section-process-btn {
   width: 24.375rem;
   height: 4rem;
- border-radius: 1.875rem;
+  border-radius: 1.875rem;
   background-color: var(--brand);
   outline: none;
   border: none;
@@ -256,48 +202,82 @@ background-color: var(--light3);
   align-items: center;
   cursor: pointer;
 }
-.sixth_section-process-btn i{
+.sixth_section-process-btn i {
   font-size: 2rem;
   margin-right: 1rem;
 }
-
-/* Estilos para o avatar e logotipo */
-.sixth_section-frame-wrapper {
-  /* Adicione seus estilos aqui */
-}
-/* Estilos para a sétima seção */
 .seventh_section {
   background-color: var(--dark8);
 }
 
-.seventh_section-title {
-  /* Adicione seus estilos aqui */
-}
-
 /* Estilos para os cartões de benefícios */
-.seventh_section-benefits-cards {
-  /* Adicione seus estilos aqui */
+.seventh_section-benefits-cards-l1,
+.seventh_section-benefits-cards-l2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  margin-top: 2rem;
 }
 
-.seventh_section-benefit-card {
-  /* Adicione seus estilos aqui */
+.grid-item {
+  width: 100%;
+  height: 18.75rem;
+  padding: 2.62rem 2.62rem;
+  border-radius: 1.25rem;
 }
 
-.seventh_section-benefit-card p {
-  /* Adicione seus estilos aqui */
+.l1c1 {
+  grid-column: 1;
+  min-width: 27.625rem;
+  background-color: var(--light1);
+  border: 0.0625rem solid var(--brand);
 }
 
-.seventh_section-benefit-card-image-wrapper {
-  /* Adicione seus estilos aqui */
+.l1c2 {
+  grid-column: 2 / span 3;
+  min-width: 40.3125rem;
+  background-color: var(--brand);
+  border-radius: 1.25rem;
+  background-image: url("../images/backgrounds/avatar-second-card.svg"),
+    url("../images/backgrounds/benefit-second-card-bg.svg");
+  background-size: contain, contain;
+  background-position: right bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Estilos para o botão "Quero registrar Minha Marca!" */
+.l2c1 {
+  min-width: 40.3125rem;
+  background-color: var(--brand);
+  border-radius: 1.25rem;
+  background-image: url("../images/backgrounds/benefit-third-card-bg.svg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.l2c2 {
+  min-width: 27.625rem;
+  background-color: var(--light1);
+  border: 0.0625rem solid var(--brand);
+  border-radius: 1.25rem;
+}
+
+.l3c1c2 {
+  margin-top: 2rem;
+  background-color: var(--brand);
+  width: 100%;
+  min-width: 68.2rem;
+  position: relative;
+}
+
 .seventh_section-benefits-button {
   /* Adicione seus estilos aqui */
 }
 
 .seventh_section-btn.secondary-button {
-  /* Adicione seus estilos aqui */
+  background-color: var(--dark2);
 }
 
 /* Estilos para a seção de FAQ */
