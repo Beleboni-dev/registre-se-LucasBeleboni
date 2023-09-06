@@ -12,12 +12,10 @@
 .first_section {
   background-color: var(--brand);
   background-image: url("../images/backgrounds/top-wave-bg.svg");
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
   background-position:  center;
-  height: 80vh;
-  min-width: 100%;
-
+  width: 100%;
 }
 
 .first_section-left-content {
@@ -160,12 +158,11 @@
 
 .sixth_section {
   background-color: var(--dark8);
-  width: 100%;
+  width: 100vw;
     background-image: url("../images/backgrounds/top-wave-bg.svg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: 80vh;
 }
 
 .sixth_section-process-cards {
