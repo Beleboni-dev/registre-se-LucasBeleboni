@@ -271,24 +271,10 @@
 .seventh_section-btn.secondary-button {
   background-color: var(--dark2);
 }
-
-
-
-/* Estilos para a seção de FAQ */
 .faq_section-about-brand,
 .faq_section-about-us{
   width: 50%;
 }
-
-
-.question {
-  /* Adicione seus estilos aqui */
-}
-
-.question summary {
-  /* Adicione seus estilos aqui */
-}
-
 .question p {
 padding: .5rem;
 }
@@ -297,59 +283,54 @@ padding: .5rem;
 .final_section {
   background-color: var(--light2);
   margin-top: 4rem;
-}
-
-.final_section h2 {
-  /* Adicione seus estilos aqui */
-}
-
-/* Estilos para o botão "Quero registrar Minha Marca!" na seção final */
-.final_section-register-button-wrapper {
-  /* Adicione seus estilos aqui */
+  height: 18.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .final_section-btn.secondary-button {
-  /* Adicione seus estilos aqui */
+background-color: var(--dark2);
 }
 
 /* Estilos para o rodapé */
 footer {
   background-color: var(--dark2);
+  padding-top: 4.87rem;
+  padding-bottom: 11rem;
 }
 
 /* Estilos para o topo do rodapé */
 .footer-top {
-  /* Adicione seus estilos aqui */
-}
-
-.footer-logo {
-  /* Adicione seus estilos aqui */
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .footer-contact {
-  /* Adicione seus estilos aqui */
+display: flex;
 }
 
 .footer-social-icons {
-  /* Adicione seus estilos aqui */
+margin-left: 6rem;
+display: flex;
+gap: 1rem;
+color: var(--brand);
 }
 
-/* Estilos para os ícones de mídia social */
-.footer-social-icons a {
-  /* Adicione seus estilos aqui */
+.footer-social-icons {
+  margin-left: 6rem;
 }
 
-/* Estilos para o conteúdo do rodapé */
-.footer p {
-  /* Adicione seus estilos aqui */
+.footer{
+border-top: 1px solid var(--dark11);
+margin-top: 1.5rem;
 }
 
-/* Estilos para os logotipos no rodapé */
-.footer-logos {
-  /* Adicione seus estilos aqui */
-}
-
-/* Estilos para os logotipos da WIPO e do INPI no rodapé */
-.footer-logos img {
-  /* Adicione seus estilos aqui */
+.footer-logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.74rem;
+  gap: 1rem;
 }

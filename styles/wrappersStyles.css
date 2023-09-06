@@ -98,7 +98,7 @@ justify-content: center;
   display: flex;
   gap: 1.87rem;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   
 }
 
@@ -119,6 +119,17 @@ justify-content: center;
 .faq_section .faq_section-question-wrapper:last-child {
   border-bottom: 0.0625rem solid var(--dark11);
   min-height: 4rem;
+}
+
+.final_section-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-details-wrapper{
+  display: flex;
+justify-content: space-between;
 }
 .wave-wrapper{
   position: absolute;

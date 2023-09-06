@@ -350,7 +350,7 @@ color: var(--verde-claro-100, #37C150);
 .faq-section-titles {
   color: var(--verde-escuro-100, #1c3622);
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: clamp(1.1rem,1.5rem, 1.625rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -363,7 +363,7 @@ color: var(--verde-claro-100, #37C150);
   color: var(--dark6);
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Raleway", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(0.75rem, 2vw, 1rem);
   font-style: normal;
   font-weight: 400;
   line-height: 138%;
@@ -378,4 +378,36 @@ color: var(--verde-claro-100, #37C150);
   font-weight: 400;
   line-height: 138%;
   letter-spacing: -0.36px;
+}
+.final_section-title{
+  color: #FBFBFB;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.09375rem;
+    letter-spacing: -0.09rem;
+    max-width:44.75rem;
+}
+.footer-phone-number{
+  color: var(--brand);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.02rem;
+}
+.footer-text{
+color: var(--dark7);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02rem;
+  max-width: 21.1875rem;
+  margin-top: 1.74rem;
 }
