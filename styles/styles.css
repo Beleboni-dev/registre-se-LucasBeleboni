@@ -209,8 +209,6 @@
 .seventh_section {
   background-color: var(--dark8);
 }
-
-/* Estilos para os cartões de benefícios */
 .seventh_section-benefits-cards-l1,
 .seventh_section-benefits-cards-l2 {
   display: grid;
@@ -218,7 +216,6 @@
   gap: 10px;
   margin-top: 2rem;
 }
-
 .grid-item {
   width: 100%;
   height: 18.75rem;
@@ -271,24 +268,18 @@
   min-width: 68.2rem;
   position: relative;
 }
-
-.seventh_section-benefits-button {
-  /* Adicione seus estilos aqui */
-}
-
 .seventh_section-btn.secondary-button {
   background-color: var(--dark2);
 }
 
+
+
 /* Estilos para a seção de FAQ */
-.faq_section {
-  /* Adicione seus estilos aqui */
+.faq_section-about-brand,
+.faq_section-about-us{
+  width: 50%;
 }
 
-/* Estilos para as perguntas frequentes */
-.faq h2 {
-  /* Adicione seus estilos aqui */
-}
 
 .question {
   /* Adicione seus estilos aqui */
@@ -299,12 +290,13 @@
 }
 
 .question p {
-  /* Adicione seus estilos aqui */
+padding: .5rem;
 }
 
 /* Estilos para a seção final */
 .final_section {
   background-color: var(--light2);
+  margin-top: 4rem;
 }
 
 .final_section h2 {

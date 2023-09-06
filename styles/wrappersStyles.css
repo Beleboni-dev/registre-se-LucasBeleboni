@@ -91,6 +91,34 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2.75rem;
+}
+.faq_section-wrapper{
+  margin-top: 9rem;
+  display: flex;
+  gap: 1.87rem;
+  max-width: 100%;
+  min-height: 100vh;
+  
+}
+
+.faq_section .faq_section-question-wrapper {
+  border-top: 0.0625rem solid var(--dark11);
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem .75rem 1rem 0; 
+  justify-content: space-between;
+}
+
+.faq_section .faq_section-question-wrapper:first-child {
+  border-bottom: 0.0625rem solid var(--dark11);
+  min-height: 4rem;
+}
+
+.faq_section .faq_section-question-wrapper:last-child {
+  border-bottom: 0.0625rem solid var(--dark11);
+  min-height: 4rem;
 }
 .wave-wrapper{
   position: absolute;

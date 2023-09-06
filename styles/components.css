@@ -355,14 +355,25 @@ color: var(--verde-claro-100, #37C150);
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.52px;
+  margin-bottom: 2.75rem;
 }
 
 /* FAQ Question Titles */
 .faq-question-titles {
-  color: #5c5c5c;
+  color: var(--dark6);
   font-variant-numeric: lining-nums proportional-nums;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138%;
+  letter-spacing: -0.36px;
+}
+.faq-question-text {
+  color: var(--dark2);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 138%;
