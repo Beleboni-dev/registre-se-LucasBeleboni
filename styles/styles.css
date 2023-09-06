@@ -269,6 +269,12 @@
   width: 100%;
   min-width: 68.2rem;
   position: relative;
+    overflow: hidden;
+}
+.l3c1c2 img {
+  position: absolute;
+  top: 0  ;
+  right: 8rem;
 }
 .seventh_section-btn.secondary-button {
   background-color: var(--dark2);
