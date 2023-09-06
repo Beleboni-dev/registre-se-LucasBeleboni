@@ -23,91 +23,89 @@
     </head>
 
     <body>
-        <div class="top-sections">
+        <section class="first_section">
             <header class="header">
                 <div class="wrapper">
                     <img src="./images/logos/logo.svg" alt="Logo registre.se"
                         id="logo">
                 </div>
             </header>
-            <section class="first_section">
-                <div class="wrapper first_section-wrapper">
-                    <div class="first_section-left-content">
-                        <h2 class="main-title">Seja dono da sua marca e se
-                            proteja da concorrência!</h2>
-                        <span class="main-subtitle">Garantimos o registro da sua
-                            marca no INPI em menos de
-                            24
-                            horas.</span>
-                        <div class="first_section-logos">
-                            <img src="./images/logos/logo-nip-gov-br.svg"
-                                alt="Logo NIP e GOV BR">
+            <div class="wrapper first_section-wrapper">
+                <div class="first_section-left-content">
+                    <h2 class="main-title">Seja dono da sua marca e se
+                        proteja da concorrência!</h2>
+                    <span class="main-subtitle">Garantimos o registro da sua
+                        marca no INPI em menos de
+                        24
+                        horas.</span>
+                    <div class="first_section-logos">
+                        <img src="./images/logos/logo-nip-gov-br.svg"
+                            alt="Logo NIP e GOV BR">
+                    </div>
+                </div>
+                <div class="first_section-right-content">
+                    <img src="./images/logos/site-blindado-logo.svg"
+                        alt="Imagem de Segurança">
+                    <div class="first_section_form-wrapper form-wrapper">
+                        <h2 class="form-title">Inicie agora o seu processo
+                            de registro e esteja
+                            seguro.</h2>
+                        <form class="registration_form"
+                            id="registration-form-steep-one">
+                            <input type="text" id="form-input-brand"
+                                placeholder="Nome da sua marca®" required>
+                            <input type="text" id="form-input-name"
+                                placeholder="Seu nome" required>
+                            <input type="tel" id="form-input-whatsapp"
+                                placeholder="DDD + Whatsapp" required>
+                            <input type="text" placeholder="Ramo de Atuação"
+                                id="form-input-line-of-business" required>
+                            <button class="button btn_form button-text"
+                                type="submit"
+                                id="btn-form">Iniciar registro</button>
+                        </form>
+                        <form class="registration_form"
+                            id="registration-form-steep-two"
+                            style="display: none;">
+                            <select id="form-select-business-internship"
+                                required>
+                                <option value disabled selected>Estágio do
+                                    negócio</option>
+                                <option value="option1">Estou me planejando
+                                    para
+                                    começar</option>
+                                <option value="option2">Comecei recentemente</option>
+                                <option value="option3">Já atuo no mercado
+                                    há um
+                                    certo tempo</option>
+                            </select>
+                            <select id="form-select-business-size" required>
+                                <option value disabled selected>Porte</option>
+                                <option value="option1">Atuo como pessoa
+                                    física</option>
+                                <option value="option2">CNPJ em criação</option>
+                                <option value="option3">MEI</option>
+                                <option value="option4">ME</option>
+                                <option value="option5">EPP</option>
+                                <option value="option6">DEMAIS</option>
+                                <option value="option7">Associação</option>
+                            </select>
+                            <input type="text"
+                                id="form-input-social-media-site"
+                                placeholder="Redes sociais e/ou site">
+                            <input type="email" id="form-input-email"
+                                placeholder="Seu E-mail">
+                            <button class="button btn_form button-text" id
+                                type="submit">Concluir
+                                registro</button>
+                        </form>
+                        <div class="selected-steep-wrapper">
+                            <div class="circle "></div>
+                            <div class="circle unselected-steep"></div>
                         </div>
                     </div>
-                    <div class="first_section-right-content">
-                        <img src="./images/logos/site-blindado-logo.svg"
-                            alt="Imagem de Segurança">
-                        <div class="first_section_form-wrapper form-wrapper">
-                            <h2 class="form-title">Inicie agora o seu processo
-                                de registro e esteja
-                                seguro.</h2>
-                            <form class="registration_form"
-                                id="registration-form-steep-one">
-                                <input type="text" id="form-input-brand"
-                                    placeholder="Nome da sua marca®" required>
-                                <input type="text" id="form-input-name"
-                                    placeholder="Seu nome" required>
-                                <input type="tel" id="form-input-whatsapp"
-                                    placeholder="DDD + Whatsapp" required>
-                                <input type="text" placeholder="Ramo de Atuação"
-                                    id="form-input-line-of-business" required>
-                                <button class="button btn_form button-text"
-                                    type="submit"
-                                    id="btn-form">Iniciar registro</button>
-                            </form>
-                            <form class="registration_form"
-                                id="registration-form-steep-two"
-                                style="display: none;">
-                                <select id="form-select-business-internship"
-                                    required>
-                                    <option value disabled selected>Estágio do
-                                        negócio</option>
-                                    <option value="option1">Estou me planejando
-                                        para
-                                        começar</option>
-                                    <option value="option2">Comecei recentemente</option>
-                                    <option value="option3">Já atuo no mercado
-                                        há um
-                                        certo tempo</option>
-                                </select>
-                                <select id="form-select-business-size" required>
-                                    <option value disabled selected>Porte</option>
-                                    <option value="option1">Atuo como pessoa
-                                        física</option>
-                                    <option value="option2">CNPJ em criação</option>
-                                    <option value="option3">MEI</option>
-                                    <option value="option4">ME</option>
-                                    <option value="option5">EPP</option>
-                                    <option value="option6">DEMAIS</option>
-                                    <option value="option7">Associação</option>
-                                </select>
-                                <input type="text"
-                                    id="form-input-social-media-site"
-                                    placeholder="Redes sociais e/ou site">
-                                <input type="email" id="form-input-email"
-                                    placeholder="Seu E-mail">
-                                <button class="button btn_form button-text" id
-                                    type="submit">Concluir
-                                    registro</button>
-                            </form>
-                            <div class="selected-steep-wrapper">
-                                <div class="circle "></div>
-                                <div class="circle unselected-steep"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div> <!-- top sections -->
+                </div>
+            </section>
 
             <section class="second_section">
                 <div class="wrapper  second_section-wrapper">
@@ -201,9 +199,11 @@
                             clientes no Google</h2>
                         <p class="testimonial-section-subtitle">Quem registrou,
                             recomenda: Registre.se!</p>
-                        <img
-                            src="./images/logos/logo-google-5-estrelas-qtd-avaliacoes.svg"
-                            alt="logo Google estrelas e avaliações">
+                        <a href="https://www.google.com/maps/place/Registre.se/@-14.4086569,-51.31668,4z/data=!4m7!3m6!1s0x2d52c038483c8fd7:0x884957017832fcc9!8m2!3d-14.4086569!4d-51.31668!9m1!1b1" target="_blank">
+                            <img
+                                src="./images/logos/logo-google-5-estrelas-qtd-avaliacoes.svg"
+                                alt="logo Google estrelas e avaliações">
+                        </a>
                     </div>
 
                     <div class="third_section-google-reviews-wrapper">
@@ -530,11 +530,6 @@
                 </section>
 
                 <section class="sixth_section">
-                    <div class="wave-wrapper">
-                        <img src="./images/backgrounds/wave-section6-bg.svg"
-                            alt="wave background sexta seção"
-                            id="wave-section6-bg">
-                    </div>
                     <div class="wrapper">
                         <div class="sixth_section-registration-process-wrapper">
                             <div class="sixth_section-registration-text-wrapper">
@@ -611,7 +606,6 @@
                                 marca registrada® para o seu
                                 negócio</h2>
                             <div class="seventh_section-benefits-cards-l1">
-
                                 <div
                                     class="seventh_section-benefit-card grid-item  l1c1">
                                     <h3
@@ -625,8 +619,8 @@
                                         pelo
                                         INPI.</p>
                                 </div>
-                                <div
-                                    class="seventh_section-benefit-card grid-item l1c2 ">
+                                <div 
+                                class="seventh_section-benefit-card grid-item l1c2 ">
                                     <h3
                                         class="seventh-section-card-title-secondary">2.<br>
                                         Exclusividade.
@@ -644,13 +638,16 @@
                                         se
                                         proteger da concorrência desleal.
                                     </p>
-
-                                    <div
-                                        class="seventh_section-benefit-card-image-wrapper">
-
-                                    </div>
+                                        <img src="./images/backgrounds/benef-second-bg.svg" alt="background do card 2">
                                 </div>
                             </div>
+
+
+
+
+
+
+
                             <div class="seventh_section-benefits-cards-l2">
                                 <div
                                     class="seventh_section-benefit-card grid-item l2c1">
@@ -699,12 +696,7 @@
                                         todo território nacional e com
                                         possibilidade
                                         ilimitada de renovação.</p>
-                                    <div
-                                        class="seventh_section-benefit-card-image-wrapper">
-                                        <img
-                                            src="./images/backgrounds/benefit-fifth-card-bg.svg"
-                                            alt="background do quinto card da sétima seção">
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="seventh_section-benefits-button-wrapper">
@@ -1166,12 +1158,24 @@
                                         alt="Logo da Registre.se">
                                 </div>
                                 <div class="footer-contact">
-                                    <p class="footer-phone-number">+55 (47)
-                                        99119.7599</p>
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=5547991197599&text=Ol%C3%A1!%20Gostaria%20de%20registrar%20minha%20marca."
+                                        target="_blank"
+                                        class="footer-phone-number">+55 (47)
+                                        99119.7599</a>
                                     <div class="footer-social-icons">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-google"></i></a>
+                                        <a
+                                            href="https://www.linkedin.com/company/78344411/"
+                                            target="_blank"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a
+                                            href="https://www.instagram.com/registreseonline/"
+                                            target="_blank"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a
+                                            href="https://www.google.com/maps/place/Registre.se/@-26.99315,-48.642003,17z/data=!3m1!4b1!4m6!3m5!1s0x2d52c038483c8fd7:0x884957017832fcc9!8m2!3d-26.99315!4d-48.642003!16s%2Fg%2F11pyc3h630?entry=ttutarget="
+                                            target="_blank"><i
+                                                class="fab fa-google"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -1180,8 +1184,12 @@
                                     <p class="footer-text">
                                         Copyright © 2023. Todos os direitos
                                         reservados. Registre.se Ltda. CNPJ:
-                                        45.657.102/0001-12 4ª Avenida, 280 - Sala 11
-                                        Centro - Balneário Camboriú-SC 88330-104
+                                        45.657.102/0001-12<span>
+                                            4ª Avenida, 280 -
+                                            Sala 11<br>
+                                            Centro - Balneário Camboriú-SC
+                                            88330-104
+                                        </span>
                                     </p>
                                     <div class="footer-logos">
                                         <img src="./images/logos/wipo-logo.svg"

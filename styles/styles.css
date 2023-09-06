@@ -10,7 +10,14 @@
 
 /* Estilos para a primeira seção */
 .first_section {
-  background-color: var(--light1);
+  background-color: var(--brand);
+  background-image: url("../images/backgrounds/top-wave-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center;
+  height: 80vh;
+  min-width: 100%;
+
 }
 
 .first_section-left-content {
@@ -68,8 +75,9 @@
 }
 .second_section {
   background-color: var(--brand);
-  padding-bottom: 3.5rem;
+
 }
+
 .second_section-title-wrapper {
   display: flex;
   flex-direction: column;
@@ -81,12 +89,7 @@
 .second_section-title {
   margin-top: 7rem;
 }
-.second_section-cards-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 3.75rem;
-}
+
 .second_section-card {
   border-radius: 3.125rem;
   border: 1px solid #eaecf0;
@@ -113,7 +116,7 @@
   background-color: var(--dark2);
 }
 .secondary-button {
-  height: 3.75rem;
+  min-height: 3.125rem;
   border-radius: 1.5625rem;
   padding: 0.625rem 1.125rem;
   margin-top: 2.0625rem;
@@ -235,15 +238,14 @@
   min-width: 40.3125rem;
   background-color: var(--brand);
   border-radius: 1.25rem;
-  background-image: url("../images/backgrounds/avatar-second-card.svg"),
-    url("../images/backgrounds/benefit-second-card-bg.svg");
-  background-size: contain, contain;
-  background-position: right bottom, right top;
-  background-repeat: no-repeat, no-repeat;
-  position: relative;
+  position: relative  ;
   overflow: hidden;
 }
-
+.l1c2 img{
+  position: absolute;
+  top: -72%;
+  right: -15%;
+}
 .l2c1 {
   min-width: 40.3125rem;
   background-color: var(--brand);

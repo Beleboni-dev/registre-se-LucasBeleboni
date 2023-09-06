@@ -107,7 +107,7 @@
 .btn_form {
   width: 100%;
   background-color: var(--dark2);
-  height: 3.125rem;
+  min-height: 3.125rem;
   border: none;
   border-radius: 1.5625rem;
   outline: none;
@@ -403,11 +403,15 @@ color: var(--verde-claro-100, #37C150);
 .footer-text{
 color: var(--dark7);
   font-family: Raleway;
-  font-size: 1rem;
+  font-size: 1.35rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.02rem;
   max-width: 21.1875rem;
   margin-top: 1.74rem;
+}
+.footer-text span{
+  display: block;
+  margin-top: 1.35rem;
 }
