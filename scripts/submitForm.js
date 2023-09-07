@@ -16,22 +16,38 @@ return false;
         stepTitle.textContent = "Preencha esses dados opcionais para agilizar o seu atendimento";
 
   const lead = {
-    title: "CRM PipeRun - Landing Page",
-    user: "email@registre-se.com",
-    brandName: brandName,
+    id: whatsapp,
+    title: brandName,
     name: name,
-    email: name, 
     mobile_phone: whatsapp,
     last_conversion: {
       source: "Site_CRMPipeRun",
     },
     custom_fields: {
-      segmento: lineOfBusiness ? lineOfBusiness : "Não Informado",
+      "area-de-atuacao": lineOfBusiness,
+      Canal: "LP 1",
+      value: "1980",
+      Campanha: "teste",
+      "Origem Campanha": "Google", 
     },
-    tags: ["Contato"],
-    notes: [
-      "Contato enviado através do formulário da nova Landing Page.",
-    ],
+    tags: ["Cadastro Simples"],
+  };
+
+const stage = ""
+const porte = ""
+
+  const leadStep2 = {
+    id: whatsapp,
+    email: email,
+    last_conversion: {
+      source: "Site_CRMPipeRun",
+    },
+    custom_fields: {
+    "qual-o-estagio-do-seu-negocio": stage,
+    porte: porte,
+    "site-ou-redes": socialMedias,
+    },
+    tags: ["Cadastro Completo"],
   };
 
   const dataToSend = {
@@ -39,6 +55,7 @@ return false;
       update: true,
       equal_pipeline: true,
       filter_status_update: "open",
+      status: "open",
     },
     leads: [lead],
   };
@@ -69,3 +86,6 @@ return false;
       console.error(error);
     });
 });
+
+
+// Desativar submit com enter
