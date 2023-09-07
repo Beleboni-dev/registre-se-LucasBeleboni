@@ -7,11 +7,13 @@ nextStep1Button.addEventListener("click", () => {
   const lineOfBusiness = document.getElementById(
     "form-input-line-of-business"
   ).value;
+const stepTitle = document.getElementById("step-1-title");
 
   if (!brandName || !name || !whatsapp || !lineOfBusiness) {
-alert("preencha todos os campos")
+        alert("Preencha todos os campos")
 return false;
   } 
+        stepTitle.textContent = "Preencha esses dados opcionais para agilizar o seu atendimento";
 
   const lead = {
     title: "CRM PipeRun - Landing Page",
@@ -54,6 +56,7 @@ return false;
     .then((response) => {
 
       if (response.status === 200) {
+
         const step1 = document.getElementById("step-1");
         const step2 = document.getElementById("step-2");
         step1.classList.add("hide-display");
