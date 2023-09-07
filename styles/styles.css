@@ -34,17 +34,18 @@
 .first_section-right-content img {
   margin-bottom: 1.38rem;
 }
-.registration_form {
+.registration_form, .step {
   display: flex;
   flex-direction: column;
   gap: 0.44rem;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-.registration_form input {
+.registration_form input , .custom-select, .selected-option{
   color: var(--dark3);
   font-variant-numeric: lining-nums proportional-nums;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: -0.02rem;
@@ -53,9 +54,58 @@
   width: 100%;
   height: 3.125rem;
   border-radius: 0.9375rem;
-  padding-left: 1rem;
+  padding-left: .7rem;
 }
-.selected-steep-wrapper {
+.custom-select {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+    color: var(--dark3);
+
+}
+
+/* Estilizando a opção selecionada */
+.selected-option {
+  background-color: #fff;
+  display: flex;
+   align-items: center;
+   justify-content: space-between;
+padding-right: .7rem;
+
+}
+
+/* Estilizando a lista de opções */
+.options {
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  max-height: 300px;
+}
+.options ul{
+    border-radius: .5rem;
+}
+.options li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+border-top: 0.0625rem solid var(--dark8);
+}
+.options li:last-child {
+  padding: 10px;
+  border-bottom: 0.0625rem solid var(--dark8);
+}
+.options li:hover {
+  background-color: var(--dark8);
+}
+.selected-step-wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -68,14 +118,23 @@
   border-radius: 50%;
   background-color: var(--light1);
 }
-.unselected-steep {
+.unselected-step {
   background-color: var(--dark9);
 }
 .second_section {
   background-color: var(--brand);
 
 }
-
+dialog{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: none;
+  border-radius: 1.5rem;
+  background-color: var(--light2);
+}
+  
 .second_section-title-wrapper {
   display: flex;
   flex-direction: column;

@@ -19,10 +19,105 @@
         <link rel="stylesheet" href="./styles/wrappersStyles.css">
         <link rel="stylesheet" href="./styles/components.css">
         <link rel="stylesheet" href="./styles/styles.css">
-        <script src="./scripts/index.js" defer></script>
+        <script type="module" src="./scripts/index.js" defer></script>
+        <script src="./scripts/customSelect.js" defer></script>
     </head>
 
     <body>
+        <dialog>
+                                  <h2 class="form-title">Inicie agora o seu processo de
+                            registro e esteja seguro.</h2>
+                        <form class="registration_form" id="registration-form">
+                            <!-- Etapa 1 -->
+                            <div class="step" id="step-1">
+                                <input type="text" id="form-input-brand"
+                                    placeholder="Nome da sua marca®" required>
+                                <input type="text" id="form-input-name"
+                                    placeholder="Seu nome" required>
+                                <input type="tel" id="form-input-whatsapp"
+                                    placeholder="DDD + Whatsapp" required>
+                                <input type="text" placeholder="Ramo de Atuação"
+                                    id="form-input-line-of-business" required>
+                                <button class="button btn_form button-text"
+                                    type="button" id="next-step-1">Iniciar
+                                    Registro</button>
+                            </div>
+
+                            <!-- Etapa 2 -->
+                            <div class="step" id="step-2" style="display: none;">
+                                <div class="custom-select">
+                                    <div class="selected-option">Estágio do
+                                        négocio
+                                         <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="15" height="9"
+                                            viewBox="0 0 15 9" fill="none">
+                                            <path d="M1 1L7.50098 7.3335"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M7.50098 7.3335L14 1"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <ul class="options">
+                                        <li data-value="option1">Estou me
+                                            planejando para começar</li>
+                                        <li data-value="option2">Comecei
+                                            recentemente</li>
+                                        <li data-value="option3">Já atuo no
+                                            mercado há um certo tempo</li>
+                                    </ul>
+                                </div>
+
+                                <div class="custom-select">
+                                    <div class="selected-option">Porte
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="15" height="9"
+                                            viewBox="0 0 15 9" fill="none">
+                                            <path d="M1 1L7.50098 7.3335"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M7.50098 7.3335L14 1"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <ul class="options">
+                                        <li data-value="option1">Atuo como
+                                            pessoa física</li>
+                                        <li data-value="option2">CNPJ em criação</li>
+                                        <li data-value="option3">MEI</li>
+                                        <li data-value="option4">ME</li>
+                                        <li data-value="option5">EPP</li>
+                                        <li data-value="option6">DEMAIS</li>
+                                        <li data-value="option7">Associação</li>
+                                    </ul>
+                                </div>
+
+                                <input type="text"
+                                    id="form-input-social-media-site"
+                                    placeholder="Redes sociais e/ou site">
+                                <input type="email" id="form-input-email"
+                                    placeholder="Seu E-mail">
+                                <button class="button btn_form button-text"
+                                    type="submit">Concluir registro</button>
+                            </div>
+                        </form>
+                                                <div class="selected-step-wrapper">
+                            <div class="circle " id="circle-1"></div>
+                            <div class="circle unselected-step" id="circle-2"></div>
+                        </div>
+        </dialog>
         <section class="first_section">
             <header class="header">
                 <div class="wrapper">
@@ -46,1155 +141,1229 @@
                 <div class="first_section-right-content">
                     <img src="./images/logos/site-blindado-logo.svg"
                         alt="Imagem de Segurança">
-                    <div class="first_section_form-wrapper form-wrapper">
-                        <h2 class="form-title">Inicie agora o seu processo
-                            de registro e esteja
-                            seguro.</h2>
-                        <form class="registration_form"
-                            id="registration-form-steep-one">
-                            <input type="text" id="form-input-brand"
-                                placeholder="Nome da sua marca®" required>
-                            <input type="text" id="form-input-name"
-                                placeholder="Seu nome" required>
-                            <input type="tel" id="form-input-whatsapp"
-                                placeholder="DDD + Whatsapp" required>
-                            <input type="text" placeholder="Ramo de Atuação"
-                                id="form-input-line-of-business" required>
-                            <button class="button btn_form button-text"
-                                type="submit"
-                                id="btn-form">Iniciar registro</button>
+                    <div class="form-wrapper">
+                        <h2 class="form-title">Inicie agora o seu processo de
+                            registro e esteja seguro.</h2>
+                        <form class="registration_form" id="registration-form">
+                            <!-- Etapa 1 -->
+                            <div class="step" id="step-1">
+                                <input type="text" id="form-input-brand"
+                                    placeholder="Nome da sua marca®" required>
+                                <input type="text" id="form-input-name"
+                                    placeholder="Seu nome" required>
+                                <input type="tel" id="form-input-whatsapp"
+                                    placeholder="DDD + Whatsapp" required>
+                                <input type="text" placeholder="Ramo de Atuação"
+                                    id="form-input-line-of-business" required>
+                                <button class="button btn_form button-text"
+                                    type="button" id="next-step-1">Iniciar
+                                    Registro</button>
+                            </div>
+
+                            <!-- Etapa 2 -->
+                            <div class="step" id="step-2" style="display: none;">
+                                <div class="custom-select">
+                                    <div class="selected-option">Estágio do
+                                        négocio
+                                         <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="15" height="9"
+                                            viewBox="0 0 15 9" fill="none">
+                                            <path d="M1 1L7.50098 7.3335"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M7.50098 7.3335L14 1"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <ul class="options">
+                                        <li data-value="option1">Estou me
+                                            planejando para começar</li>
+                                        <li data-value="option2">Comecei
+                                            recentemente</li>
+                                        <li data-value="option3">Já atuo no
+                                            mercado há um certo tempo</li>
+                                    </ul>
+                                </div>
+
+                                <div class="custom-select">
+                                    <div class="selected-option">Porte
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="15" height="9"
+                                            viewBox="0 0 15 9" fill="none">
+                                            <path d="M1 1L7.50098 7.3335"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M7.50098 7.3335L14 1"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <ul class="options">
+                                        <li data-value="option1">Atuo como
+                                            pessoa física</li>
+                                        <li data-value="option2">CNPJ em criação</li>
+                                        <li data-value="option3">MEI</li>
+                                        <li data-value="option4">ME</li>
+                                        <li data-value="option5">EPP</li>
+                                        <li data-value="option6">DEMAIS</li>
+                                        <li data-value="option7">Associação</li>
+                                    </ul>
+                                </div>
+
+                                <input type="text"
+                                    id="form-input-social-media-site"
+                                    placeholder="Redes sociais e/ou site">
+                                <input type="email" id="form-input-email"
+                                    placeholder="Seu E-mail">
+                                <button class="button btn_form button-text"
+                                    type="submit">Concluir registro</button>
+                            </div>
                         </form>
-                        <form class="registration_form"
-                            id="registration-form-steep-two"
-                            style="display: none;">
-                            <select id="form-select-business-internship"
-                                required>
-                                <option value disabled selected>Estágio do
-                                    negócio</option>
-                                <option value="option1">Estou me planejando
-                                    para
-                                    começar</option>
-                                <option value="option2">Comecei recentemente</option>
-                                <option value="option3">Já atuo no mercado
-                                    há um
-                                    certo tempo</option>
-                            </select>
-                            <select id="form-select-business-size" required>
-                                <option value disabled selected>Porte</option>
-                                <option value="option1">Atuo como pessoa
-                                    física</option>
-                                <option value="option2">CNPJ em criação</option>
-                                <option value="option3">MEI</option>
-                                <option value="option4">ME</option>
-                                <option value="option5">EPP</option>
-                                <option value="option6">DEMAIS</option>
-                                <option value="option7">Associação</option>
-                            </select>
-                            <input type="text"
-                                id="form-input-social-media-site"
-                                placeholder="Redes sociais e/ou site">
-                            <input type="email" id="form-input-email"
-                                placeholder="Seu E-mail">
-                            <button class="button btn_form button-text" id
-                                type="submit">Concluir
-                                registro</button>
-                        </form>
-                        <div class="selected-steep-wrapper">
-                            <div class="circle "></div>
-                            <div class="circle unselected-steep"></div>
+                        <div class="selected-step-wrapper">
+                            <div class="circle " id="circle-1"></div>
+                            <div class="circle unselected-step" id="circle-2"></div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <section class="second_section">
-                <div class="wrapper  second_section-wrapper">
-                    <div class="second_section-title-wrapper">
-                        <h2 class="second_section-title light-titles">Processo
-                            100% online, ágil,
-                            transparente e sem burocracia.</h2>
-                        <span class="second_section-text secondary-subtitle">Corpo
-                            jurídico com mais de
-                            <strong>
-                                15 anos
-                                de experiência
-                            </strong> em propriedade
-                            industrial.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="second_section">
+            <div class="wrapper  second_section-wrapper">
+                <div class="second_section-title-wrapper">
+                    <h2 class="second_section-title light-titles">Processo
+                        100% online, ágil,
+                        transparente e sem burocracia.</h2>
+                    <span class="second_section-text secondary-subtitle">Corpo
+                        jurídico com mais de
+                        <strong>
+                            15 anos
+                            de experiência
+                        </strong> em propriedade
+                        industrial.</span>
+                </div>
+                <div class="second_section-cards-wrapper">
+                    <div class="second_section-card">
+                        <h2
+                            class="second_section-left-content-title second-section-card-title">O
+                            que
+                            acontece se
+                            eu não registrar? ⚠️</h2>
+                        <ol
+                            class="second_section-left-content-list order-list second-section-card-text ">
+                            <li class="second_section-left-content-item">Abrir
+                                mão do
+                                valor que sua marca já gerou para seus
+                                clientes.</li>
+                            <li class="second_section-left-content-item">Ser
+                                copiado
+                                pela concorrência sem ter meios de reação.</li>
+                            <li class="second_section-left-content-item">Ser
+                                forçado a
+                                mudar o nome da sua marca de forma
+                                abrupta.</li>
+                            <li class="second_section-left-content-item">Correr
+                                o risco
+                                de um processo por uso indevido de marca.</li>
+                            <li class="second_section-left-content-item">Perder
+                                os
+                                investimentos em comunicação e ter de
+                                recomeçar do zero.</li>
+                        </ol>
+                        <button
+                            class="second_section-left-content-btn secondary-button button-text
+                                id="btn-open-registration-modal">Quero registrar
+                            Minha
+                            Marca!</button>
                     </div>
-                    <div class="second_section-cards-wrapper">
-                        <div class="second_section-card">
+                    <div class="second_section-card">
+                        <div class="second_section-title-wrapper">
                             <h2
-                                class="second_section-left-content-title second-section-card-title">O
+                                class="second_section-right-content-title second-section-card-title2">Por
                                 que
-                                acontece se
-                                eu não registrar? ⚠️</h2>
-                            <ol
-                                class="second_section-left-content-list order-list second-section-card-text ">
-                                <li class="second_section-left-content-item">Abrir
-                                    mão do
-                                    valor que sua marca já gerou para seus
-                                    clientes.</li>
-                                <li class="second_section-left-content-item">Ser
-                                    copiado
-                                    pela concorrência sem ter meios de reação.</li>
-                                <li class="second_section-left-content-item">Ser
-                                    forçado a
-                                    mudar o nome da sua marca de forma
-                                    abrupta.</li>
-                                <li class="second_section-left-content-item">Correr
-                                    o risco
-                                    de um processo por uso indevido de marca.</li>
-                                <li class="second_section-left-content-item">Perder
-                                    os
-                                    investimentos em comunicação e ter de
-                                    recomeçar do zero.</li>
-                            </ol>
-                            <button
-                                class="second_section-left-content-btn secondary-button button-text
-                                id="btn-open-registration-modal">Quero registrar
-                                Minha
-                                Marca!</button>
+                                optar
+                                pela Registre.se? ✅</h2>
                         </div>
-                        <div class="second_section-card">
-                            <div class="second_section-title-wrapper">
-                                <h2
-                                    class="second_section-right-content-title second-section-card-title2">Por
-                                    que
-                                    optar
-                                    pela Registre.se? ✅</h2>
+
+                        <ol
+                            class="second_section-right-content-list order-list second-section-card-text">
+                            <li class="second_section-right-content-item">100%
+                                de
+                                avaliações 5 estrelas no Google.</li>
+                            <li class="second_section-right-content-item">Mais
+                                de 600
+                                marcas protegidas em todo o Brasil.</li>
+                            <li class="second_section-right-content-item">Atendimento
+                                humanizado e personalizado para suas
+                                necessidades.</li>
+                            <li class="second_section-right-content-item">Taxa
+                                de
+                                aprovação de 86%.</li>
+                            <li class="second_section-right-content-item">Garantia
+                                contratual em caso de reprovação pelo INPI.</li>
+                            <li class="second_section-right-content-item">ZERO
+                                reclamações no Reclame Aqui.</li>
+                        </ol>
+                        <button
+                            class="second_section-right-content-btn secondary-button button-text
+                                id="btn-open-registration-modal">Quero registrar
+                            Minha
+                            Marca!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third_section">
+            <div class="wrapper">
+                <div class="testimonial-title-wrapper">
+                    <h2 class="testimonial-section-title">O que dizem nossos
+                        clientes no Google</h2>
+                    <p class="testimonial-section-subtitle">Quem registrou,
+                        recomenda: Registre.se!</p>
+                    <a
+                        href="https://www.google.com/maps/place/Registre.se/@-14.4086569,-51.31668,4z/data=!4m7!3m6!1s0x2d52c038483c8fd7:0x884957017832fcc9!8m2!3d-14.4086569!4d-51.31668!9m1!1b1"
+                        target="_blank">
+                        <img
+                            src="./images/logos/logo-google-5-estrelas-qtd-avaliacoes.svg"
+                            alt="logo Google estrelas e avaliações">
+                    </a>
+                </div>
+
+                <div class="third_section-google-reviews-wrapper">
+
+                    <div class="review testimonial-text">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+                        <p>Registre-se encontrei na internet, no buscar do
+                            Google.
+                            Primeira do topo, sem medo e pelo conteúdo
+                            que vi no
+                            site, me impressionei, deixei meu contato e no
+                            outro
+                            dia, fui atendido pelo Luan, fechamos o
+                            contrato e já demos
+                            início ao processo do registro da minha marca.</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/maicon-davi.svg"
+                                alt="Foto de Maicon Davi">
+                            <div>
+                                <p class="author-name">Maicon Davi</p>
+                                <p class="author-reviews">3 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review testimonial-text ">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+
+                        <p>Atendimento muito rápido e profissionais super
+                            atenciosos
+                            e simpáticos. Desde o primeiro contato
+                            estavam sempre
+                            dispostos a responder todas as dúvidas de
+                            maneira
+                            efetiva com uma organização no processo de
+                            atendimento
+                            impecável.</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/lucas-malanote.svg"
+                                alt="Foto de Lucas Malanote">
+                            <div>
+                                <p class="author-name">Lucas Malanote</p>
+                                <p class="author-reviews">2 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review testimonial-text">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+
+                        <p>Tive uma experiência incrível com o registro da
+                            minha
+                            marca. O atendimento foi excepcional desde o
+                            primeiro
+                            contato e tive suporte constante da equipe
+                            durante todo
+                            o processo. Recomendo demais! 🖤</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/ana-caroline-ramos.svg"
+                                alt="Foto de Ana Caroline Ramos">
+                            <div>
+                                <p class="author-name">Ana Caroline Ramos</p>
+                                <p class="author-reviews">6 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review testimonial-text">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+
+                        <p>Processo de registro de Marca iniciado bem, de
+                            forma
+                            clara e objetiva. Dão passo a passo explicação
+                            de todo o
+                            processo de maneira que é compreensível e ajuda
+                            em nossa
+                            organização! Parabéns!</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/eduardo-cidade.svg"
+                                alt="Foto de Eduardo Cidade">
+                            <div>
+                                <p class="author-name">Eduardo Cidade</p>
+                                <p class="author-reviews">42 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review testimonial-text">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+
+                        <p>A Registre-se não é só uma empresa que te ajuda
+                            com seu
+                            registro, é a melhor parceira para o serviço.
+                            Colaboradores acolhedores, que sabem o que
+                            fazem,
+                            tirando não só as dúvidas mais deixando vc
+                            esclarecido sobre o
+                            assunto. Entre todas as que procurei sem sombra
+                            de
+                            dúvidas a melhor. Ponto.</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/gladson-santos.svg"
+                                alt="Foto de Gladson Santos">
+                            <div>
+                                <p class="author-name">Gladson Santos</p>
+                                <p class="author-reviews">3 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review testimonial-text">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+
+                        <p>Entrar em contato com a Registre-se foi um achado
+                            no
+                            Google... eles me deram respaldo com a pesquisa
+                            de nomes
+                            antes de definir a minha marca. Atendimento
+                            incrível,
+                            especialmente na pessoa do Rafael que foi a
+                            primeira
+                            pessoa com quem tive contato. Gratidão pessoal!!</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/katia-smaniotto.svg"
+                                alt="Foto de Katia Smaniotto">
+                            <div>
+                                <p class="author-name">Katia Smaniotto</p>
+                                <p class="author-reviews">355 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review testimonial-text">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+
+                        <p>Atendimento nota MIL! Cheguei com alguns medos,
+                            inseguranças sobre o processo de registro, e o
+                            Kadu,
+                            a Eduarda e
+                            toda a equipe foram elucidando todas as dúvidas
+                            e me
+                            ajudaram a proteger a minha marca. Atendimento
+                            humanizado,
+                            um enorme diferencial para mim.</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/kauana-publicidade.svg"
+                                alt="Foto de Kauana Publicidade">
+                            <div>
+                                <p class="author-name">Kauana Publicidade</p>
+                                <p class="author-reviews">1 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review testimonial-text">
+                        <img src="./images/logos/logo-google-5-estrelas.svg"
+                            alt="Logo do Google e 5 estrelas">
+
+                        <p>Só tenho a agradecer a empresa por estar me
+                            auxiliando a
+                            realizar o meu registro de marca de maneira
+                            atenciosa e profissional. Cada passo dado com
+                            muita
+                            transparência o que nos inspira confiança e
+                            credibilidade.</p>
+                        <div class="testimonial-author-wrapper">
+                            <img
+                                src="./images/google-reviewers/michaelle-bruno.svg"
+                                alt="Foto de Maicon Davi">
+                            <div>
+                                <p class="author-name">Michaelle Bruno</p>
+                                <p class="author-reviews">5 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="fourth_section">
+                <div class="wrapper">
+                    <div class="fourth_section-title-wrapper">
+
+                        <h2 class="fourth-section-title">Inicie seu registro
+                            e
+                            esteja
+                            seguro</h2>
+                        <p
+                            class="fourth_section-text fourth-section-subtitle">Faça
+                            como as mais de 600
+                            marcas
+                            que já passaram por aqui.</p>
+                    </div>
+                    <div class="fourth_section-brand-logos-wrapper">
+                        <img src="./images/brands/green-valley.svg"
+                            alt="Logo da Marca Green Valley">
+                        <img src="./images/brands/bem-mais.svg"
+                            alt="Logo da Marca Bem+">
+                        <img src="./images/brands/campano.svg"
+                            alt="Logo da Marca Campano">
+                        <img src="./images/brands/i-move-line.svg"
+                            alt="Logo da Marca I Move Line">
+                        <img src="./images/brands/odontiq.svg"
+                            alt="Logo da Marca Odontiq">
+                        <img src="./images/brands/nc3e.svg"
+                            alt="Logo da Marca NC3E">
+                        <img src="./images/brands/pit-zaria.svg"
+                            alt="Logo da Marca Pit-zaria">
+                        <img src="./images/brands/ponto-com.svg"
+                            alt="Logo da Marca Ponto Com">
+                        <img id="responsive-omit"
+                            src="./images/brands/postos-catarina.svg"
+                            alt="Logo da Marca Postos Catarina">
+                        <img id="responsive-omit"
+                            src="./images/brands/postos-rr.svg"
+                            alt="Logo da Marca Postos RR">
+                    </div>
+                    <div class="fourth_section-btn-wrapper">
+                        <button
+                            class="fourth_section-btn secondary-button button-text
+                                id="btn-open-registration-modal">Quero registrar
+                            Minha
+                            Marca!</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fifth_section">
+                <div class="wrapper">
+                    <div class="fifth_section-registration-process-wrapper">
+                        <div class="fifth_section-registration-text-wrapper">
+                            <h2
+                                class="fifth_section-registration-title fifth-section-title">Inicie
+                                hoje
+                                mesmo o seu processo de registro no INPI</h2>
+                            <p
+                                class="fifth_section-registration-text fifth-section-subtitle">Conte
+                                com
+                                a
+                                nossa assessoria para garantir o sucesso
+                                do seu pedido e ganhe tempo para focar no
+                                que
+                                importa: <strong>O seu negócio</strong>.</p>
+                        </div>
+                        <div class="fifth_section_form-wrapper form-wrapper">
+                        <form class="registration_form" id="registration-form">
+                            <!-- Etapa 1 -->
+                            <div class="step" id="step-1-sec-form">
+                                <input type="text" id="form-input-brand"
+                                    placeholder="Nome da sua marca®" required>
+                                <input type="text" id="form-input-name"
+                                    placeholder="Seu nome" required>
+                                <input type="tel" id="form-input-whatsapp"
+                                    placeholder="DDD + Whatsapp" required>
+                                <input type="text" placeholder="Ramo de Atuação"
+                                    id="form-input-line-of-business" required>
+                                <button class="button btn_form button-text"
+                                    type="button" id="next-step-1-sec-form">Iniciar
+                                    Registro</button>
                             </div>
 
-                            <ol
-                                class="second_section-right-content-list order-list second-section-card-text">
-                                <li class="second_section-right-content-item">100%
-                                    de
-                                    avaliações 5 estrelas no Google.</li>
-                                <li class="second_section-right-content-item">Mais
-                                    de 600
-                                    marcas protegidas em todo o Brasil.</li>
-                                <li class="second_section-right-content-item">Atendimento
-                                    humanizado e personalizado para suas
-                                    necessidades.</li>
-                                <li class="second_section-right-content-item">Taxa
-                                    de
-                                    aprovação de 86%.</li>
-                                <li class="second_section-right-content-item">Garantia
-                                    contratual em caso de reprovação pelo INPI.</li>
-                                <li class="second_section-right-content-item">ZERO
-                                    reclamações no Reclame Aqui.</li>
-                            </ol>
-                            <button
-                                class="second_section-right-content-btn secondary-button button-text
-                                id="btn-open-registration-modal">Quero registrar
-                                Minha
-                                Marca!</button>
+                            <!-- Etapa 2 -->
+                            <div class="step" id="step-2-sec-form" style="display: none;">
+                                <div class="custom-select">
+                                    <div class="selected-option">Estágio do
+                                        négocio
+                                         <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="15" height="9"
+                                            viewBox="0 0 15 9" fill="none">
+                                            <path d="M1 1L7.50098 7.3335"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M7.50098 7.3335L14 1"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <ul class="options">
+                                        <li data-value="option1">Estou me
+                                            planejando para começar</li>
+                                        <li data-value="option2">Comecei
+                                            recentemente</li>
+                                        <li data-value="option3">Já atuo no
+                                            mercado há um certo tempo</li>
+                                    </ul>
+                                </div>
+
+                                <div class="custom-select">
+                                    <div class="selected-option">Porte
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="15" height="9"
+                                            viewBox="0 0 15 9" fill="none">
+                                            <path d="M1 1L7.50098 7.3335"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M7.50098 7.3335L14 1"
+                                                stroke="#5C5C5C"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                    <ul class="options">
+                                        <li data-value="option1">Atuo como
+                                            pessoa física</li>
+                                        <li data-value="option2">CNPJ em criação</li>
+                                        <li data-value="option3">MEI</li>
+                                        <li data-value="option4">ME</li>
+                                        <li data-value="option5">EPP</li>
+                                        <li data-value="option6">DEMAIS</li>
+                                        <li data-value="option7">Associação</li>
+                                    </ul>
+                                </div>
+
+                                <input type="text"
+                                    id="form-input-social-media-site"
+                                    placeholder="Redes sociais e/ou site">
+                                <input type="email" id="form-input-email"
+                                    placeholder="Seu E-mail">
+                                <button class="button btn_form button-text"
+                                    type="submit">Concluir registro</button>
+                            </div>
+                        </form>
+                        <div class="selected-step-wrapper">
+                            <div class="circle " id="circle-1-sec"></div>
+                            <div class="circle unselected-step" id="circle-2-sec"></div>
+                        </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="third_section">
+
+            <section class="sixth_section">
                 <div class="wrapper">
-                    <div class="testimonial-title-wrapper">
-                        <h2 class="testimonial-section-title">O que dizem nossos
-                            clientes no Google</h2>
-                        <p class="testimonial-section-subtitle">Quem registrou,
-                            recomenda: Registre.se!</p>
-                        <a href="https://www.google.com/maps/place/Registre.se/@-14.4086569,-51.31668,4z/data=!4m7!3m6!1s0x2d52c038483c8fd7:0x884957017832fcc9!8m2!3d-14.4086569!4d-51.31668!9m1!1b1" target="_blank">
-                            <img
-                                src="./images/logos/logo-google-5-estrelas-qtd-avaliacoes.svg"
-                                alt="logo Google estrelas e avaliações">
-                        </a>
+                    <div class="sixth_section-registration-process-wrapper">
+                        <div class="sixth_section-registration-text-wrapper">
+                            <h2 class="sixth-section-title">Como funciona o
+                                processo aqui na Registre.se</h2>
+                        </div>
+                        <div class="sixth_section-process-cards">
+                            <div
+                                class="sixth_section-process-card process-card-1 ">
+                                <h3 class="sixth-section-card-title">1.
+                                    Análise de viabilidade</h3>
+                                <p class="sixth-section-card-text">Nossos
+                                    especialistas farão uma pesquisa
+                                    aprofundada em busca de marcas que podem
+                                    ser
+                                    um
+                                    obstáculo
+                                    para o seu registro.</p>
+                            </div>
+                            <div
+                                class="sixth_section-process-card process-card-2">
+                                <h3 class="sixth-section-card-title">2.
+                                    Estratégia e documentação</h3>
+                                <p class="sixth-section-card-text">Com base
+                                    no resultado da pesquisa, iremos
+                                    traçar
+                                    estratégias para maximizar as chances de
+                                    sucesso
+                                    do
+                                    seu pedido de registro.</p>
+                            </div>
+                            <div
+                                class="sixth_section-process-card process-card-3">
+                                <h3 class="sixth-section-card-title">3.
+                                    Protocolo do pedido no INPI</h3>
+                                <p class="sixth-section-card-text">Em menos
+                                    de 24 horas, organizamos toda a
+                                    documentação, preparamos o processo e
+                                    protocolamos o seu
+                                    pedido de registro.</p>
+                            </div>
+                            <div
+                                class="sixth_section-process-card process-card-4">
+                                <h3 class="sixth-section-card-title">4.
+                                    Vigilância do processo</h3>
+                                <p class="sixth-section-card-text">Vamos
+                                    monitorar todas as publicações do
+                                    INPI
+                                    e te
+                                    informar por WhatsApp e e-mail por 10
+                                    anos,
+                                    sem
+                                    surpresas.</p>
+                            </div>
+                        </div>
+                        <div class="sixth_section-process-button-wrapper">
+                            <button
+                                class="sixth_section-process-btn button-text"
+                                id="btn-step-by-step-video"><i
+                                    class="fa-regular fa-circle-play"></i>
+                                Entenda o
+                                passo a passo</button>
+                        </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="third_section-google-reviews-wrapper">
-
-                        <div class="review testimonial-text">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-                            <p>Registre-se encontrei na internet, no buscar do
-                                Google.
-                                Primeira do topo, sem medo e pelo conteúdo
-                                que vi no
-                                site, me impressionei, deixei meu contato e no
-                                outro
-                                dia, fui atendido pelo Luan, fechamos o
-                                contrato e já demos
-                                início ao processo do registro da minha marca.</p>
-                            <div class="testimonial-author-wrapper">
+            <section class="seventh_section">
+                <div class="seventh_section-wrapper">
+                    <div class="wrapper">
+                        <h2 class="seventh-section-title">Os 5 principais
+                            benefícios
+                            da
+                            marca registrada® para o seu
+                            negócio</h2>
+                        <div class="seventh_section-benefits-cards-l1">
+                            <div
+                                class="seventh_section-benefit-card grid-item  l1c1">
+                                <h3
+                                    class="seventh-section-card-title-primary">1
+                                    <br>Garantia de propriedade.</h3>
+                                <p class="seventh-section-card-text-primary">Sua
+                                    marca só é
+                                    realmente sua quando você tem o
+                                    certificado
+                                    emitido
+                                    pelo
+                                    INPI.</p>
+                            </div>
+                            <div
+                                class="seventh_section-benefit-card grid-item l1c2 ">
+                                <h3
+                                    class="seventh-section-card-title-secondary">2.<br>
+                                    Exclusividade.
+                                </h3>
+                                <p
+                                    class="seventh-section-card-text-secondary">Sabemos
+                                    que você não
+                                    quer um
+                                    concorrente usando uma marca similar ou
+                                    até
+                                    igual a
+                                    sua. Somente com sua marca registrada
+                                    você
+                                    pode
+                                    se
+                                    proteger da concorrência desleal.
+                                </p>
                                 <img
-                                    src="./images/google-reviewers/maicon-davi.svg"
-                                    alt="Foto de Maicon Davi">
-                                <div>
-                                    <p class="author-name">Maicon Davi</p>
-                                    <p class="author-reviews">3 avaliações</p>
+                                    src="./images/backgrounds/benef-second-bg.svg"
+                                    alt="background do card 2">
+                            </div>
+                        </div>
+                        <div class="seventh_section-benefits-cards-l2">
+                            <div
+                                class="seventh_section-benefit-card grid-item l2c1">
+                                <h3
+                                    class="seventh-section-card-title-secondary">
+                                    3<br> Credibilidade.
+                                </h3>
+                                <p
+                                    class="seventh-section-card-text-secondary">O
+                                    R de registrado é um
+                                    símbolo
+                                    reconhecido pelos seus clientes e
+                                    demonstra
+                                    o
+                                    profissionalismo do seu negócio.</p>
+                                <img
+                                    src="./images/backgrounds/benefit-third-card-bg.svg"
+                                    alt="background do card 3">
+                            </div>
+                            <div
+                                class="seventh_section-benefit-card grid-item l2c2">
+                                <h3
+                                    class="seventh-section-card-title-primary">4<br>
+                                    Direito de uso.</h3>
+                                <p class="seventh-section-card-text-primary">
+                                    <p>Somente o certificado
+                                        do
+                                        INPI
+                                        lhe dá tranquilidade para usar sua
+                                        marca sem
+                                        infringir o direito de terceiros.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="seventh_section-benefit-card grid-item l3c1c2">
+                                <h3
+                                    class="seventh-section-card-title-secondary seventh_section--title-modifier">
+                                    5<br> Um investimento único que protege
+                                    a
+                                    sua
+                                    marca
+                                    pra
+                                    sempre.
+                                </h3>
+                                <p
+                                    class="seventh_section--text-modifier">O
+                                    certificado é válido por 10
+                                    anos em
+                                    todo território nacional e com
+                                    possibilidade
+                                    ilimitada de renovação.</p>
+                                <img
+                                    src="./images/backgrounds/fifth-card-bg.png"
+                                    alt="Brasão background quinto card">
+                            </div>
+                        </div>
+                        <div class="seventh_section-benefits-button-wrapper">
+                            <button
+                                class="seventh_section-btn secondary-button button-text
+                                    id="btn-open-registration-modal">Quero
+                                registrar
+                                Minha
+                                Marca!</button>
+                        </div>
+
+                    </section>
+                </div>
+                <section class="faq_section">
+                    <div class="wrapper">
+                        <div class="faq_section-wrapper">
+                            <div class="faq_section-about-brand">
+                                <h2 class="faq-section-titles ">Sobre o
+                                    processo de <strong>registro de marca</strong></h2>
+
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Estou
+                                            usando minha marca sem
+                                            registro.
+                                            Devo
+                                            me preocupar?</summary>
+                                        <p class="faq-question-text">Sim, é
+                                            importante registrar sua marca
+                                            para
+                                            protegê-la legalmente. O
+                                            registro
+                                            confere
+                                            direitos exclusivos e evita que
+                                            terceiros
+                                            usem
+                                            ou copiem sua marca
+                                            indevidamente.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">O
+                                            que é o INPI (Instituto de
+                                            Propriedade
+                                            Intelectual)?</summary>
+                                        <p class="faq-question-text">O INPI
+                                            é o Instituto Nacional da
+                                            Propriedade
+                                            Industrial, responsável pelo
+                                            registro e
+                                            proteção
+                                            de
+                                            marcas no Brasil. É onde seu
+                                            pedido de
+                                            registro
+                                            será
+                                            analisado e processado.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Qual
+                                            valor das taxas?</summary>
+                                        <p class="faq-question-text">O valor
+                                            das taxas de registro de marca
+                                            pode
+                                            variar
+                                            dependendo do tipo de marca e
+                                            dos
+                                            serviços
+                                            solicitados. É recomendável
+                                            verificar as
+                                            taxas
+                                            atuais no site do INPI.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Quanto
+                                            tempo demora para registrar?</summary>
+                                        <p class="faq-question-text">O tempo
+                                            de registro pode variar, mas
+                                            geralmente
+                                            leva
+                                            de 12 a 24 meses. O processo
+                                            envolve
+                                            análise,
+                                            publicação e possível oposição
+                                            por
+                                            terceiros.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">O
+                                            que fazer se sua marca já for
+                                            registrada?</summary>
+                                        <p class="faq-question-text">Se sua
+                                            marca já estiver registrada por
+                                            outra
+                                            pessoa,
+                                            você pode buscar um acordo ou
+                                            negociar
+                                            para
+                                            usar
+                                            a
+                                            marca sob certas condições. Caso
+                                            contrário,
+                                            pode
+                                            ser
+                                            necessário escolher uma marca
+                                            alternativa.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Como
+                                            saber se posso registrar minha
+                                            marca?</summary>
+                                        <p class="faq-question-text">É
+                                            importante realizar uma busca no
+                                            banco
+                                            de
+                                            marcas do
+                                            INPI para verificar se a marca
+                                            que
+                                            deseja
+                                            registrar
+                                            já está em uso. Além disso, é
+                                            aconselhável
+                                            contar
+                                            com o auxílio de profissionais
+                                            para
+                                            avaliar
+                                            a
+                                            viabilidade do registro.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq_section-about-us">
+                                <h2 class="faq-section-titles ">Sobre a
+                                    <strong>Registre.se</strong> </h2>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Quem
+                                            é a Registre.se?</summary>
+                                        <p class="faq-question-text">A
+                                            Registre.se é uma empresa
+                                            especializada
+                                            em
+                                            registro
+                                            de marcas. Nossa equipe de
+                                            especialistas
+                                            oferece
+                                            assessoria personalizada para
+                                            garantir o
+                                            sucesso
+                                            do
+                                            seu pedido de registro.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Qual
+                                            valor para registro da
+                                            marca?</summary>
+                                        <p class="faq-question-text">O valor
+                                            para registro de marca pode
+                                            variar
+                                            dependendo
+                                            do tipo de serviço e das taxas
+                                            do
+                                            INPI.
+                                            Entre em
+                                            contato conosco para obter uma
+                                            cotação
+                                            personalizada.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Como
+                                            funciona o pedido de
+                                            registro?</summary>
+                                        <p class="faq-question-text">Nós
+                                            cuidamos de todo o processo de
+                                            registro,
+                                            desde a
+                                            análise de viabilidade até o
+                                            protocolo
+                                            no
+                                            INPI.
+                                            Você
+                                            pode contar conosco para tornar
+                                            o
+                                            processo
+                                            simples e
+                                            eficiente.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Vou
+                                            pagar taxas extras?</summary>
+                                        <p class="faq-question-text">O valor
+                                            das taxas do INPI não está
+                                            incluído
+                                            em
+                                            nossos
+                                            serviços, mas podemos ajudá-lo a
+                                            entender e
+                                            pagar
+                                            essas taxas de forma adequada.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Como
+                                            é o atendimento?</summary>
+                                        <p class="faq-question-text">Oferecemos
+                                            atendimento personalizado
+                                            e
+                                            dedicado a
+                                            cada cliente. Nossa equipe está
+                                            disponível
+                                            para
+                                            esclarecer suas dúvidas e
+                                            fornecer
+                                            suporte
+                                            durante
+                                            todo o processo.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="faq_section-question-wrapper">
+                                    <details class="question">
+                                        <summary
+                                            class="faq-question-titles ">Por
+                                            que é mais simples com a
+                                            Registre.se?</summary>
+                                        <p class="faq-question-text">Com a
+                                            Registre.se, você conta com
+                                            especialistas
+                                            que
+                                            conhecem o processo de registro
+                                            de
+                                            marcas.
+                                            Simplificamos o processo para
+                                            você,
+                                            economizando
+                                            tempo e esforço.</p>
+                                    </details>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="9"
+                                        viewBox="0 0 15 9" fill="none">
+                                        <path d="M1 1L7.50098 7.3335"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.50098 7.3335L14 1"
+                                            stroke="#5C5C5C"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="review testimonial-text ">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-
-                            <p>Atendimento muito rápido e profissionais super
-                                atenciosos
-                                e simpáticos. Desde o primeiro contato
-                                estavam sempre
-                                dispostos a responder todas as dúvidas de
-                                maneira
-                                efetiva com uma organização no processo de
-                                atendimento
-                                impecável.</p>
-                            <div class="testimonial-author-wrapper">
-                                <img
-                                    src="./images/google-reviewers/lucas-malanote.svg"
-                                    alt="Foto de Lucas Malanote">
-                                <div>
-                                    <p class="author-name">Lucas Malanote</p>
-                                    <p class="author-reviews">2 avaliações</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="review testimonial-text">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-
-                            <p>Tive uma experiência incrível com o registro da
-                                minha
-                                marca. O atendimento foi excepcional desde o
-                                primeiro
-                                contato e tive suporte constante da equipe
-                                durante todo
-                                o processo. Recomendo demais! 🖤</p>
-                            <div class="testimonial-author-wrapper">
-                                <img
-                                    src="./images/google-reviewers/ana-caroline-ramos.svg"
-                                    alt="Foto de Ana Caroline Ramos">
-                                <div>
-                                    <p class="author-name">Ana Caroline Ramos</p>
-                                    <p class="author-reviews">6 avaliações</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="review testimonial-text">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-
-                            <p>Processo de registro de Marca iniciado bem, de
-                                forma
-                                clara e objetiva. Dão passo a passo explicação
-                                de todo o
-                                processo de maneira que é compreensível e ajuda
-                                em nossa
-                                organização! Parabéns!</p>
-                            <div class="testimonial-author-wrapper">
-                                <img
-                                    src="./images/google-reviewers/eduardo-cidade.svg"
-                                    alt="Foto de Eduardo Cidade">
-                                <div>
-                                    <p class="author-name">Eduardo Cidade</p>
-                                    <p class="author-reviews">42 avaliações</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="review testimonial-text">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-
-                            <p>A Registre-se não é só uma empresa que te ajuda
-                                com seu
-                                registro, é a melhor parceira para o serviço.
-                                Colaboradores acolhedores, que sabem o que
-                                fazem,
-                                tirando não só as dúvidas mais deixando vc
-                                esclarecido sobre o
-                                assunto. Entre todas as que procurei sem sombra
-                                de
-                                dúvidas a melhor. Ponto.</p>
-                            <div class="testimonial-author-wrapper">
-                                <img
-                                    src="./images/google-reviewers/gladson-santos.svg"
-                                    alt="Foto de Gladson Santos">
-                                <div>
-                                    <p class="author-name">Gladson Santos</p>
-                                    <p class="author-reviews">3 avaliações</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="review testimonial-text">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-
-                            <p>Entrar em contato com a Registre-se foi um achado
-                                no
-                                Google... eles me deram respaldo com a pesquisa
-                                de nomes
-                                antes de definir a minha marca. Atendimento
-                                incrível,
-                                especialmente na pessoa do Rafael que foi a
-                                primeira
-                                pessoa com quem tive contato. Gratidão pessoal!!</p>
-                            <div class="testimonial-author-wrapper">
-                                <img
-                                    src="./images/google-reviewers/katia-smaniotto.svg"
-                                    alt="Foto de Katia Smaniotto">
-                                <div>
-                                    <p class="author-name">Katia Smaniotto</p>
-                                    <p class="author-reviews">355 avaliações</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="review testimonial-text">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-
-                            <p>Atendimento nota MIL! Cheguei com alguns medos,
-                                inseguranças sobre o processo de registro, e o
-                                Kadu,
-                                a Eduarda e
-                                toda a equipe foram elucidando todas as dúvidas
-                                e me
-                                ajudaram a proteger a minha marca. Atendimento
-                                humanizado,
-                                um enorme diferencial para mim.</p>
-                            <div class="testimonial-author-wrapper">
-                                <img
-                                    src="./images/google-reviewers/kauana-publicidade.svg"
-                                    alt="Foto de Kauana Publicidade">
-                                <div>
-                                    <p class="author-name">Kauana Publicidade</p>
-                                    <p class="author-reviews">1 avaliações</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="review testimonial-text">
-                            <img src="./images/logos/logo-google-5-estrelas.svg"
-                                alt="Logo do Google e 5 estrelas">
-
-                            <p>Só tenho a agradecer a empresa por estar me
-                                auxiliando a
-                                realizar o meu registro de marca de maneira
-                                atenciosa e profissional. Cada passo dado com
-                                muita
-                                transparência o que nos inspira confiança e
-                                credibilidade.</p>
-                            <div class="testimonial-author-wrapper">
-                                <img
-                                    src="./images/google-reviewers/michaelle-bruno.svg"
-                                    alt="Foto de Maicon Davi">
-                                <div>
-                                    <p class="author-name">Michaelle Bruno</p>
-                                    <p class="author-reviews">5 avaliações</p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </section>
-                <section class="fourth_section">
-                    <div class="wrapper">
-                        <div class="fourth_section-title-wrapper">
 
-                            <h2 class="fourth-section-title">Inicie seu registro
-                                e
-                                esteja
-                                seguro</h2>
-                            <p
-                                class="fourth_section-text fourth-section-subtitle">Faça
-                                como as mais de 600
-                                marcas
-                                que já passaram por aqui.</p>
-                        </div>
-                        <div class="fourth_section-brand-logos-wrapper">
-                            <img src="./images/brands/green-valley.svg"
-                                alt="Logo da Marca Green Valley">
-                            <img src="./images/brands/bem-mais.svg"
-                                alt="Logo da Marca Bem+">
-                            <img src="./images/brands/campano.svg"
-                                alt="Logo da Marca Campano">
-                            <img src="./images/brands/i-move-line.svg"
-                                alt="Logo da Marca I Move Line">
-                            <img src="./images/brands/odontiq.svg"
-                                alt="Logo da Marca Odontiq">
-                            <img src="./images/brands/nc3e.svg"
-                                alt="Logo da Marca NC3E">
-                            <img src="./images/brands/pit-zaria.svg"
-                                alt="Logo da Marca Pit-zaria">
-                            <img src="./images/brands/ponto-com.svg"
-                                alt="Logo da Marca Ponto Com">
-                            <img id="responsive-omit"
-                                src="./images/brands/postos-catarina.svg"
-                                alt="Logo da Marca Postos Catarina">
-                            <img id="responsive-omit"
-                                src="./images/brands/postos-rr.svg"
-                                alt="Logo da Marca Postos RR">
-                        </div>
-                        <div class="fourth_section-btn-wrapper">
+                <section class="final_section">
+                    <div class="wrapper">
+                        <div class="final_section-wrapper">
+
+                            <h2 class="final_section-title">Não perca mais
+                                tempo, registre a sua marca hoje
+                                mesmo!</h2>
                             <button
-                                class="fourth_section-btn secondary-button button-text
-                                id="btn-open-registration-modal">Quero registrar
+                                class="final_section-btn secondary-button button-text"
+                                id="btn-open-registration-modal ">Quero
+                                registrar
                                 Minha
                                 Marca!</button>
                         </div>
                     </div>
                 </section>
-
-                <section class="fifth_section">
+                <footer>
                     <div class="wrapper">
-                        <div class="fifth_section-registration-process-wrapper">
-                            <div class="fifth_section-registration-text-wrapper">
-                                <h2
-                                    class="fifth_section-registration-title fifth-section-title">Inicie
-                                    hoje
-                                    mesmo o seu processo de registro no INPI</h2>
-                                <p
-                                    class="fifth_section-registration-text fifth-section-subtitle">Conte
-                                    com
-                                    a
-                                    nossa assessoria para garantir o sucesso
-                                    do seu pedido e ganhe tempo para focar no
-                                    que
-                                    importa: <strong>O seu negócio</strong>.</p>
+                        <div class="footer-top">
+                            <div class="footer-logo">
+                                <img src="./images/logos/logo.svg"
+                                    alt="Logo da Registre.se">
                             </div>
-                            <div class="fifth_section_form-wrapper form-wrapper">
-                                <form class="registration_form"
-                                    id="registration-form-steep-one">
-                                    <input type="text" id="form-input-brand"
-                                        placeholder="Nome da sua marca®"
-                                        required>
-                                    <input type="text" id="form-input-name"
-                                        placeholder="Seu nome" required>
-                                    <input type="tel" id="form-input-whatsapp"
-                                        placeholder="DDD + Whatsapp" required>
-                                    <input type="text"
-                                        placeholder="Ramo de Atuação"
-                                        id="form-input-line-of-business"
-                                        required>
-                                    <button class="button btn_form button-text"
-                                        type="submit"
-                                        id="btn-form">Iniciar registro</button>
-                                </form>
-                                <form class="registration_form"
-                                    id="registration-form-steep-two"
-                                    style="display: none;">
-                                    <select id="form-select-business-internship"
-                                        required>
-                                        <option value disabled selected>Estágio
-                                            do
-                                            negócio</option>
-                                        <option value="option1">Estou me
-                                            planejando
-                                            para
-                                            começar</option>
-                                        <option value="option2">Comecei
-                                            recentemente</option>
-                                        <option value="option3">Já atuo no
-                                            mercado
-                                            há um
-                                            certo tempo</option>
-                                    </select>
-                                    <select id="form-select-business-size"
-                                        required>
-                                        <option value disabled selected>Porte</option>
-                                        <option value="option1">Atuo como pessoa
-                                            física</option>
-                                        <option value="option2">CNPJ em criação</option>
-                                        <option value="option3">MEI</option>
-                                        <option value="option4">ME</option>
-                                        <option value="option5">EPP</option>
-                                        <option value="option6">DEMAIS</option>
-                                        <option value="option7">Associação</option>
-                                    </select>
-                                    <input type="text"
-                                        id="form-input-social-media-site"
-                                        placeholder="Redes sociais e/ou site">
-                                    <input type="email" id="form-input-email"
-                                        placeholder="Seu E-mail">
-                                    <button class="button btn_form button-text"
-                                        id
-                                        type="submit">Concluir
-                                        registro</button>
-                                </form>
-                                <div class="selected-steep-wrapper">
-                                    <div class="circle "></div>
-                                    <div class="circle unselected-steep"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="sixth_section">
-                    <div class="wrapper">
-                        <div class="sixth_section-registration-process-wrapper">
-                            <div class="sixth_section-registration-text-wrapper">
-                                <h2 class="sixth-section-title">Como funciona o
-                                    processo aqui na Registre.se</h2>
-                            </div>
-                            <div class="sixth_section-process-cards">
-                                <div
-                                    class="sixth_section-process-card process-card-1 ">
-                                    <h3 class="sixth-section-card-title">1.
-                                        Análise de viabilidade</h3>
-                                    <p class="sixth-section-card-text">Nossos
-                                        especialistas farão uma pesquisa
-                                        aprofundada em busca de marcas que podem
-                                        ser
-                                        um
-                                        obstáculo
-                                        para o seu registro.</p>
-                                </div>
-                                <div
-                                    class="sixth_section-process-card process-card-2">
-                                    <h3 class="sixth-section-card-title">2.
-                                        Estratégia e documentação</h3>
-                                    <p class="sixth-section-card-text">Com base
-                                        no resultado da pesquisa, iremos
-                                        traçar
-                                        estratégias para maximizar as chances de
-                                        sucesso
-                                        do
-                                        seu pedido de registro.</p>
-                                </div>
-                                <div
-                                    class="sixth_section-process-card process-card-3">
-                                    <h3 class="sixth-section-card-title">3.
-                                        Protocolo do pedido no INPI</h3>
-                                    <p class="sixth-section-card-text">Em menos
-                                        de 24 horas, organizamos toda a
-                                        documentação, preparamos o processo e
-                                        protocolamos o seu
-                                        pedido de registro.</p>
-                                </div>
-                                <div
-                                    class="sixth_section-process-card process-card-4">
-                                    <h3 class="sixth-section-card-title">4.
-                                        Vigilância do processo</h3>
-                                    <p class="sixth-section-card-text">Vamos
-                                        monitorar todas as publicações do
-                                        INPI
-                                        e te
-                                        informar por WhatsApp e e-mail por 10
-                                        anos,
-                                        sem
-                                        surpresas.</p>
-                                </div>
-                            </div>
-                            <div class="sixth_section-process-button-wrapper">
-                                <button
-                                    class="sixth_section-process-btn button-text"
-                                    id="btn-steep-by-steep-video"><i
-                                        class="fa-regular fa-circle-play"></i>
-                                    Entenda o
-                                    passo a passo</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="seventh_section">
-                    <div class="seventh_section-wrapper">
-                        <div class="wrapper">
-                            <h2 class="seventh-section-title">Os 5 principais
-                                benefícios
-                                da
-                                marca registrada® para o seu
-                                negócio</h2>
-                            <div class="seventh_section-benefits-cards-l1">
-                                <div
-                                    class="seventh_section-benefit-card grid-item  l1c1">
-                                    <h3
-                                        class="seventh-section-card-title-primary">1
-                                        <br>Garantia de propriedade.</h3>
-                                    <p class="seventh-section-card-text-primary">Sua
-                                        marca só é
-                                        realmente sua quando você tem o
-                                        certificado
-                                        emitido
-                                        pelo
-                                        INPI.</p>
-                                </div>
-                                <div 
-                                class="seventh_section-benefit-card grid-item l1c2 ">
-                                    <h3
-                                        class="seventh-section-card-title-secondary">2.<br>
-                                        Exclusividade.
-                                    </h3>
-                                    <p
-                                        class="seventh-section-card-text-secondary">Sabemos
-                                        que você não
-                                        quer um
-                                        concorrente usando uma marca similar ou
-                                        até
-                                        igual a
-                                        sua. Somente com sua marca registrada
-                                        você
-                                        pode
-                                        se
-                                        proteger da concorrência desleal.
-                                    </p>
-                                        <img src="./images/backgrounds/benef-second-bg.svg" alt="background do card 2">
-                                </div>
-                            </div>
-                            <div class="seventh_section-benefits-cards-l2">
-                                <div
-                                    class="seventh_section-benefit-card grid-item l2c1">
-                                    <h3
-                                        class="seventh-section-card-title-secondary">
-                                        3<br> Credibilidade.
-                                    </h3>
-                                    <p
-                                        class="seventh-section-card-text-secondary">O
-                                        R de registrado é um
-                                        símbolo
-                                        reconhecido pelos seus clientes e
-                                        demonstra
-                                        o
-                                        profissionalismo do seu negócio.</p>
-                                        <img src="./images/backgrounds/benefit-third-card-bg.svg" alt="background do card 3">
-                                </div>
-                                <div
-                                    class="seventh_section-benefit-card grid-item l2c2">
-                                    <h3
-                                        class="seventh-section-card-title-primary">4<br>
-                                        Direito de uso.</h3>
-                                    <p class="seventh-section-card-text-primary">
-                                        <p>Somente o certificado
-                                            do
-                                            INPI
-                                            lhe dá tranquilidade para usar sua
-                                            marca sem
-                                            infringir o direito de terceiros.</p>
-                                    </div>
-                                </div>
-                                <div
-                                    class="seventh_section-benefit-card grid-item l3c1c2">
-                                    <h3
-                                        class="seventh-section-card-title-secondary seventh_section--title-modifier">
-                                        5<br> Um investimento único que protege
-                                        a
-                                        sua
-                                        marca
-                                        pra
-                                        sempre.
-                                    </h3>
-                                    <p
-                                        class="seventh_section--text-modifier">O
-                                        certificado é válido por 10
-                                        anos em
-                                        todo território nacional e com
-                                        possibilidade
-                                        ilimitada de renovação.</p>
-                                    <img src="./images/backgrounds/fifth-card-bg.png" alt="Brasão background quinto card">
-                                </div>
-                            </div>
-                            <div class="seventh_section-benefits-button-wrapper">
-                                <button
-                                    class="seventh_section-btn secondary-button button-text
-                                    id="btn-open-registration-modal">Quero
-                                    registrar
-                                    Minha
-                                    Marca!</button>
-                            </div>
-
-                        </section>
-                    </div>
-                    <section class="faq_section">
-                        <div class="wrapper">
-                            <div class="faq_section-wrapper">
-                                <div class="faq_section-about-brand">
-                                    <h2 class="faq-section-titles ">Sobre o
-                                        processo de <strong>registro de marca</strong></h2>
-
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Estou
-                                                usando minha marca sem
-                                                registro.
-                                                Devo
-                                                me preocupar?</summary>
-                                            <p class="faq-question-text">Sim, é
-                                                importante registrar sua marca
-                                                para
-                                                protegê-la legalmente. O
-                                                registro
-                                                confere
-                                                direitos exclusivos e evita que
-                                                terceiros
-                                                usem
-                                                ou copiem sua marca
-                                                indevidamente.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">O
-                                                que é o INPI (Instituto de
-                                                Propriedade
-                                                Intelectual)?</summary>
-                                            <p class="faq-question-text">O INPI
-                                                é o Instituto Nacional da
-                                                Propriedade
-                                                Industrial, responsável pelo
-                                                registro e
-                                                proteção
-                                                de
-                                                marcas no Brasil. É onde seu
-                                                pedido de
-                                                registro
-                                                será
-                                                analisado e processado.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Qual
-                                                valor das taxas?</summary>
-                                            <p class="faq-question-text">O valor
-                                                das taxas de registro de marca
-                                                pode
-                                                variar
-                                                dependendo do tipo de marca e
-                                                dos
-                                                serviços
-                                                solicitados. É recomendável
-                                                verificar as
-                                                taxas
-                                                atuais no site do INPI.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Quanto
-                                                tempo demora para registrar?</summary>
-                                            <p class="faq-question-text">O tempo
-                                                de registro pode variar, mas
-                                                geralmente
-                                                leva
-                                                de 12 a 24 meses. O processo
-                                                envolve
-                                                análise,
-                                                publicação e possível oposição
-                                                por
-                                                terceiros.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">O
-                                                que fazer se sua marca já for
-                                                registrada?</summary>
-                                            <p class="faq-question-text">Se sua
-                                                marca já estiver registrada por
-                                                outra
-                                                pessoa,
-                                                você pode buscar um acordo ou
-                                                negociar
-                                                para
-                                                usar
-                                                a
-                                                marca sob certas condições. Caso
-                                                contrário,
-                                                pode
-                                                ser
-                                                necessário escolher uma marca
-                                                alternativa.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Como
-                                                saber se posso registrar minha
-                                                marca?</summary>
-                                            <p class="faq-question-text">É
-                                                importante realizar uma busca no
-                                                banco
-                                                de
-                                                marcas do
-                                                INPI para verificar se a marca
-                                                que
-                                                deseja
-                                                registrar
-                                                já está em uso. Além disso, é
-                                                aconselhável
-                                                contar
-                                                com o auxílio de profissionais
-                                                para
-                                                avaliar
-                                                a
-                                                viabilidade do registro.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="faq_section-about-us">
-                                    <h2 class="faq-section-titles ">Sobre a
-                                        <strong>Registre.se</strong> </h2>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Quem
-                                                é a Registre.se?</summary>
-                                            <p class="faq-question-text">A
-                                                Registre.se é uma empresa
-                                                especializada
-                                                em
-                                                registro
-                                                de marcas. Nossa equipe de
-                                                especialistas
-                                                oferece
-                                                assessoria personalizada para
-                                                garantir o
-                                                sucesso
-                                                do
-                                                seu pedido de registro.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Qual
-                                                valor para registro da
-                                                marca?</summary>
-                                            <p class="faq-question-text">O valor
-                                                para registro de marca pode
-                                                variar
-                                                dependendo
-                                                do tipo de serviço e das taxas
-                                                do
-                                                INPI.
-                                                Entre em
-                                                contato conosco para obter uma
-                                                cotação
-                                                personalizada.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Como
-                                                funciona o pedido de
-                                                registro?</summary>
-                                            <p class="faq-question-text">Nós
-                                                cuidamos de todo o processo de
-                                                registro,
-                                                desde a
-                                                análise de viabilidade até o
-                                                protocolo
-                                                no
-                                                INPI.
-                                                Você
-                                                pode contar conosco para tornar
-                                                o
-                                                processo
-                                                simples e
-                                                eficiente.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Vou
-                                                pagar taxas extras?</summary>
-                                            <p class="faq-question-text">O valor
-                                                das taxas do INPI não está
-                                                incluído
-                                                em
-                                                nossos
-                                                serviços, mas podemos ajudá-lo a
-                                                entender e
-                                                pagar
-                                                essas taxas de forma adequada.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Como
-                                                é o atendimento?</summary>
-                                            <p class="faq-question-text">Oferecemos
-                                                atendimento personalizado
-                                                e
-                                                dedicado a
-                                                cada cliente. Nossa equipe está
-                                                disponível
-                                                para
-                                                esclarecer suas dúvidas e
-                                                fornecer
-                                                suporte
-                                                durante
-                                                todo o processo.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="faq_section-question-wrapper">
-                                        <details class="question">
-                                            <summary
-                                                class="faq-question-titles ">Por
-                                                que é mais simples com a
-                                                Registre.se?</summary>
-                                            <p class="faq-question-text">Com a
-                                                Registre.se, você conta com
-                                                especialistas
-                                                que
-                                                conhecem o processo de registro
-                                                de
-                                                marcas.
-                                                Simplificamos o processo para
-                                                você,
-                                                economizando
-                                                tempo e esforço.</p>
-                                        </details>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            width="15" height="9"
-                                            viewBox="0 0 15 9" fill="none">
-                                            <path d="M1 1L7.50098 7.3335"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.50098 7.3335L14 1"
-                                                stroke="#5C5C5C"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="final_section">
-                        <div class="wrapper">
-                            <div class="final_section-wrapper">
-
-                                <h2 class="final_section-title">Não perca mais
-                                    tempo, registre a sua marca hoje
-                                    mesmo!</h2>
-                                <button
-                                    class="final_section-btn secondary-button button-text"
-                                    id="btn-open-registration-modal ">Quero
-                                    registrar
-                                    Minha
-                                    Marca!</button>
-                            </div>
-                        </div>
-                    </section>
-                    <footer>
-                        <div class="wrapper">
-                            <div class="footer-top">
-                                <div class="footer-logo">
-                                    <img src="./images/logos/logo.svg"
-                                        alt="Logo da Registre.se">
-                                </div>
-                                <div class="footer-contact">
+                            <div class="footer-contact">
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=5547991197599&text=Ol%C3%A1!%20Gostaria%20de%20registrar%20minha%20marca."
+                                    target="_blank"
+                                    class="footer-phone-number">+55 (47)
+                                    99119.7599</a>
+                                <div class="footer-social-icons">
                                     <a
-                                        href="https://api.whatsapp.com/send?phone=5547991197599&text=Ol%C3%A1!%20Gostaria%20de%20registrar%20minha%20marca."
-                                        target="_blank"
-                                        class="footer-phone-number">+55 (47)
-                                        99119.7599</a>
-                                    <div class="footer-social-icons">
-                                        <a
-                                            href="https://www.linkedin.com/company/78344411/"
-                                            target="_blank"><i
-                                                class="fab fa-linkedin"></i></a>
-                                        <a
-                                            href="https://www.instagram.com/registreseonline/"
-                                            target="_blank"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a
-                                            href="https://www.google.com/maps/place/Registre.se/@-26.99315,-48.642003,17z/data=!3m1!4b1!4m6!3m5!1s0x2d52c038483c8fd7:0x884957017832fcc9!8m2!3d-26.99315!4d-48.642003!16s%2Fg%2F11pyc3h630?entry=ttutarget="
-                                            target="_blank"><i
-                                                class="fab fa-google"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="footer-details-wrapper">
-                                    <p class="footer-text">
-                                        Copyright © 2023. Todos os direitos
-                                        reservados. Registre.se Ltda. CNPJ:
-                                        45.657.102/0001-12<span>
-                                            4ª Avenida, 280 -
-                                            Sala 11<br>
-                                            Centro - Balneário Camboriú-SC
-                                            88330-104
-                                        </span>
-                                    </p>
-                                    <div class="footer-logos">
-                                        <img src="./images/logos/wipo-logo.svg"
-                                            alt="Logo da WIPO">
-                                        <img src="./images/logos/inpi-logo.svg"
-                                            alt="Logo do INPI">
-                                    </div>
+                                        href="https://www.linkedin.com/company/78344411/"
+                                        target="_blank"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a
+                                        href="https://www.instagram.com/registreseonline/"
+                                        target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a
+                                        href="https://www.google.com/maps/place/Registre.se/@-26.99315,-48.642003,17z/data=!3m1!4b1!4m6!3m5!1s0x2d52c038483c8fd7:0x884957017832fcc9!8m2!3d-26.99315!4d-48.642003!16s%2Fg%2F11pyc3h630?entry=ttutarget="
+                                        target="_blank"><i
+                                            class="fab fa-google"></i></a>
                                 </div>
                             </div>
                         </div>
-                    </footer>
-                </body>
+                        <div class="footer">
+                            <div class="footer-details-wrapper">
+                                <p class="footer-text">
+                                    Copyright © 2023. Todos os direitos
+                                    reservados. Registre.se Ltda. CNPJ:
+                                    45.657.102/0001-12<span>
+                                        4ª Avenida, 280 -
+                                        Sala 11<br>
+                                        Centro - Balneário Camboriú-SC
+                                        88330-104
+                                    </span>
+                                </p>
+                                <div class="footer-logos">
+                                    <img src="./images/logos/wipo-logo.svg"
+                                        alt="Logo da WIPO">
+                                    <img src="./images/logos/inpi-logo.svg"
+                                        alt="Logo do INPI">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </body>
 
-            </html>
+        </html>
