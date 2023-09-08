@@ -48,10 +48,10 @@
   .wrapper {
     max-width: 90%;
   }
-    .header{
-      display: flex;
-      padding-top: 3rem;
-    }
+  .header {
+    display: flex;
+    padding-top: 3rem;
+  }
   .second_section-card {
     max-width: 100%;
   }
@@ -74,9 +74,9 @@
   .fifth-section-title,
   .sixth-section-title,
   .final_section-title,
-    .second-section-card-title,
-        .second-section-card-title2,
-    .main-title {
+  .second-section-card-title,
+  .second-section-card-title2,
+  .main-title {
     font-size: 2rem;
     line-height: 110%;
     text-align: center;
@@ -85,8 +85,8 @@
   .testimonial-section-subtitle,
   .fourth-section-subtitle,
   .fifth-section-subtitle,
-    .main-subtitle,
-                        .form-title {
+  .main-subtitle,
+  .form-title {
     margin-top: 0.5rem;
     text-align: center;
     line-height: 110%;
@@ -134,22 +134,31 @@
   .faq-question-titles {
     font-size: 1rem;
   }
-  .footer-top{
-        justify-content: center;
-          flex-wrap: wrap;
-          align-items: center;
-          gap: 1.5rem;
+  .footer-top {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
   }
-  .footer-text{
+  .footer-text {
     font-size: 1rem;
     text-align: center;
   }
-    .footer-details-wrapper{
-          flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-        footer{
-padding-bottom: 25rem; 
-       }
+  .footer-details-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    padding-bottom: 25rem;
+  }
+  .modal-content{
+    min-width: 95%;
+    height: 40vh;
+    padding: 0;
+  }
+    .modal-content iframe {
+      width: 100%;
+      height: 100%;
+    }
 }
