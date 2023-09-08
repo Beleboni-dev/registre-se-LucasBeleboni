@@ -8,7 +8,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-min-height: 46rem;
+min-height: 30rem;
 }
 .form-wrapper {
   background-color: var(--light2);
@@ -99,9 +99,6 @@ justify-content: center;
   padding-bottom: 2.75rem;
 }
 
-.seventh_section-benefit-card-image-wrapper img{
-
-}
 .faq_section-wrapper{
   margin-top: 9rem;
   display: flex;
@@ -143,24 +140,4 @@ justify-content: space-between;
   max-width: 100%;
   position: absolute;
   z-index: -1;
-}
-@media (max-width: 80rem) {
-  .third_section-google-reviews-wrapper {
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    margin-top: 1.75rem;
-  }
-  .fourth_section-brand-logos-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
-    margin-top: 1.75rem;
-  }
-  .seventh_section{
-    display: none;
-  }
-
-  #responsive-omit {
-    display: none;
-  }
 }

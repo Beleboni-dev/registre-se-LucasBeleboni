@@ -1,22 +1,23 @@
 const nextStep1Button = document.getElementById("next-step-1");
 const finalizeRegistration = document.getElementById("finalize-registration");
 
-let  whatsapp = "";
+let whatsapp = "";
 
 nextStep1Button.addEventListener("click", (e) => {
   e.preventDefault();
   const brandName = document.getElementById("form-input-brand").value;
   const name = document.getElementById("form-input-name").value;
- whatsapp = document.getElementById("form-input-whatsapp").value;
+  whatsapp = document.getElementById("form-input-whatsapp").value;
   const lineOfBusiness = document.getElementById(
     "form-input-line-of-business"
   ).value;
   const stepTitle = document.getElementById("step-1-title");
 
   if (!brandName || !name || !whatsapp || !lineOfBusiness) {
-showToast("Por favor preencha todos os campos do formulário", "error");
+    showToast("Por favor preencha todos os campos do formulário", "error");
     return false;
   }
+
   stepTitle.textContent =
     "Preencha esses dados opcionais para agilizar o seu atendimento";
 
@@ -61,7 +62,7 @@ showToast("Por favor preencha todos os campos do formulário", "error");
         const step2 = document.getElementById("step-2");
         step1.classList.add("hide-display");
         step2.classList.remove("hide-display");
-        showToast("Primeira etapa concluída!")
+        showToast("Primeira etapa concluída!");
       } else {
         console.error("Erro na integração com o Piperun.");
       }
@@ -71,21 +72,25 @@ showToast("Por favor preencha todos os campos do formulário", "error");
     });
 });
 
-const stageOptions = document.querySelectorAll(".custom-select:nth-child(1) .options li");
-const businessSizeOptions = document.querySelectorAll(".custom-select:nth-child(2) .options li");
+const stageOptions = document.querySelectorAll(
+  ".custom-select:nth-child(1) .options li"
+);
+const businessSizeOptions = document.querySelectorAll(
+  ".custom-select:nth-child(2) .options li"
+);
 
-let stage = ""; 
-let businessSize = ""; 
+let stage = "";
+let businessSize = "";
 
 stageOptions.forEach((option) => {
   option.addEventListener("click", () => {
-    stage = option.textContent; 
+    stage = option.textContent;
   });
 });
 
 businessSizeOptions.forEach((option) => {
   option.addEventListener("click", () => {
-    businessSize = option.textContent; 
+    businessSize = option.textContent;
   });
 });
 
@@ -95,13 +100,14 @@ finalizeRegistration.addEventListener("click", (e) => {
   const socialMedias = document.getElementById(
     "form-input-social-media-site"
   ).value;
-  const formWrapper = document.querySelector(".form-wrapper")
+  const formWrapper = document.querySelector(".form-wrapper");
   if (!email || !socialMedias || !stage || !businessSize) {
     showToast("Por favor, preencha todos os campos da segunda etapa", "error");
     return false;
   }
   const leadStep2 = {
     id: whatsapp,
+    title: brandName,
     email: email,
     custom_fields: {
       "qual-o-estagio-do-seu-negocio": stage,
@@ -119,7 +125,7 @@ finalizeRegistration.addEventListener("click", (e) => {
     },
     leads: [leadStep2],
   };
-  console.log(dataToSendStep2)
+
   const endpoint =
     "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
 
@@ -139,7 +145,7 @@ finalizeRegistration.addEventListener("click", (e) => {
           Obrigado por se cadastrar, em breve entraremos em contato!
         </h3>
 
-        `
+        `;
       } else {
         console.error("Erro na integração com o Piperun.");
       }

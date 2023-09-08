@@ -1,0 +1,155 @@
+@media (max-width: 80rem) {
+  .first_section-wrapper {
+    flex-direction: column;
+    margin-top: 3.0625rem;
+  }
+  .first_section-right-content {
+    margin-top: 1rem;
+  }
+
+  .second_section-cards-wrapper {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .third_section-google-reviews-wrapper {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    margin-top: 1.75rem;
+  }
+
+  .fourth_section-brand-logos-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    margin-top: 1.75rem;
+  }
+  .fifth_section-registration-process-wrapper {
+    justify-content: center;
+  }
+  .sixth_section {
+    padding-bottom: 2%;
+  }
+  .faq_section-wrapper {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3.5rem;
+  }
+  .seventh_section {
+    display: none;
+  }
+
+  #responsive-omit {
+    display: none;
+  }
+}
+@media (max-width: 26.25rem) {
+  .wrapper {
+    max-width: 90%;
+  }
+    .header{
+      display: flex;
+      padding-top: 3rem;
+    }
+  .second_section-card {
+    max-width: 100%;
+  }
+  .secondary-subtitle {
+    max-width: 80%;
+    text-align: center;
+  }
+  .second-section-card-title {
+    max-width: 80%;
+  }
+  .second_section-card ol {
+    max-width: 80%;
+  }
+  .review {
+    width: 100%;
+    height: 19rem;
+  }
+  .testimonial-section-title,
+  .fourth-section-title,
+  .fifth-section-title,
+  .sixth-section-title,
+  .final_section-title,
+    .second-section-card-title,
+        .second-section-card-title2,
+    .main-title {
+    font-size: 2rem;
+    line-height: 110%;
+    text-align: center;
+  }
+
+  .testimonial-section-subtitle,
+  .fourth-section-subtitle,
+  .fifth-section-subtitle,
+    .main-subtitle,
+                        .form-title {
+    margin-top: 0.5rem;
+    text-align: center;
+    line-height: 110%;
+  }
+  .testimonial-title-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial-title-wrapper img {
+    max-width: 90%;
+  }
+  .third_section-google-reviews-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .third_section-google-reviews-wrapper-omit {
+    display: none;
+  }
+  .fourth_section-brand-logos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth_section-brand-logos-wrapper img {
+    max-width: 10rem;
+  }
+  .sixth_section-process-card {
+    gap: 1rem;
+  }
+  .first_section-wrapper {
+    max-width: 80%;
+  }
+  .faq_section-about-brand,
+  .faq_section-about-us {
+    min-width: 90%;
+  }
+  .faq-question-text {
+    font-size: 1rem;
+  }
+  .faq-question-titles {
+    font-size: 1rem;
+  }
+  .footer-top{
+        justify-content: center;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 1.5rem;
+  }
+  .footer-text{
+    font-size: 1rem;
+    text-align: center;
+  }
+    .footer-details-wrapper{
+          flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        footer{
+padding-bottom: 25rem; 
+       }
+}
