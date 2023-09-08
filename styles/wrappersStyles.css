@@ -8,7 +8,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+min-height: 46rem;
 }
 .form-wrapper {
   background-color: var(--light2);

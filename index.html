@@ -25,10 +25,14 @@
         <script src="./scripts/videoModal.js" defer></script>
         <script src="./scripts/scroll.js" defer></script>
         <script src="./scripts/submitForm.js" defer></script>
-        
+        <script src="./scripts/toast.js" defer></script>
+
     </head>
 
     <body>
+<div id="toast" class="hide">
+  <div id="toast-text"></div>
+</div>
 
         <section class="first_section">
             <header class="header">
@@ -39,7 +43,7 @@
             </header>
             <div class="wrapper first_section-wrapper">
                 <div class="first_section-left-content">
-                    <h2 class="main-title" >Seja dono da sua marca e se
+                    <h2 class="main-title">Seja dono da sua marca e se
                         proteja da concorrência!</h2>
                     <span class="main-subtitle">Garantimos o registro da sua
                         marca no INPI em menos de
@@ -54,7 +58,8 @@
                     <img src="./images/logos/site-blindado-logo.svg"
                         alt="Imagem de Segurança">
                     <div class="form-wrapper">
-                        <h2 class="form-title" id="step-1-title">Inicie agora o seu processo de
+                        <h2 class="form-title" id="step-1-title">Inicie agora o
+                            seu processo de
                             registro e esteja seguro.</h2>
                         <form class="registration_form" id="registration-form">
                             <!-- Etapa 1 -->
@@ -63,7 +68,8 @@
                                     placeholder="Nome da sua marca®" required>
                                 <input type="text" id="form-input-name"
                                     placeholder="Seu nome" required>
-                                <input type="tel"  class="form-input-whatsapp" id="form-input-whatsapp"
+                                <input type="tel" class="form-input-whatsapp"
+                                    id="form-input-whatsapp"
                                     placeholder="DDD + Whatsapp" required>
                                 <input type="text" placeholder="Ramo de Atuação"
                                     id="form-input-line-of-business" required>
@@ -139,7 +145,7 @@
                                 <input type="email" id="form-input-email"
                                     placeholder="Seu E-mail">
                                 <button class="button btn_form button-text"
->Concluir registro</button>
+                                    id="finalize-registration">Enviar dados</button>
                             </div>
                         </form>
                         <div class="selected-step-wrapper">
@@ -518,7 +524,9 @@
                                         required>
                                     <input type="text" id="form-input-name"
                                         placeholder="Seu nome" required>
-                                    <input type="tel"  class="form-input-whatsapp" id="form-input-whatsapp"
+                                    <input type="tel"
+                                        class="form-input-whatsapp"
+                                        id="form-input-whatsapp"
                                         placeholder="DDD + Whatsapp" required>
                                     <input type="text"
                                         placeholder="Ramo de Atuação"
@@ -598,7 +606,7 @@
                                     <input type="email" id="form-input-email"
                                         placeholder="Seu E-mail">
                                     <button class="button btn_form button-text"
-                                        type="submit">Concluir registro</button>
+                                        >Concluir registro</button>
                                 </div>
                             </form>
                             <div class="selected-step-wrapper">
@@ -678,13 +686,17 @@
                     </div>
                 </div>
                 <div class="backdrop hide-display" id="backdrop"></div>
-                <div class="sixth_section-video-modal hide-display" id="video-modal">
-                     <div class="modal-content" >
+                <div class="sixth_section-video-modal hide-display"
+                    id="video-modal">
+                    <div class="modal-content">
                         <button class="video-modal-close-modal-btn">
                             X
                         </button>
-                        <iframe id="embed-video-step-by-step"  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                     </div>
+                        <iframe id="embed-video-step-by-step" src
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </section>
 
