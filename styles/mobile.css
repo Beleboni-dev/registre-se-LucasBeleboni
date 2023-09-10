@@ -81,7 +81,6 @@
     line-height: 110%;
     text-align: center;
   }
-
   .testimonial-section-subtitle,
   .fourth-section-subtitle,
   .fifth-section-subtitle,
@@ -152,13 +151,13 @@
   footer {
     padding-bottom: 25rem;
   }
-  .modal-content{
+  .modal-content {
     min-width: 95%;
     height: 40vh;
     padding: 0;
   }
-    .modal-content iframe {
-      width: 100%;
-      height: 100%;
-    }
+  .modal-content iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
