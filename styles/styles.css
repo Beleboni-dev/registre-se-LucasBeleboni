@@ -9,7 +9,7 @@
 /*header acima da wave*/
 .first_section {
   background-color: var(--brand);
-  width: 100vw;
+  width: 100%;
     background-image: url("../images/backgrounds/top-wave-bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,7 +215,7 @@ dialog {
 }
 .sixth_section {
   background-color: var(--dark8);
-  width: 100vw;
+  width: 100%;
   background-image: url("../images/backgrounds/top-wave-bg.svg");
   background-size: cover;
   background-repeat: no-repeat;

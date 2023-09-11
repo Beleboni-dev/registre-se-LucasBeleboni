@@ -2,19 +2,25 @@ const nextStep1Button = document.getElementById("next-step-1");
 const finalizeRegistration = document.getElementById("finalize-registration");
 
 let whatsapp = "";
+let brandName =""
 
 document.querySelectorAll(".step input").forEach((input) => {
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      e.preventDefault(); 
-      nextStep1Button.click(); 
+      e.preventDefault();
+      if (nextStep1Button.style.display === "none") {
+        finalizeRegistration.click();
+      } else {
+        nextStep1Button.click();
+      }
     }
   });
 });
 
+
 nextStep1Button.addEventListener("click", (e) => {
   e.preventDefault();
-  const brandName = document.getElementById("form-input-brand").value;
+  brandName = document.getElementById("form-input-brand").value;
   const name = document.getElementById("form-input-name").value;
   whatsapp = document.getElementById("form-input-whatsapp").value;
   const lineOfBusiness = document.getElementById(
@@ -72,6 +78,7 @@ nextStep1Button.addEventListener("click", (e) => {
         step1.classList.add("hide-display");
         step2.classList.remove("hide-display");
         showToast("Primeira etapa concluída!");
+         nextStep1Button.style.display = "none";
       } else {
         console.error("Erro na integração com o Piperun.");
       }
