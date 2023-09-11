@@ -3,6 +3,15 @@ const finalizeRegistration = document.getElementById("finalize-registration");
 
 let whatsapp = "";
 
+document.querySelectorAll(".step input").forEach((input) => {
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); 
+      nextStep1Button.click(); 
+    }
+  });
+});
+
 nextStep1Button.addEventListener("click", (e) => {
   e.preventDefault();
   const brandName = document.getElementById("form-input-brand").value;
