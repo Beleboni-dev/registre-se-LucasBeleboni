@@ -46,7 +46,7 @@ const formattedNameMiddle = formatName(name);
 
   if (
     !brandNameMiddle ||
-    !nameMiddle ||
+    !nameInputMiddle ||
     !whatsappMiddle ||
     !lineOfBusinessMiddle
   ) {
@@ -79,7 +79,6 @@ const formattedNameMiddle = formatName(name);
     },
     leads: [leadMiddle],
   };
-  console.log(dataToSendMiddle)
   const endpointMiddle =
     "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
 
