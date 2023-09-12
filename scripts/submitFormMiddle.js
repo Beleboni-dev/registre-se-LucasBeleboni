@@ -3,6 +3,14 @@ const finalizeRegistrationMiddle = document.getElementById(
   "finalize-registration-middle"
 );
 
+function formatName(name) {
+  return name
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 let whatsappMiddle = "";
 let brandNameMiddle = "";
 
@@ -24,7 +32,12 @@ nextStep1ButtonMiddle.addEventListener("click", (e) => {
   brandNameMiddle = document.getElementById(
     "form-input-brand-middle"
   ).value;
-  const nameMiddle = document.getElementById("form-input-name-middle").value;
+const nameInputMiddle = document.getElementById("form-input-name");
+const name = nameInputMiddle.value;
+
+const formattedNameMiddle = formatName(name);
+
+
   whatsappMiddle = document.getElementById("form-input-whatsapp-middle").value;
   const stepTitle = document.getElementById("step-1-title-middle");
   const lineOfBusinessMiddle = document.getElementById(
@@ -44,7 +57,7 @@ nextStep1ButtonMiddle.addEventListener("click", (e) => {
   const leadMiddle = {
     id: whatsappMiddle,
     title: brandNameMiddle,
-    name: nameMiddle,
+    name: formattedNameMiddle,
     mobile_phone: whatsappMiddle,
     last_conversion: {
       source: "Google",

@@ -35,9 +35,7 @@ const name = nameInput.value;
 
 const formattedName = formatName(name);
 
-  
-  for (let i = 0 ; i < formatName.length; i++ ){
-  } 
+
   whatsapp = document.getElementById("form-input-whatsapp").value;
   const lineOfBusiness = document.getElementById(
     "form-input-line-of-business"
@@ -77,7 +75,7 @@ const formattedName = formatName(name);
     },
     leads: [lead],
   };
-  console.log(lead)
+
   const endpoint =
     "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
 
