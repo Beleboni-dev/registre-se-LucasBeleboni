@@ -140,6 +140,8 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
   const leadStep2Middle = {
     id: whatsappMiddle,
     email: emailMiddle,
+    title: brandNameMiddle,
+    mobile_phone: whatsappMiddle,
     custom_fields: {
       "qual-o-estagio-do-seu-negocio": stageMiddle,
       porte: businessSizeMiddle,
