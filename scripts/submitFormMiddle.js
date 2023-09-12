@@ -32,7 +32,7 @@ nextStep1ButtonMiddle.addEventListener("click", (e) => {
   brandNameMiddle = document.getElementById(
     "form-input-brand-middle"
   ).value;
-const nameInputMiddle = document.getElementById("form-input-name");
+const nameInputMiddle = document.getElementById("form-input-name-middle");
 const name = nameInputMiddle.value;
 
 const formattedNameMiddle = formatName(name);
