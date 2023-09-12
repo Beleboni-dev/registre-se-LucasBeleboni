@@ -1,6 +1,15 @@
 const nextStep1Button = document.getElementById("next-step-1");
 const finalizeRegistration = document.getElementById("finalize-registration");
 
+
+function formatName(name) {
+  return name
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 let whatsapp = "";
 let brandName =""
 
@@ -21,7 +30,14 @@ document.querySelectorAll(".step input").forEach((input) => {
 nextStep1Button.addEventListener("click", (e) => {
   e.preventDefault();
   brandName = document.getElementById("form-input-brand").value;
-  const name = document.getElementById("form-input-name").value;
+const nameInput = document.getElementById("form-input-name");
+const name = nameInput.value;
+
+const formattedName = formatName(name);
+
+  
+  for (let i = 0 ; i < formatName.length; i++ ){
+  } 
   whatsapp = document.getElementById("form-input-whatsapp").value;
   const lineOfBusiness = document.getElementById(
     "form-input-line-of-business"
@@ -39,7 +55,7 @@ nextStep1Button.addEventListener("click", (e) => {
   const lead = {
     id: whatsapp,
     title: brandName,
-    name: name,
+    name: formattedName,
     mobile_phone: whatsapp,
     last_conversion: {
       source: "Google",
@@ -61,6 +77,7 @@ nextStep1Button.addEventListener("click", (e) => {
     },
     leads: [lead],
   };
+  console.log(lead)
   const endpoint =
     "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
 
