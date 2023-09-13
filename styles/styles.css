@@ -212,6 +212,7 @@ dialog {
 
 .fifth_section {
   background-color: var(--light2);
+  position: relative;
 }
 .sixth_section {
   background-color: var(--dark8);
@@ -452,9 +453,9 @@ footer {
 }
 
 #toast {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  position: absolute;
+  top: -70px;
+  right: 0;
   font-family: "Raleway", sans-serif;
   background-color: var(--light2);
   border: 1px solid var(--brand);
@@ -477,14 +478,14 @@ footer {
   }
 
   to {
-    top: 20px;
+    top: -70px;
     opacity: 1;
   }
 }
 
 @keyframes fadeout {
   from {
-    top: 20px;
+    top: -70px;
     opacity: 1;
   }
 

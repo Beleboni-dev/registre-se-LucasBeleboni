@@ -50,7 +50,7 @@ const formattedNameMiddle = formatName(name);
     !whatsappMiddle ||
     !lineOfBusinessMiddle
   ) {
-    showToast("Por favor preencha todos os campos do formulário", "error");
+    showToast("Por favor preencha todos os campos do formulário", "middle");
     return false;
   }
 
@@ -99,7 +99,7 @@ const formattedNameMiddle = formatName(name);
 
         step1Middle.classList.add("hide-display");
         step2Middle.classList.remove("hide-display");
-        showToast("Primeira etapa concluída!");
+        showToast("Primeira etapa concluída!", "middle");
                  nextStep1ButtonMiddle.style.display = "none";
       } else {
         console.error("Erro na integração com o Piperun.");
@@ -147,7 +147,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     !stageMiddle ||
     !businessSizeMiddle
   ) {
-    showToast("Por favor, preencha todos os campos da segunda etapa", "error");
+    showToast("Por favor, preencha todos os campos da segunda etapa", "middle");
     return false;
   }
   const leadStep2Middle = {
@@ -184,7 +184,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
   })
     .then((response) => {
       if (response.status === 200) {
-        showToast("Cadastro concluído com sucesso!");
+        showToast("Cadastro concluído com sucesso!","middle");
         formWrapperMiddle.innerHTML = `
         
         <h3 class="form-title">
