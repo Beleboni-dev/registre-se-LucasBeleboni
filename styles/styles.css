@@ -89,6 +89,7 @@
   background-color: #fff;
   z-index: 1;
   max-height: 300px;
+  color: var(--dark9);
 }
 .options ul {
   border-radius: 0.5rem;
@@ -469,7 +470,10 @@ footer {
   display: none;
 }
 
-#toast.show {
+
+
+#toast.show,
+#toast-middle.show {
   display: block;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
