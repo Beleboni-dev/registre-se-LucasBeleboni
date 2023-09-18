@@ -92,15 +92,18 @@ const formattedNameMiddle = formatName(name);
     .then((response) => {
       if (response.status === 200) {
         const step1Middle = document.getElementById("step-middle-1");
-        const step2Middle = document.getElementById("step-middle-2");
-
-          stepTitle.textContent =
-            "Preencha esses dados opcionais para agilizar o seu atendimento";
-
         step1Middle.classList.add("hide-display");
-        step2Middle.classList.remove("hide-display");
-        showToast("Primeira etapa concluída!", "middle");
-                 nextStep1ButtonMiddle.style.display = "none";
+
+        const loadingMiddle = document.getElementById("loading-middle");
+        loadingMiddle.classList.remove("hide-display");
+
+        setTimeout(() => {
+          const step2Middle = document.getElementById("step-middle-2");
+          step2Middle.classList.remove("hide-display");
+          showToast("Primeira etapa concluída!");
+          nextStep1ButtonMiddle.style.display = "none";
+          loadingMiddle.classList.add("hide-display");
+        }, 1000); 
       } else {
         console.error("Erro na integração com o Piperun.");
       }
