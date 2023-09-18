@@ -150,6 +150,12 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     showToast("Por favor, preencha todos os campos da segunda etapa", "middle");
     return false;
   }
+   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+   if (!emailRegex.test(emailMiddle)) {
+     showToast("Por favor, insira um endereço de email válido.", "error");
+     return false;
+   }
   const leadStep2Middle = {
     id: whatsappMiddle,
     email: emailMiddle,
