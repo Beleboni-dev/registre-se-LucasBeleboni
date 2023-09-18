@@ -1,4 +1,8 @@
 @media (max-width: 75rem) {
+  .header{
+    max-width: clamp(10rem, 30rem, 30.625rem);
+    padding-top: 3rem;
+  }
   .first_section-wrapper {
     flex-direction: column;
     margin-top: 3.0625rem;
@@ -50,8 +54,18 @@
   }
   .header {
     display: flex;
+    justify-content: center;
     padding-top: 3rem;
+    max-width: 80%;
   }
+  .first_section-logos{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+    .first_section-logos img {
+      width: 80%;
+    }
   .second_section-card {
     max-width: 100%;
   }
@@ -65,6 +79,7 @@
   .second_section-card ol {
     max-width: 80%;
   }
+
   .review {
     width: 100%;
     height: 19rem;
@@ -120,9 +135,7 @@
   .sixth_section-process-card {
     gap: 1rem;
   }
-  .first_section-wrapper {
-    max-width: 80%;
-  }
+
   .faq_section-about-brand,
   .faq_section-about-us {
     min-width: 90%;
@@ -148,9 +161,7 @@
     justify-content: center;
     align-items: center;
   }
-  footer {
-    padding-bottom: 25rem;
-  }
+
   .modal-content {
     min-width: 95%;
     height: 40vh;
