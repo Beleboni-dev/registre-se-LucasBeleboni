@@ -1,6 +1,8 @@
 .header {
   padding-top: 6.25rem;
   background-color: var(--light1);
+    max-width: clamp(48rem, 80%, 70.1875rem);
+      margin: 0 auto;
 }
 
 #logo {
@@ -452,7 +454,8 @@ footer {
   display: block;
 }
 
-#toast {
+#toast,
+#toast-middle {
   position: absolute;
   top: -70px;
   right: 0;

@@ -9,6 +9,9 @@ function showToast(message, section) {
 
   toastText.innerText = message;
 
+
+  toastText.innerText = message;
+
   toast.classList.add("show");
 
   setTimeout(() => {
