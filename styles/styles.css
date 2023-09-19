@@ -89,7 +89,7 @@
   background-color: #fff;
   z-index: 1;
   max-height: 300px;
-  color: var(--dark9);
+  color: #1b1b1b;
 }
 .options ul {
   border-radius: 0.5rem;
