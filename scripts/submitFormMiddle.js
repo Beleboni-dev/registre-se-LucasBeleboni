@@ -64,9 +64,9 @@ const formattedNameMiddle = formatName(name);
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusinessMiddle,
-      Canal: "LP 1",
+      Canal: "Landing Page",
       value: "1980",
-      Campanha: "Landing Page",
+      Campanha: "LP 1",
       url_conversao: window.location.href,
     },
     tags: ["Cadastro Simples"],
