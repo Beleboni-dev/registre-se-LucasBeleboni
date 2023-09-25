@@ -2,4 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/regis2903/public_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R scripts $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp .cpanel.yml $DEPLOYPATH
