@@ -174,7 +174,7 @@ finalizeRegistration.addEventListener("click", (e) => {
   };
 
   const endpoint =
-    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
+    "https://app.pipe.run/webservice/integradorJson?hash=da824ed6-15ea-4099-87a0-eafdd542e0cd";
 
   fetch(endpoint, {
     headers: {
