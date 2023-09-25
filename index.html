@@ -15,11 +15,18 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     ></link>
-<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link
+        rel="shortcut icon"
+        href="./favicon.ico"
+        type="image/x-icon"
+    ></link>
+
     <link
         rel="preconnect"
         href="https://fonts.googleapis.com"
     ></link>
+
     <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
@@ -98,6 +105,11 @@
         defer="defer"
     ></script>
 
+    <script
+        src="./scripts/dirModal.js"
+        defer="defer"
+    ></script>
+
     <!-- Google Tag Manager -->
 
     <script>
@@ -112,8 +124,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-
-
     <!-- Google Tag Manager (noscript) -->
 
     <noscript>
@@ -126,27 +136,268 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </noscript>
 
     <!-- End Google Tag Manager (noscript) -->
+    <div id="backdrop"></div>
+
+    <div
+        id="myModal"
+        style="display: none;"
+    >
+        <h2
+            class="form-title"
+            id="step-1-title"
+        >
+            Inicie agora o
+                            seu processo de
+                            registro e esteja seguro.
+        </h2>
+
+        <form
+            class="registration_form"
+            id="registration-form"
+        >
+            <!-- Etapa 1 -->
+
+            <div
+                class="step"
+                id="step-1"
+            >
+                <input
+                    type="text"
+                    id="form-input-brand"
+                    placeholder="Nome da sua marca®"
+                    required="required"
+                ></input>
+
+                <input
+                    type="text"
+                    id="form-input-name"
+                    placeholder="Seu nome"
+                    required="required"
+                ></input>
+
+                <input
+                    type="tel"
+                    class="form-input-whatsapp"
+                    id="form-input-whatsapp"
+                    placeholder="DDD + Whatsapp"
+                    required="required"
+                ></input>
+
+                <input
+                    type="text"
+                    placeholder="Ramo de Atuação"
+                    id="form-input-line-of-business"
+                    required="required"
+                ></input>
+
+                <button
+                    class="button btn_form button-text"
+                    type="button"
+                    id="next-step-1-modal"
+                >
+                    Iniciar
+                                    Registro
+                </button>
+            </div>
+
+            <!-- Etapa 2 -->
+
+            <div
+                class="step hide-display"
+                id="step-2"
+            >
+                <div class="custom-select">
+                    <div class="selected-option">
+                        Estágio do
+                                        négocio
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="9"
+                            viewBox="0 0 15 9"
+                            fill="none"
+                        >
+                            <path
+                                d="M1 1L7.50098 7.3335"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+
+                            <path
+                                d="M7.50098 7.3335L14 1"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <ul class="options">
+                        <li data-value="option1">
+                            Estou me planejando para começar
+                        </li>
+
+                        <li data-value="option2">Comecei recentemente</li>
+
+                        <li data-value="option3">
+                            Já atuo no mercado há um certo tempo
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="custom-select">
+                    <div class="selected-option">
+                        Já possui um logotipo?
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="9"
+                            viewBox="0 0 15 9"
+                            fill="none"
+                        >
+                            <path
+                                d="M1 1L7.50098 7.3335"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+
+                            <path
+                                d="M7.50098 7.3335L14 1"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <ul class="options">
+                        <li data-value="option1">Sim</li>
+
+                        <li data-value="option2">
+                            Ainda não. Está em fase de criação.
+                        </li>
+
+                        <li data-value="option3">
+                            Não. Pretendo registrar apenas um nome
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="custom-select">
+                    <div class="selected-option">
+                        Possuí CNPJ?
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="9"
+                            viewBox="0 0 15 9"
+                            fill="none"
+                        >
+                            <path
+                                d="M1 1L7.50098 7.3335"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+
+                            <path
+                                d="M7.50098 7.3335L14 1"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <ul class="options">
+                        <li data-value="option1">Sim</li>
+
+                        <li data-value="option2">
+                            Não, mas já estamos providenciando
+                        </li>
+
+                        <li data-value="option3">Atuo como pessoa física</li>
+                    </ul>
+                </div>
+
+                <div class="custom-select">
+                    <div class="selected-option">
+                        Quantos colaboradores?
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="9"
+                            viewBox="0 0 15 9"
+                            fill="none"
+                        >
+                            <path
+                                d="M1 1L7.50098 7.3335"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+
+                            <path
+                                d="M7.50098 7.3335L14 1"
+                                stroke="#5C5C5C"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <ul class="options">
+                        <li data-value="option1">1 a 2</li>
+
+                        <li data-value="option2">3 a 5</li>
+
+                        <li data-value="option3">6 a 10</li>
+
+                        <li data-value="option3">11 a 50</li>
+
+                        <li data-value="option3">Mais de 50</li>
+                    </ul>
+                </div>
+
+                <button
+                    class="button btn_form button-text"
+                    id="finalize-registration"
+                >Enviar dados</button>
+            </div>
+        </form>
+    </div>
 
     <section class="first_section">
-        
         <header class="header">
-
-                <img
-                    src="./images/logos/logo.svg"
-                    alt="Logo registre.se"
-                    id="logo"
-                >
-
+            <img
+                src="./images/logos/logo.svg"
+                alt="Logo registre.se"
+                id="logo"
+            >
         </header>
 
         <div class="wrapper first_section-wrapper">
-                <div
-        id="toast"
-        class="hide"
-    >
-        <div id="toast-text"></div>
-    </div>
-                    
+            <div
+                id="toast"
+                class="hide"
+            >
+                <div id="toast-text"></div>
+            </div>
+
             <div class="first_section-left-content">
                 <h2 class="main-title">
                     Seja dono da sua marca e se
@@ -169,14 +420,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             <div class="first_section-right-content">
-                
                 <img
                     src="./images/logos/site-blindado-logo.svg"
                     alt="Imagem de Segurança"
                 >
 
                 <div class="form-wrapper">
-                    
                     <h2
                         class="form-title"
                         id="step-1-title"
@@ -185,16 +434,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             seu processo de
                             registro e esteja seguro.
                     </h2>
-<div id="loading" class="hide-display">
-  <div class="spinner"></div>
-</div>
+
+                    <div
+                        id="loading"
+                        class="hide-display"
+                    >
+                        <div class="spinner"></div>
+                    </div>
 
                     <form
                         class="registration_form"
                         id="registration-form"
                     >
                         <!-- Etapa 1 -->
-    <div
+
+                        <div
                             class="step"
                             id="step-1"
                         >
@@ -274,17 +528,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </div>
 
                                 <ul class="options">
-                                   <li data-value="option1">Estou me planejando para começar</li>
+                                    <li data-value="option1">
+                                        Estou me planejando para começar
+                                    </li>
 
                                     <li data-value="option2">Comecei recentemente</li>
 
-                                    <li data-value="option3">Já atuo no mercado há um certo tempo</li>
+                                    <li data-value="option3">
+                                        Já atuo no mercado há um certo tempo
+                                    </li>
                                 </ul>
                             </div>
 
                             <div class="custom-select">
                                 <div class="selected-option">
                                     Já possui um logotipo?
+
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="15"
@@ -312,14 +571,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 <ul class="options">
                                     <li data-value="option1">Sim</li>
-                                    <li data-value="option2">Ainda não. Está em fase de criação.</li>
-                                    <li data-value="option3">Não. Pretendo registrar apenas um nome</li>
+
+                                    <li data-value="option2">
+                                        Ainda não. Está em fase de criação.
+                                    </li>
+
+                                    <li data-value="option3">
+                                        Não. Pretendo registrar apenas um nome
+                                    </li>
                                 </ul>
                             </div>
 
                             <div class="custom-select">
                                 <div class="selected-option">
                                     Possuí CNPJ?
+
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="15"
@@ -344,10 +610,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         ></path>
                                     </svg>
                                 </div>
-                                <ul class="options">
-                                   <li data-value="option1">Sim</li>
 
-                                    <li data-value="option2">Não, mas já estamos providenciando</li>
+                                <ul class="options">
+                                    <li data-value="option1">Sim</li>
+
+                                    <li data-value="option2">
+                                        Não, mas já estamos providenciando
+                                    </li>
 
                                     <li data-value="option3">Atuo como pessoa física</li>
                                 </ul>
@@ -356,6 +625,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="custom-select">
                                 <div class="selected-option">
                                     Quantos colaboradores?
+
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="15"
@@ -383,12 +653,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 <ul class="options">
                                     <li data-value="option1">1 a 2</li>
+
                                     <li data-value="option2">3 a 5</li>
+
                                     <li data-value="option3">6 a 10</li>
+
                                     <li data-value="option3">11 a 50</li>
+
                                     <li data-value="option3">Mais de 50</li>
                                 </ul>
                             </div>
+
                             <button
                                 class="button btn_form button-text"
                                 id="finalize-registration"
@@ -420,7 +695,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </h2>
 
                 <span class="second_section-text secondary-subtitle">
-                    Conte com a assessoria de especialistas com mais de <strong>15 anos de experiência</strong> em propriedade industrial.
+                    Conte com a assessoria de especialistas com mais de
+
+                    <strong>15 anos de experiência</strong>
+
+                    em propriedade industrial.
                 </span>
             </div>
 
@@ -908,14 +1187,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         class="fifth_section"
         id="target-form-section"
     >
-    
         <div class="wrapper">
-                            <div
-        id="toast-middle"
-        class="hide"
-    >
-        <div id="toast-text-middle"></div>
-    </div>      
+            <div
+                id="toast-middle"
+                class="hide"
+            >
+                <div id="toast-text-middle"></div>
+            </div>
+
             <div class="fifth_section-registration-process-wrapper">
                 <div class="fifth_section-registration-text-wrapper">
                     <h2 class="fifth_section-registration-title fifth-section-title">
@@ -940,8 +1219,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
                 <div class="fifth_section_form-wrapper form-wrapper">
-
-                                        <h2
+                    <h2
                         class="form-title"
                         id="step-1-title-middle"
                     >
@@ -949,9 +1227,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             seu processo de
                             registro e esteja seguro.
                     </h2>
-                    <div id="loading-middle" class="hide-display">
-  <div class="spinner"></div>
-</div>
+
+                    <div
+                        id="loading-middle"
+                        class="hide-display"
+                    >
+                        <div class="spinner"></div>
+                    </div>
 
                     <form
                         class="registration_form"
@@ -1036,17 +1318,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </div>
 
                                 <ul class="options">
-                                   <li data-value="option1">Estou me planejando para começar</li>
+                                    <li data-value="option1">
+                                        Estou me planejando para começar
+                                    </li>
 
                                     <li data-value="option2">Comecei recentemente</li>
 
-                                    <li data-value="option3">Já atuo no mercado há um certo tempo</li>
+                                    <li data-value="option3">
+                                        Já atuo no mercado há um certo tempo
+                                    </li>
                                 </ul>
                             </div>
 
                             <div class="custom-select">
                                 <div class="selected-option">
                                     Já possui um logotipo?
+
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="15"
@@ -1074,8 +1361,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 <ul class="options">
                                     <li data-value="option1">Sim</li>
-                                    <li data-value="option2">Ainda não. Está em fase de criação.</li>
-                                    <li data-value="option3">Não. Pretendo registrar apenas um nome</li>
+
+                                    <li data-value="option2">
+                                        Ainda não. Está em fase de criação.
+                                    </li>
+
+                                    <li data-value="option3">
+                                        Não. Pretendo registrar apenas um nome
+                                    </li>
                                 </ul>
                             </div>
 
@@ -1109,9 +1402,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </div>
 
                                 <ul class="options">
-                                   <li data-value="option1">Sim</li>
+                                    <li data-value="option1">Sim</li>
 
-                                    <li data-value="option2">Não, mas já estamos providenciando</li>
+                                    <li data-value="option2">
+                                        Não, mas já estamos providenciando
+                                    </li>
 
                                     <li data-value="option3">Atuo como pessoa física</li>
                                 </ul>
@@ -1120,6 +1415,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="custom-select">
                                 <div class="selected-option">
                                     Quantos colaboradores?
+
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="15"
@@ -1147,18 +1443,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 <ul class="options">
                                     <li data-value="option1">1 a 2</li>
+
                                     <li data-value="option2">3 a 5</li>
+
                                     <li data-value="option3">6 a 10</li>
+
                                     <li data-value="option3">11 a 50</li>
+
                                     <li data-value="option3">Mais de 50</li>
                                 </ul>
                             </div>
+
                             <button
                                 class="button btn_form button-text"
                                 id="finalize-registration-middle"
                             >Enviar dados</button>
                         </div>
                     </form>
+
                     <div class="selected-step-wrapper">
                         <div
                             class="circle"
@@ -1642,6 +1944,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                             ></path>
+                        </svg>
                     </div>
 
                     <div class="faq_section-question-wrapper">
