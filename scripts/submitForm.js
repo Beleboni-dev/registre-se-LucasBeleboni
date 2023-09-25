@@ -63,6 +63,7 @@ const formattedName = formatName(name);
       Canal: "LP 1",
       value: "1980",
       Campanha: "teste",
+      url_conversao: window.location.href,
     },
     tags: ["Cadastro Simples"],
   };
@@ -75,7 +76,7 @@ const formattedName = formatName(name);
     },
     leads: [lead],
   };
-
+console.log(dataToSend)
   const endpoint =
     "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
 
