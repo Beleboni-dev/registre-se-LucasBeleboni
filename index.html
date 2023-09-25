@@ -109,7 +109,10 @@
         src="./scripts/dirModal.js"
         defer="defer"
     ></script>
-
+    <script
+        src="./scripts/submitModalForm.js"
+        defer="defer"
+    ></script>
     <!-- Google Tag Manager -->
 
     <script>
@@ -142,243 +145,102 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         id="myModal"
         style="display: none;"
     >
+                <div
+                id="toast-modal"
+                class="hide"
+            >
+                <div id="toast-text-modal"></div>
+            </div>
+    <span id="close-modal-btn">X</span>
+    
         <h2
             class="form-title"
-            id="step-1-title"
+            id="step-1-title-modal"
         >
             Inicie agora o
                             seu processo de
                             registro e esteja seguro.
         </h2>
-
-        <form
-            class="registration_form"
-            id="registration-form"
-        >
+                            <div
+                        id="loading-modal"
+                        class="hide-display"
+                    >
+                        <div class="spinner"></div>
+                    </div>
+    <div class="form-wrapper-modal">
+        <form class="registration_form" id="registration-form-modal">
             <!-- Etapa 1 -->
-
-            <div
-                class="step"
-                id="step-1"
-            >
-                <input
-                    type="text"
-                    id="form-input-brand"
-                    placeholder="Nome da sua marca®"
-                    required="required"
-                ></input>
-
-                <input
-                    type="text"
-                    id="form-input-name"
-                    placeholder="Seu nome"
-                    required="required"
-                ></input>
-
-                <input
-                    type="tel"
-                    class="form-input-whatsapp"
-                    id="form-input-whatsapp"
-                    placeholder="DDD + Whatsapp"
-                    required="required"
-                ></input>
-
-                <input
-                    type="text"
-                    placeholder="Ramo de Atuação"
-                    id="form-input-line-of-business"
-                    required="required"
-                ></input>
-
-                <button
-                    class="button btn_form button-text"
-                    type="button"
-                    id="next-step-1-modal"
-                >
-                    Iniciar
-                                    Registro
-                </button>
+            <div class="step" id="step-1-modal">
+                <input type="text" id="form-input-brand-modal" placeholder="Nome da sua marca®" required="required">
+                <input type="text" id="form-input-name-modal" placeholder="Seu nome" required="required">
+                <input type="tel" class="form-input-whatsapp" id="form-input-whatsapp-modal" placeholder="DDD + Whatsapp" required="required">
+                <input type="text" placeholder="Ramo de Atuação" id="form-input-line-of-business-modal" required="required">
+                <button class="button btn_form button-text" type="button" id="next-step-1-modal">Iniciar Registro</button>
             </div>
-
             <!-- Etapa 2 -->
-
-            <div
-                class="step hide-display"
-                id="step-2"
-            >
+            <div class="step hide-display" id="step-2-modal">
                 <div class="custom-select">
                     <div class="selected-option">
-                        Estágio do
-                                        négocio
-
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="15"
-                            height="9"
-                            viewBox="0 0 15 9"
-                            fill="none"
-                        >
-                            <path
-                                d="M1 1L7.50098 7.3335"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-
-                            <path
-                                d="M7.50098 7.3335L14 1"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
+                        Estágio do negócio
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                            <path d="M1 1L7.50098 7.3335" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.50098 7.3335L14 1" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </div>
-
                     <ul class="options">
-                        <li data-value="option1">
-                            Estou me planejando para começar
-                        </li>
-
-                        <li data-value="option2">Comecei recentemente</li>
-
-                        <li data-value="option3">
-                            Já atuo no mercado há um certo tempo
-                        </li>
+                        <li data-value="option1-modal">Estou me planejando para começar</li>
+                        <li data-value="option2-modal">Comecei recentemente</li>
+                        <li data-value="option3-modal">Já atuo no mercado há um certo tempo</li>
                     </ul>
                 </div>
-
                 <div class="custom-select">
                     <div class="selected-option">
                         Já possui um logotipo?
-
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="15"
-                            height="9"
-                            viewBox="0 0 15 9"
-                            fill="none"
-                        >
-                            <path
-                                d="M1 1L7.50098 7.3335"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-
-                            <path
-                                d="M7.50098 7.3335L14 1"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                            <path d="M1 1L7.50098 7.3335" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.50098 7.3335L14 1" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </div>
-
                     <ul class="options">
-                        <li data-value="option1">Sim</li>
-
-                        <li data-value="option2">
-                            Ainda não. Está em fase de criação.
-                        </li>
-
-                        <li data-value="option3">
-                            Não. Pretendo registrar apenas um nome
-                        </li>
+                        <li data-value="option1-modal">Sim</li>
+                        <li data-value="option2-modal">Ainda não. Está em fase de criação.</li>
+                        <li data-value="option3-modal">Não. Pretendo registrar apenas um nome</li>
                     </ul>
                 </div>
-
                 <div class="custom-select">
                     <div class="selected-option">
-                        Possuí CNPJ?
-
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="15"
-                            height="9"
-                            viewBox="0 0 15 9"
-                            fill="none"
-                        >
-                            <path
-                                d="M1 1L7.50098 7.3335"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-
-                            <path
-                                d="M7.50098 7.3335L14 1"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
+                        Possui CNPJ?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                            <path d="M1 1L7.50098 7.3335" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.50098 7.3335L14 1" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </div>
-
                     <ul class="options">
-                        <li data-value="option1">Sim</li>
-
-                        <li data-value="option2">
-                            Não, mas já estamos providenciando
-                        </li>
-
-                        <li data-value="option3">Atuo como pessoa física</li>
+                        <li data-value="option1-modal">Sim</li>
+                        <li data-value="option2-modal">Não, mas já estamos providenciando</li>
+                        <li data-value="option3-modal">Atuo como pessoa física</li>
                     </ul>
                 </div>
-
                 <div class="custom-select">
                     <div class="selected-option">
                         Quantos colaboradores?
-
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="15"
-                            height="9"
-                            viewBox="0 0 15 9"
-                            fill="none"
-                        >
-                            <path
-                                d="M1 1L7.50098 7.3335"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-
-                            <path
-                                d="M7.50098 7.3335L14 1"
-                                stroke="#5C5C5C"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                            <path d="M1 1L7.50098 7.3335" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.50098 7.3335L14 1" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </div>
-
                     <ul class="options">
-                        <li data-value="option1">1 a 2</li>
-
-                        <li data-value="option2">3 a 5</li>
-
-                        <li data-value="option3">6 a 10</li>
-
-                        <li data-value="option3">11 a 50</li>
-
-                        <li data-value="option3">Mais de 50</li>
+                        <li data-value="option1-modal">1 a 2</li>
+                        <li data-value="option2-modal">3 a 5</li>
+                        <li data-value="option3-modal">6 a 10</li>
+                        <li data-value="option4-modal">11 a 50</li>
+                        <li data-value="option5-modal">Mais de 50</li>
                     </ul>
                 </div>
-
-                <button
-                    class="button btn_form button-text"
-                    id="finalize-registration"
-                >Enviar dados</button>
+                <button class="button btn_form button-text" id="finalize-registration-modal">Enviar dados</button>
             </div>
         </form>
+    </div>
     </div>
 
     <section class="first_section">

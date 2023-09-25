@@ -17,6 +17,17 @@ function showToast(message, section) {
   setTimeout(() => {
     toast.classList.remove("show");
   }, 3000);
+  }else if(section === "modal"){
+  const toast = document.getElementById("toast-modal");
+  const toastText = document.getElementById("toast-text-modal");
+
+  toastText.innerText = message;
+
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
   }else{
   const toast = document.getElementById("toast");
   const toastText = document.getElementById("toast-text");

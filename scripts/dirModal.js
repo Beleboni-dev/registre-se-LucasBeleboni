@@ -1,4 +1,5 @@
 let modalVisible = false;
+const closeBtn = document.getElementById("close-modal-btn");
 
 // Função para mostrar o modal
 function showModal() {
@@ -28,3 +29,5 @@ document.addEventListener("click", function (e) {
     hideModal();
   }
 });
+
+closeBtn.addEventListener("click", () => hideModal())

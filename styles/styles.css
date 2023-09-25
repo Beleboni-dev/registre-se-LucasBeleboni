@@ -456,7 +456,8 @@ footer {
 }
 
 #toast,
-#toast-middle {
+#toast-middle,
+#toast-modal {
   position: absolute;
   top: -70px;
   right: 0;
@@ -470,11 +471,19 @@ footer {
   display: none;
 }
 
+#toast-modal{
+  background-color: var(--light1);
+  color: var(--light2);
+  right: -52px;
+}
+
 #toast.show,
-#toast-middle.show {
+#toast-middle.show,
+#toast-modal.show {
   display: block;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
+
 #backdrop {
   display: none;
   position: fixed;
@@ -557,4 +566,17 @@ footer {
   100% {
     transform: rotate(360deg);
   }
+}
+#close-modal-btn{
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: var(--light1);
+border-radius: .3rem;
+position: absolute;
+top:-10px;
+right: -10px;
+cursor: pointer;
 }
