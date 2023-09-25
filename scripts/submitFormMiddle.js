@@ -50,7 +50,7 @@ const formattedNameMiddle = formatName(name);
     !whatsappMiddle ||
     !lineOfBusinessMiddle
   ) {
-    showToast("Por favor preencha todos os campos do formulário", "middle");
+    showToast("Por favor, responda todos os campos do formulário.", "middle");
     return false;
   }
 
@@ -204,7 +204,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
 
         `;
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("EErro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {
