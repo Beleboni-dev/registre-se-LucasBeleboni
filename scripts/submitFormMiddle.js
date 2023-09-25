@@ -107,7 +107,7 @@ const formattedNameMiddle = formatName(name);
           loadingMiddle.classList.add("hide-display");
         }, 1000); 
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("Erro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {
@@ -152,7 +152,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     !stageMiddle ||
     !businessSizeMiddle
   ) {
-    showToast("Por favor, preencha todos os campos da segunda etapa", "middle");
+    showToast("Por favor, preencha todos os campos do formulário.", "middle");
     return false;
   }
    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
