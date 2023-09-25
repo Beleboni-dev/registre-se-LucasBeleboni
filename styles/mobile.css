@@ -10,7 +10,13 @@
   .first_section-right-content {
     margin-top: 1rem;
   }
-
+    .fourth_section-brand-logos-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
   .second_section-cards-wrapper {
     justify-content: center;
     gap: 1.5rem;
@@ -60,6 +66,9 @@ flex-wrap: wrap;
     padding-top: 3rem;
     max-width: 80%;
   }
+.fourth_section-title-wrapper p{
+text-align: center;
+}
   .first_section-logos{
     max-width: 100%;
     display: flex;

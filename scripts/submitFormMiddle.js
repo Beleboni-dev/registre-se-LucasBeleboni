@@ -115,61 +115,68 @@ const formattedNameMiddle = formatName(name);
     });
 });
 
+
+let stageMiddle = "";
 const stageOptionsMiddle = document.querySelectorAll(
   ".custom-select:nth-child(1) .options li"
 );
-const businessSizeOptionsMiddle = document.querySelectorAll(
-  ".custom-select:nth-child(2) .options li"
-);
-
-let stageMiddle = "";
-let businessSizeMiddle = "";
-
 stageOptionsMiddle.forEach((option) => {
   option.addEventListener("click", () => {
     stageMiddle = option.textContent;
   });
 });
 
-businessSizeOptionsMiddle.forEach((option) => {
+let logoOptionMiddle = "";
+const logoOptionsMiddle = document.querySelectorAll(
+  ".custom-select:nth-child(2) .options li"
+);
+logoOptionsMiddle.forEach((option) => {
   option.addEventListener("click", () => {
-    businessSizeMiddle = option.textContent;
+    logoOptionMiddle = option.textContent;
   });
 });
 
+let cnpjMiddle = "";
+const cnpjOptionsMiddle = document.querySelectorAll(
+  ".custom-select:nth-child(3) .options li"
+);
+cnpjOptionsMiddle.forEach((option) => {
+  option.addEventListener("click", () => {
+    cnpjMiddle = option.textContent;
+  });
+});
+
+let collaboratorsOptionMiddle = "";
+const collaboratorsOptionsMiddle = document.querySelectorAll(
+  ".custom-select:nth-child(4) .options li"
+);
+collaboratorsOptionsMiddle.forEach((option) => {
+  option.addEventListener("click", () => {
+    collaboratorsOptionMiddle = option.textContent;
+  });
+});
+
+
 finalizeRegistrationMiddle.addEventListener("click", (e) => {
   e.preventDefault();
-  const emailMiddle = document.getElementById("form-input-email-middle").value;
-  const socialMediasMiddle = document.getElementById(
-    "form-input-social-media-site-middle"
-  ).value;
   const formWrapperMiddle = document.querySelector(
     ".fifth_section_form-wrapper"
   );
-  if (
-    !emailMiddle ||
-    !socialMediasMiddle ||
-    !stageMiddle ||
-    !businessSizeMiddle
-  ) {
-    showToast("Por favor, preencha todos os campos do formulário.", "middle");
+  if (!logoOptionMiddle || !collaboratorsOptionMiddle || !stageMiddle) {
+    showToast("Por favor, responda todos os campos do formulário.", "error");
     return false;
   }
-   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-   if (!emailRegex.test(emailMiddle)) {
-     showToast("Por favor, insira um endereço de email válido.", "error");
-     return false;
-   }
+
   const leadStep2Middle = {
     id: whatsappMiddle,
-    email: emailMiddle,
     title: brandNameMiddle,
     mobile_phone: whatsappMiddle,
     custom_fields: {
       "qual-o-estagio-do-seu-negocio": stageMiddle,
-      porte: businessSizeMiddle,
-      "site-ou-redes": socialMediasMiddle,
+      "tem-logotipo": logoOptionMiddle,
+      "quantos-colaboradores": collaboratorsOptionMiddle,
+      "tem-cnpj": cnpjMiddle,
     },
     tags: ["Cadastro Completo"],
   };
@@ -184,7 +191,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
   };
 
   const endpointMiddle =
-    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
+    "https://app.pipe.run/webservice/integradorJson?hash=da824ed6-15ea-4099-87a0-eafdd542e0cd";
 
   fetch(endpointMiddle, {
     headers: {

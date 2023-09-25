@@ -111,58 +111,73 @@ const formattedName = formatName(name);
     });
 });
 
+let stage = "";
 const stageOptions = document.querySelectorAll(
   ".custom-select:nth-child(1) .options li"
 );
-const businessSizeOptions = document.querySelectorAll(
-  ".custom-select:nth-child(2) .options li"
-);
-
-let stage = "";
-let businessSize = "";
-
 stageOptions.forEach((option) => {
   option.addEventListener("click", () => {
     stage = option.textContent;
   });
 });
 
-businessSizeOptions.forEach((option) => {
+
+let logoOption = "";
+const logoOptions = document.querySelectorAll(
+  ".custom-select:nth-child(2) .options li"
+);
+logoOptions.forEach((option) => {
   option.addEventListener("click", () => {
-    businessSize = option.textContent;
+   logoOption = option.textContent;
   });
 });
 
+let cnpj = "";
+const cnpjOptions = document.querySelectorAll(
+  ".custom-select:nth-child(3) .options li"
+);
+cnpjOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    cnpj= option.textContent;
+  });
+});
+
+
+let collaboratorsOption = ""
+const collaboratorsOptions = document.querySelectorAll(
+  ".custom-select:nth-child(4) .options li"
+);
+collaboratorsOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    collaboratorsOption = option.textContent;
+  });
+});
+
+
 finalizeRegistration.addEventListener("click", (e) => {
   e.preventDefault();
-  const email = document.getElementById("form-input-email").value;
-  const socialMedias = document.getElementById(
-    "form-input-social-media-site"
-  ).value;
+ 
   const formWrapper = document.querySelector(".form-wrapper");
-  if (!email || !socialMedias || !stage || !businessSize) {
+
+  if (!logoOption || !collaboratorsOption || !stage ) {
     showToast("Por favor, responda todos os campos do formulário.", "error");
     return false;
   }
-  
- const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
- if (!emailRegex.test(email)) {
-   showToast("Por favor, insira um endereço de email válido.", "error");
-   return false;
- }
 
   const leadStep2 = {
     id: whatsapp,
     title: brandName,
-    email: email,
     custom_fields: {
       "qual-o-estagio-do-seu-negocio": stage,
-      porte: businessSize,
-      "site-ou-redes": socialMedias,
+      "tem-logotipo": logoOption,
+      "quantos-colaboradores": collaboratorsOption,
+      "tem-cnpj": cnpj,
     },
     tags: ["Cadastro Completo"],
   };
+
+
   const dataToSendStep2 = {
     rules: {
       update: true,
@@ -174,7 +189,7 @@ finalizeRegistration.addEventListener("click", (e) => {
   };
 
   const endpoint =
-    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
+    "https://app.pipe.run/webservice/integradorJson?hash=da824ed6-15ea-4099-87a0-eafdd542e0cd";
 
   fetch(endpoint, {
     headers: {
@@ -185,6 +200,7 @@ finalizeRegistration.addEventListener("click", (e) => {
   })
     .then((response) => {
       if (response.status === 200) {
+    
         showToast("Cadastro concluído com sucesso!");
         formWrapper.innerHTML = `
         
