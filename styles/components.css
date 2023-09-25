@@ -65,12 +65,12 @@
 }
 /* Secondary Subtitle */
 .secondary-subtitle {
-  color: var(--dark2);
-  font-family: "Raleway", sans-serif;
-  font-size: clamp(0.875rem, 3.5vw, 1.125rem);
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  color: #1c3622;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 86.4%;
 }
 /* Second Section Card Title */
 .second-section-card-title {
