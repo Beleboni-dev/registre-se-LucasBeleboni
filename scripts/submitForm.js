@@ -141,7 +141,7 @@ finalizeRegistration.addEventListener("click", (e) => {
   ).value;
   const formWrapper = document.querySelector(".form-wrapper");
   if (!email || !socialMedias || !stage || !businessSize) {
-    showToast("Por favor, preencha todos os campos da segunda etapa", "error");
+    showToast("Por favor, responda todos os campos do formulário.", "error");
     return false;
   }
   
@@ -189,12 +189,12 @@ finalizeRegistration.addEventListener("click", (e) => {
         formWrapper.innerHTML = `
         
         <h3 class="form-title">
-          Obrigado por se cadastrar, em breve entraremos em contato!
+          Obrigado pelo envio dos dados! Em breve entraremos em contato.
         </h3>
 
         `;
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("Erro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {
