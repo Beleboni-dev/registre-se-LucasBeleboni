@@ -48,7 +48,7 @@ const formattedName = formatName(name);
   }
 
   stepTitle.textContent =
-    "Preencha esses dados opcionais para agilizar o seu atendimento";
+    "Preencha esses dados adicionais para agilizar o seu atendimento";
 
   const lead = {
     id: whatsapp,
@@ -62,7 +62,7 @@ const formattedName = formatName(name);
       "area-de-atuacao": lineOfBusiness,
       Canal: "LP 1",
       value: "1980",
-      Campanha: "teste",
+      Campanha: "Landing Page",
       url_conversao: window.location.href,
     },
     tags: ["Cadastro Simples"],
@@ -78,7 +78,7 @@ const formattedName = formatName(name);
   };
 
   const endpoint =
-    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
+    "https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509";
 
   fetch(endpoint, {
     headers: {
@@ -103,7 +103,7 @@ const formattedName = formatName(name);
           loading.classList.add("hide-display");
         }, 1000); 
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("Erro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {
@@ -141,7 +141,7 @@ finalizeRegistration.addEventListener("click", (e) => {
   ).value;
   const formWrapper = document.querySelector(".form-wrapper");
   if (!email || !socialMedias || !stage || !businessSize) {
-    showToast("Por favor, preencha todos os campos da segunda etapa", "error");
+    showToast("Por favor, responda todos os campos do formulário.", "error");
     return false;
   }
   
@@ -189,12 +189,12 @@ finalizeRegistration.addEventListener("click", (e) => {
         formWrapper.innerHTML = `
         
         <h3 class="form-title">
-          Obrigado por se cadastrar, em breve entraremos em contato!
+          Obrigado pelo envio dos dados! Em breve entraremos em contato.
         </h3>
 
         `;
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("Erro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {

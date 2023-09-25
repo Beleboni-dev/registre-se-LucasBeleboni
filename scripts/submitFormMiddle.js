@@ -50,7 +50,7 @@ const formattedNameMiddle = formatName(name);
     !whatsappMiddle ||
     !lineOfBusinessMiddle
   ) {
-    showToast("Por favor preencha todos os campos do formulário", "middle");
+    showToast("Por favor, responda todos os campos do formulário.", "middle");
     return false;
   }
 
@@ -66,7 +66,7 @@ const formattedNameMiddle = formatName(name);
       "area-de-atuacao": lineOfBusinessMiddle,
       Canal: "LP 1",
       value: "1980",
-      Campanha: "teste",
+      Campanha: "Landing Page",
       url_conversao: window.location.href,
     },
     tags: ["Cadastro Simples"],
@@ -82,7 +82,7 @@ const formattedNameMiddle = formatName(name);
   };
 
   const endpointMiddle =
-    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
+    "https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509";
 
   fetch(endpointMiddle, {
     headers: {
@@ -107,7 +107,7 @@ const formattedNameMiddle = formatName(name);
           loadingMiddle.classList.add("hide-display");
         }, 1000); 
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("Erro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {
@@ -152,7 +152,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     !stageMiddle ||
     !businessSizeMiddle
   ) {
-    showToast("Por favor, preencha todos os campos da segunda etapa", "middle");
+    showToast("Por favor, preencha todos os campos do formulário.", "middle");
     return false;
   }
    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -204,7 +204,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
 
         `;
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("EErro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {
