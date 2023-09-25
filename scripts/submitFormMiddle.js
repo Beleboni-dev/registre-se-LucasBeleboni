@@ -66,7 +66,7 @@ const formattedNameMiddle = formatName(name);
       "area-de-atuacao": lineOfBusinessMiddle,
       Canal: "LP 1",
       value: "1980",
-      Campanha: "teste",
+      Campanha: "Landing Page",
       url_conversao: window.location.href,
     },
     tags: ["Cadastro Simples"],
@@ -82,7 +82,7 @@ const formattedNameMiddle = formatName(name);
   };
 
   const endpointMiddle =
-    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
+    "https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509";
 
   fetch(endpointMiddle, {
     headers: {
