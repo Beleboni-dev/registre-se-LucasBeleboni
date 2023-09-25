@@ -48,7 +48,7 @@ const formattedName = formatName(name);
   }
 
   stepTitle.textContent =
-    "Preencha esses dados opcionais para agilizar o seu atendimento";
+    "Preencha esses dados adicionais para agilizar o seu atendimento";
 
   const lead = {
     id: whatsapp,
@@ -103,7 +103,7 @@ const formattedName = formatName(name);
           loading.classList.add("hide-display");
         }, 1000); 
       } else {
-        console.error("Erro na integração com o Piperun.");
+        console.error("Erro na integração com o site. Por favor, preencha novamente.");
       }
     })
     .catch((error) => {
