@@ -60,9 +60,9 @@ const formattedName = formatName(name);
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusiness,
-      Canal: "LP 1",
+      Canal: "Landing Page",
       value: "1980",
-      Campanha: "Landing Page",
+      Campanha: "LP 1",
       url_conversao: window.location.href,
     },
     tags: ["Cadastro Simples"],
@@ -78,7 +78,7 @@ const formattedName = formatName(name);
   };
 
   const endpoint =
-    "https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509";
+    "https://app.pipe.run/webservice/integradorJson?hash=cc7c6b85-9e70-4b26-9d38-c7de57e8fb4e";
 
   fetch(endpoint, {
     headers: {
@@ -189,7 +189,7 @@ finalizeRegistration.addEventListener("click", (e) => {
   };
 
   const endpoint =
-    "https://app.pipe.run/webservice/integradorJson?hash=da824ed6-15ea-4099-87a0-eafdd542e0cd";
+    "https://app.pipe.run/webservice/integradorJson?hash=cc7c6b85-9e70-4b26-9d38-c7de57e8fb4e";
 
   fetch(endpoint, {
     headers: {
