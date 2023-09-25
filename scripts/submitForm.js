@@ -103,7 +103,7 @@ const formattedName = formatName(name);
           loading.classList.add("hide-display");
         }, 1000); 
       } else {
-        console.error("Erro na integração com o site. Por favor, preencha novamente.");
+        console.error("Erro na integração com o Piperun.");
       }
     })
     .catch((error) => {
@@ -194,7 +194,7 @@ finalizeRegistration.addEventListener("click", (e) => {
 
         `;
       } else {
-        console.error("Erro na integração com o site. Por favor, preencha novamente.");
+        console.error("Erro na integração com o Piperun.");
       }
     })
     .catch((error) => {
