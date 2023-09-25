@@ -17,16 +17,14 @@
   }
 
   .third_section-google-reviews-wrapper {
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    margin-top: 1.75rem;
+display: flex;
+flex-wrap: wrap;
   }
 
   .fourth_section-brand-logos-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
-    margin-top: 1.75rem;
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
   .fifth_section-registration-process-wrapper {
     justify-content: center;
@@ -52,6 +50,10 @@
   .wrapper {
     max-width: 90%;
   }
+    .fifth_section_form-wrapper{
+      min-width: 100%;
+      padding: 1.5rem 0;
+    }
   .header {
     display: flex;
     justify-content: center;
@@ -112,12 +114,6 @@
   }
   .testimonial-title-wrapper img {
     max-width: 90%;
-  }
-  .third_section-google-reviews-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .third_section-google-reviews-wrapper-omit {
     display: none;
