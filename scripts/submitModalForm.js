@@ -59,9 +59,9 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusinessModal,
-      pipecanal: "LP 1",
+      pipecanal: "Landing Page",
       value: "1980",
-      Campanha: "Landing Page",
+      Campanha: "LP 1",
       url_conversao: window.location.href,
     },
     tags: ["Cadastro Simples"],
