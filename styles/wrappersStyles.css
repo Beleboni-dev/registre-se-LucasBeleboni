@@ -17,6 +17,10 @@ position: relative;
   border-radius: 3rem;
   padding: 3rem 2.69rem 1.06rem;
   min-height: 26.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .testimonial-title-wrapper {
   margin-top: 4.38rem;
