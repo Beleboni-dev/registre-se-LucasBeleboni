@@ -59,7 +59,7 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusinessModal,
-      Canal: "LP 1",
+      pipecanal: "LP 1",
       value: "1980",
       Campanha: "Landing Page",
       url_conversao: window.location.href,
