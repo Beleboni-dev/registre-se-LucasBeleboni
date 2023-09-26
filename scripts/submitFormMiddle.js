@@ -105,6 +105,7 @@ const formattedNameMiddle = formatName(name);
              circle1Middle.classList.add("unselected-step");
              circle2Middle.classList.remove("unselected-step");
              circle2Middle.classList.add("step2-circle");
+             sessionStorage.setItem("firstStepForm", true);
            }, 300);
       } else {
         console.error("Erro na integração com o Piperun.");

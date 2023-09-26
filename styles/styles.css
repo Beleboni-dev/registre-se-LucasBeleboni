@@ -603,3 +603,6 @@ footer {
   cursor: pointer;
 }
 
+.select-text{
+  color: var(--dark9);
+}

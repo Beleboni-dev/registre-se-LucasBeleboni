@@ -100,6 +100,7 @@ const formattedName = formatName(name);
           circle1.classList.add("unselected-step");
           circle2.classList.remove("unselected-step");
           circle2.classList.add("step2-circle")
+          sessionStorage.setItem("firstStepForm" , true);
         }, 300);
         nextStep1Button.style.display = "none";
       } else {
