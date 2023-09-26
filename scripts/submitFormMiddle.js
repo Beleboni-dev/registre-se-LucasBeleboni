@@ -35,7 +35,7 @@ nextStep1ButtonMiddle.addEventListener("click", (e) => {
 const nameInputMiddle = document.getElementById("form-input-name-middle");
 const name = nameInputMiddle.value;
 
-const formattedNameMiddle = formatName(name);
+formattedNameMiddle = formatName(name);
 
 
   whatsappMiddle = document.getElementById("form-input-whatsapp-middle").value;
