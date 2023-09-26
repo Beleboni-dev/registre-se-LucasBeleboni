@@ -172,6 +172,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     id: whatsappMiddle,
     title: brandNameMiddle,
     mobile_phone: whatsappMiddle,
+    name: formattedNameMiddle,
     custom_fields: {
       "qual-o-estagio-do-seu-negocio": stageMiddle,
       "tem-logotipo": logoOptionMiddle,
