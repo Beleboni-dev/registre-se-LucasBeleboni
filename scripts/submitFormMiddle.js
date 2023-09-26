@@ -94,18 +94,18 @@ const formattedNameMiddle = formatName(name);
     .then((response) => {
       if (response.status === 200) {
         const step1Middle = document.getElementById("step-middle-1");
-        step1Middle.classList.add("hide-display");
-
-        const loadingMiddle = document.getElementById("loading-middle");
-        loadingMiddle.classList.remove("hide-display");
-
-        setTimeout(() => {
-          const step2Middle = document.getElementById("step-middle-2");
-          step2Middle.classList.remove("hide-display");
-          showToast("Primeira etapa concluída!");
-          nextStep1ButtonMiddle.style.display = "none";
-          loadingMiddle.classList.add("hide-display");
-        }, 1000); 
+        const step2Middle = document.getElementById("step-middle-2");
+           const circle1Middle = document.getElementById("circle-1-middle");
+           const circle2Middle = document.getElementById("circle-2-middle");
+           step1Middle.classList.add("slide-down");
+           setTimeout(function () {
+             step1Middle.classList.add("hide-display");
+             step2Middle.classList.remove("hide-display");
+             step2Middle.classList.add("slide-up");
+             circle1Middle.classList.add("unselected-step");
+             circle2Middle.classList.remove("unselected-step");
+             circle2Middle.classList.add("step2-circle");
+           }, 300);
       } else {
         console.error("Erro na integração com o Piperun.");
       }

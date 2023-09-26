@@ -45,6 +45,9 @@
   align-items: center;
   width: 100%;
 }
+#step-2-modal{
+  gap: .75rem;
+}
 .registration_form input,
 .custom-select,
 .selected-option {
@@ -123,6 +126,10 @@
 .unselected-step {
   background-color: var(--dark9);
 }
+.step2-circle{
+background-color: var(--light1);
+}
+
 .second_section {
   background-color: var(--brand);
 }
@@ -454,6 +461,39 @@ footer {
 .show-display {
   display: block;
 }
+.slide-down {
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(-100%);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 #toast,
 #toast-middle,
@@ -471,7 +511,7 @@ footer {
   display: none;
 }
 
-#toast-modal{
+#toast-modal {
   background-color: var(--light1);
   color: var(--light2);
   right: -52px;
@@ -495,6 +535,7 @@ footer {
   z-index: 1;
 }
 #myModal {
+  min-height: 29.1875rem;
   display: none;
   position: fixed;
   top: 50%;
@@ -548,35 +589,17 @@ footer {
   }
 }
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto;
-  border: 4px solid var(--light1);
-  border-left: 4px solid var(--light2);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-#close-modal-btn{
+#close-modal-btn {
   width: 28px;
   height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: var(--light1);
-border-radius: .3rem;
-position: absolute;
-top:-10px;
-right: -10px;
-cursor: pointer;
+  background-color: var(--light1);
+  border-radius: 0.3rem;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
 }
+

@@ -89,18 +89,18 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
     .then((response) => {
       if (response.status === 200) {
         const step1Modal = document.getElementById("step-1-modal");
-        step1Modal.classList.add("hide-display");
-
-        const loadingModal = document.getElementById("loading-modal");
-        loadingModal.classList.remove("hide-display");
-
-        setTimeout(() => {
-          const step2Modal = document.getElementById("step-2-modal");
+        const step2Modal = document.getElementById("step-2-modal");
+        const circle1Modal = document.getElementById("circle-1-modal");
+        const circle2Modal = document.getElementById("circle-2-modal");
+        step1Modal.classList.add("slide-down");
+        setTimeout(function () {
+          step1Modal.classList.add("hide-display");
           step2Modal.classList.remove("hide-display");
-          showToast("Primeira etapa concluída!", "modal");
-          nextStep1ButtonModal.style.display = "none";
-          loadingModal.classList.add("hide-display");
-        }, 1000);
+          step2Modal.classList.add("slide-up");
+          circle1Modal.classList.add("unselected-step");
+          circle2Modal.classList.remove("unselected-step");
+          circle2Modal.classList.add("step2-circle");
+        }, 300);
       } else {
         console.error("Erro na integração com o Piperun.");
       }
