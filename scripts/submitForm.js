@@ -49,7 +49,6 @@ const formattedName = formatName(name);
 
   stepTitle.textContent =
     "Preencha esses dados adicionais para agilizar o seu atendimento";
-
   const lead = {
     id: whatsapp,
     title: brandName,
