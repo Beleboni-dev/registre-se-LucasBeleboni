@@ -1,9 +1,7 @@
 let modalVisible = false;
-const closeBtn = document.getElementById("close-modal-btn");
-
 
 function showModal() {
-  document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style.display = "flex";
       document.getElementById("backdrop").style.display = "block";
   modalVisible = true;
 }
@@ -31,4 +29,3 @@ document.addEventListener("click", function (e) {
   }
 });
 
-closeBtn.addEventListener("click", () => hideModal())

@@ -549,6 +549,9 @@ footer {
   animation: fadeInModal 0.3s ease-in-out forwards;
   z-index: 999;
   border-radius: 1rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 #myModal form input {
   margin-top: 0.2rem;
