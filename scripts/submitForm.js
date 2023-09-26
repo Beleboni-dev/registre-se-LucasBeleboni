@@ -60,7 +60,7 @@ const formattedName = formatName(name);
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusiness,
-      Canal: "Landing Page",
+      pipeanal: "Landing Page",
       value: "1980",
       Campanha: "LP 1",
       url_conversao: window.location.href,
