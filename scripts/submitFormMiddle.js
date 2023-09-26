@@ -64,7 +64,7 @@ const formattedNameMiddle = formatName(name);
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusinessMiddle,
-      Canal: "Landing Page",
+      pipecanal: "Landing Page",
       value: "1980",
       Campanha: "LP 1",
       url_conversao: window.location.href,
