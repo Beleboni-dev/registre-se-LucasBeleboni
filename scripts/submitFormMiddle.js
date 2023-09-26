@@ -13,7 +13,7 @@ function formatName(name) {
 
 let whatsappMiddle = "";
 let brandNameMiddle = "";
-
+let formattedNameMiddle = "";
 document.querySelectorAll(".step-middle input").forEach((input) => {
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
