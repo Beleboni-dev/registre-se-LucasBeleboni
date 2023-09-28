@@ -13,6 +13,7 @@ function formatName(name) {
 
 let whatsappModal = "";
 let brandNameModal = "";
+let formattedNameModal = "";
 
 document.querySelectorAll(".step input").forEach((input) => {
   input.addEventListener("keydown", (e) => {
@@ -33,7 +34,7 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
   const nameInputModal = document.getElementById("form-input-name-modal");
   const nameModal = nameInputModal.value;
 
-  const formattedNameModal = formatName(nameModal);
+  formattedNameModal = formatName(nameModal);
 
   whatsappModal = document.getElementById("form-input-whatsapp-modal").value;
   const lineOfBusinessModal = document.getElementById(

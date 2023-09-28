@@ -12,7 +12,7 @@ function formatName(name) {
 
 let whatsapp = "";
 let brandName =""
-
+ let formattedName = ""
 document.querySelectorAll(".step input").forEach((input) => {
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -33,7 +33,7 @@ nextStep1Button.addEventListener("click", (e) => {
 const nameInput = document.getElementById("form-input-name");
 const name = nameInput.value;
 
-const formattedName = formatName(name);
+ formattedName = formatName(name);
 
 
   whatsapp = document.getElementById("form-input-whatsapp").value;

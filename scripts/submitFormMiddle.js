@@ -13,7 +13,7 @@ function formatName(name) {
 
 let whatsappMiddle = "";
 let brandNameMiddle = "";
-
+let formattedNameMiddle = "";
 document.querySelectorAll(".step-middle input").forEach((input) => {
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -35,7 +35,7 @@ nextStep1ButtonMiddle.addEventListener("click", (e) => {
 const nameInputMiddle = document.getElementById("form-input-name-middle");
 const name = nameInputMiddle.value;
 
-const formattedNameMiddle = formatName(name);
+formattedNameMiddle = formatName(name);
 
 
   whatsappMiddle = document.getElementById("form-input-whatsapp-middle").value;
