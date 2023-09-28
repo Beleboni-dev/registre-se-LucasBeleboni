@@ -1,5 +1,5 @@
 .header {
-  padding-top: 6.25rem;
+  padding-top: 5.25rem;
   background-color: var(--light1);
   max-width: clamp(48rem, 80%, 70.1875rem);
   margin: 0 auto;
