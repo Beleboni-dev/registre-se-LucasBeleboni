@@ -1,5 +1,5 @@
 .header {
-  padding-top: 6.25rem;
+  padding-top: 5.25rem;
   background-color: var(--light1);
   max-width: clamp(48rem, 80%, 70.1875rem);
   margin: 0 auto;
@@ -18,7 +18,7 @@
   background-position: center;
 }
 .first_section-logos {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
 }
 .first_section-left-content {
   display: flex;
