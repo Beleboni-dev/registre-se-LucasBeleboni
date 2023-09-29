@@ -59,7 +59,7 @@ const name = nameInput.value;
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusiness,
-      pipecanal: "Landing Page",
+      pipecanal: "LP - Form Top",
       value: "1980",
       Campanha: "LP 1",
       url_conversao: window.location.href,
