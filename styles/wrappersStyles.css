@@ -13,7 +13,7 @@ position: relative;
 }
 .form-wrapper {
   background-color: var(--light2);
-  max-width: clamp(18rem, 24rem, 24.3125rem);
+  max-width: clamp(18rem, 26rem, 24.3125rem);
   border-radius: 3rem;
   padding: 3rem 2.69rem 1.06rem;
   min-height: 26.9375rem;
