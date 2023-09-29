@@ -12,11 +12,11 @@
 .main-subtitle {
   color: var(--dark2);
   font-family: "Raleway", sans-serif;
-  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 4vw, 1.25rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  max-width: 18.575rem;
+  max-width: 32.575rem;
 }
 /* Form Title */
 .form-title {
