@@ -12,7 +12,7 @@
 .main-subtitle {
   color: var(--dark2);
   font-family: "Raleway", sans-serif;
-  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
