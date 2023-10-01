@@ -78,7 +78,7 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
   };
 
   const endpointModal =
-    "https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509";
+    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
 
   fetch(endpointModal, {
     headers: {

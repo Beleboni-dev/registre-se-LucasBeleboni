@@ -76,8 +76,7 @@ const name = nameInput.value;
     leads: [lead],
   };
 
-  const endpoint =
-    "https://app.pipe.run/webservice/integradorJson?hash=cc7c6b85-9e70-4b26-9d38-c7de57e8fb4e";
+  const endpoint ="https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509"
 
   fetch(endpoint, {
     headers: {
@@ -165,6 +164,79 @@ finalizeRegistration.addEventListener("click", (e) => {
     return false;
   }
 
+    let score = 0;
+
+    switch (stage) {
+      case "Já atuo no mercado há um certo tempo":
+        score += 27;
+        break;
+      case "Comecei recentemente":
+        score += 14;
+        break;
+      case "Estou me planejando para começar":
+        score += 6;
+        break;
+    }
+
+    switch (logoOption) {
+      case "Sim":
+        score += 20;
+        break;
+      case "Ainda não. Está em fase de criação.":
+        score += 6;
+        break;
+      case "Não. Pretendo registrar apenas um nome.":
+        score += 7;
+        break;
+    }
+
+    switch (cnpj) {
+      case "Sim":
+        score += 27;
+        break;
+      case "Estou providenciando":
+        score += 6;
+        break;
+      case "Pessoa Física":
+        score += 6;
+        break;
+    }
+
+    switch (collaboratorsOption) {
+      case "1 a 2":
+        score += 9;
+        break;
+      case "3 a 5":
+        score += 22;
+        break;
+      case "11 a 50":
+        score += 20;
+        break;
+      case "6 a 10":
+        score += 41;
+        break;
+      case "Mais de 50":
+        score += 37;
+        break;
+    }
+
+    score += 36;
+
+let hash = ""
+
+ if (score < 50) {
+   hash = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
+ } else if (score <= 60) {
+   hash = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
+ } else if (score <= 70) {
+   hash = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
+ } else if (score <= 80) {
+   hash = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
+ } else if (score <= 110) {
+   hash = "a8da92cd-1bb9-4196-8c7c-93af0e3809d9";
+ } else {
+   hash = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";
+ }
 
   const leadStep2 = {
     id: whatsapp,
@@ -174,10 +246,11 @@ finalizeRegistration.addEventListener("click", (e) => {
       "tem-logotipo": logoOption,
       "quantos-colaboradores": collaboratorsOption,
       "tem-cnpj": cnpj,
+       score: score.toString(),
     },
     tags: ["Cadastro Completo"],
   };
-
+console.log(leadStep2)
 
   const dataToSendStep2 = {
     rules: {
@@ -190,7 +263,7 @@ finalizeRegistration.addEventListener("click", (e) => {
   };
 
   const endpoint =
-    "https://app.pipe.run/webservice/integradorJson?hash=cc7c6b85-9e70-4b26-9d38-c7de57e8fb4e";
+    `https://app.pipe.run/webservice/integradorJson?hash=${hash}`;
 
   fetch(endpoint, {
     headers: {

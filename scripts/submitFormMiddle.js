@@ -82,7 +82,7 @@ formattedNameMiddle = formatName(name);
   };
 
   const endpointMiddle =
-    "https://app.pipe.run/webservice/integradorJson?hash=cc7c6b85-9e70-4b26-9d38-c7de57e8fb4e";
+    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
 
   fetch(endpointMiddle, {
     headers: {
