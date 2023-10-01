@@ -194,7 +194,7 @@ finalizeRegistration.addEventListener("click", (e) => {
       case "Sim":
         score += 27;
         break;
-      case "Estou providenciando":
+      case "Não, mas já estamos providenciando":
         score += 6;
         break;
       case "Pessoa Física":
@@ -250,7 +250,7 @@ let hash = ""
     },
     tags: ["Cadastro Completo"],
   };
-console.log(leadStep2)
+
 
   const dataToSendStep2 = {
     rules: {

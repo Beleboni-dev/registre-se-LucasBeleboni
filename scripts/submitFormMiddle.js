@@ -82,7 +82,7 @@ formattedNameMiddle = formatName(name);
   };
 
   const endpointMiddle =
-    "https://app.pipe.run/webservice/integradorJson?hash=f1e34340-bdad-49a4-a40a-9d3eb26e2328";
+    "https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509";
 
   fetch(endpointMiddle, {
     headers: {
@@ -167,7 +167,79 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     showToast("Por favor, responda todos os campos do formulário.", "error");
     return false;
   }
+    let scoreMiddle = 0;
 
+    switch (stageMiddle) {
+      case "Já atuo no mercado há um certo tempo":
+        scoreMiddle += 27;
+        break;
+      case "Comecei recentemente":
+        scoreMiddle += 14;
+        break;
+      case "Estou me planejando para começar":
+        scoreMiddle += 6;
+        break;
+    }
+
+    switch (logoOptionMiddle) {
+      case "Sim":
+        scoreMiddle += 20;
+        break;
+      case "Ainda não. Está em fase de criação.":
+        scoreMiddle += 6;
+        break;
+      case "Não. Pretendo registrar apenas um nome.":
+        scoreMiddle += 7;
+        break;
+    }
+
+    switch (cnpjMiddle) {
+      case "Sim":
+        scoreMiddle += 27;
+        break;
+      case "Não, mas já estamos providenciando":
+        scoreMiddle += 6;
+        break;
+      case "Pessoa Física":
+        scoreMiddle += 6;
+        break;
+    }
+
+    switch (collaboratorsOptionMiddle) {
+      case "1 a 2":
+        scoreMiddle += 9;
+        break;
+      case "3 a 5":
+        scoreMiddle += 22;
+        break;
+      case "11 a 50":
+        scoreMiddle += 20;
+        break;
+      case "6 a 10":
+        scoreMiddle += 41;
+        break;
+      case "Mais de 50":
+        scoreMiddle += 37;
+        break;
+    }
+
+    scoreMiddle += 36;
+
+    let hashMiddle = "";
+
+    if (scoreMiddle < 50) {
+      hashMiddle = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
+    } else if (scoreMiddle <= 60) {
+      hashMiddle = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
+    } else if (scoreMiddle <= 70) {
+      hashMiddle = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
+    } else if (scoreMiddle <= 80) {
+      hashMiddle = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
+    } else if (scoreMiddle <= 110) {
+      hashMiddle = "a8da92cd-1bb9-4196-8c7c-93af0e3809d9";
+    } else {
+      hashMiddle = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";
+    }
 
   const leadStep2Middle = {
     id: whatsappMiddle,
@@ -179,9 +251,11 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
       "tem-logotipo": logoOptionMiddle,
       "quantos-colaboradores": collaboratorsOptionMiddle,
       "tem-cnpj": cnpjMiddle,
+      score: scoreMiddle.toString(),
     },
     tags: ["Cadastro Completo"],
   };
+
   const dataToSendStep2Middle = {
     rules: {
       update: true,
@@ -192,8 +266,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     leads: [leadStep2Middle],
   };
 
-  const endpointMiddle =
-    "https://app.pipe.run/webservice/integradorJson?hash=cc7c6b85-9e70-4b26-9d38-c7de57e8fb4e";
+  const endpointMiddle = `https://app.pipe.run/webservice/integradorJson?hash=${hashMiddle}`;
 
   fetch(endpointMiddle, {
     headers: {
