@@ -60,7 +60,7 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusinessModal,
-      pipecanal: "Landing Page",
+      pipecanal: "LP - Form Exit Pop Up",
       value: "1980",
       Campanha: "LP 1",
       url_conversao: window.location.href,
