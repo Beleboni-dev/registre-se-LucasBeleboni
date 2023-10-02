@@ -59,6 +59,7 @@ const name = nameInput.value;
     },
     custom_fields: {
       "area-de-atuacao": lineOfBusiness,
+      "Nome da marca": brandName,
       pipecanal: "LP - Form Top",
       value: "1980",
       Campanha: "LP 1",
