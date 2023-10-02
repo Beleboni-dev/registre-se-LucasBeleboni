@@ -62,6 +62,7 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
       "area-de-atuacao": lineOfBusinessModal,
       pipecanal: "LP - Form Exit Pop Up",
       "Nome da marca": brandNameModal,
+      "Nome Lead": formattedNameModal,
       value: "1980",
       Campanha: "LP 1",
       url_conversao: window.location.href,
