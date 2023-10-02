@@ -76,7 +76,8 @@ const name = nameInput.value;
     leads: [lead],
   };
 
-  const endpoint ="https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509"
+  const endpoint =
+    "https://app.pipe.run/webservice/integradorJson?hash=83211966-8869-455f-83ce-b022d45c7509";
 
   fetch(endpoint, {
     headers: {
