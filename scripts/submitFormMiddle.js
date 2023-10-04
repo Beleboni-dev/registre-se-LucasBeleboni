@@ -65,6 +65,8 @@ formattedNameMiddle = formatName(name);
     custom_fields: {
       "area-de-atuacao": lineOfBusinessMiddle,
       pipecanal: "LP - Form Middle",
+      "Nome Lead": formattedNameMiddle,
+      "Nome da marca": brandNameMiddle,
       value: "1980",
       Campanha: "LP 1",
       url_conversao: window.location.href,
