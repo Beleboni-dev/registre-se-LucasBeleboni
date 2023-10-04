@@ -65,7 +65,7 @@ nextStep1ButtonModal.addEventListener("click", (e) => {
       Campanha: "LP 1",
       url_conversao: window.location.href,
     },
-    tags: ["Cadastro Simples"],
+      
   };
   const dataToSendModal = {
     rules: {
@@ -245,7 +245,7 @@ finalizeRegistrationModal.addEventListener("click", (e) => {
       "tem-cnpj": cnpjModal,
       score: scoreModal.toString(),
     },
-    tags: ["Cadastro Completo"],
+     
   };
 
   const dataToSendStep2Modal = {

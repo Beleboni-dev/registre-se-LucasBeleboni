@@ -69,7 +69,7 @@ formattedNameMiddle = formatName(name);
       Campanha: "LP 1",
       url_conversao: window.location.href,
     },
-    tags: ["Cadastro Simples"],
+      
   };
   const dataToSendMiddle = {
     rules: {
@@ -253,7 +253,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
       "tem-cnpj": cnpjMiddle,
       score: scoreMiddle.toString(),
     },
-    tags: ["Cadastro Completo"],
+     
   };
 
   const dataToSendStep2Middle = {
