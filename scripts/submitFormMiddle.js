@@ -128,7 +128,6 @@ stageOptionsMiddle.forEach((option) => {
     stageMiddle = option.textContent;
   });
 });
-
 let logoOptionMiddle = "";
 const logoOptionsMiddle = document.querySelectorAll(
   ".custom-select:nth-child(2) .options li"
