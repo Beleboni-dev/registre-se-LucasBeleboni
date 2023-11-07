@@ -228,25 +228,21 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     
 let hashMiddle = "";
 
-const scoreToHashMiddle = {
-  0: "da824ed6-15ea-4099-87a0-eafdd542e0cd",
-  51: "68f9a9be-22b6-4be4-9ea8-e59542cb5993",
-  61: "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e",
-  71: "29a1eca5-93fb-4d44-ad11-ef12293d9a97",
-  81: "e3059d23-6294-459b-915b-377b6cb4a5e3",
-  91: "95a90be8-a855-4328-9323-1e3166863903",
-  101: "546b229e-2627-4e47-8502-552d14e8f42d",
-};
-
-for (let threshold in scoreToHashMiddle) {
-  if (scoreMiddle <= Number(threshold)) {
-    hashMiddle = scoreToHashMiddle[threshold];
-    break;
-  }
-}
-
-// Se o score for maior que o maior limite definido
-if (hashMiddle === "") {
+if (scoreMiddle < 50) {
+  hashMiddle = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
+} else if (scoreMiddle >= 51 && scoreMiddle <= 60) {
+  hashMiddle = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
+} else if (scoreMiddle >= 61 && scoreMiddle <= 70) {
+  hashMiddle = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
+} else if (scoreMiddle >= 71 && scoreMiddle <= 80) {
+  hashMiddle = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
+} else if (scoreMiddle >= 81 && scoreMiddle <= 90) {
+  hashMiddle = "e3059d23-6294-459b-915b-377b6cb4a5e3";
+} else if (scoreMiddle >= 91 && scoreMiddle <= 100) {
+  hashMiddle = "95a90be8-a855-4328-9323-1e3166863903";
+} else if (scoreMiddle >= 101 && scoreMiddle <= 110) {
+  hashMiddle = "546b229e-2627-4e47-8502-552d14e8f42d";
+} else {
   hashMiddle = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";
 }
 
