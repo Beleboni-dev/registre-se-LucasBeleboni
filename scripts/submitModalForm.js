@@ -168,13 +168,13 @@ finalizeRegistrationModal.addEventListener("click", (e) => {
 
     switch (stageModal) {
       case "Já atuo no mercado há um certo tempo":
-        scoreModal += 27;
+        scoreModal += 60;
         break;
       case "Comecei recentemente":
-        scoreModal += 14;
+        scoreModal += 40;
         break;
       case "Estou me planejando para começar":
-        scoreModal += 6;
+        scoreModal += 3;
         break;
     }
 
@@ -183,19 +183,19 @@ finalizeRegistrationModal.addEventListener("click", (e) => {
         scoreModal += 20;
         break;
       case "Ainda não. Está em fase de criação.":
-        scoreModal += 6;
+        scoreModal += 5;
         break;
-      case "Não. Pretendo registrar apenas um nome.":
-        scoreModal += 7;
+      case "Não. Pretendo registrar apenas o nome.":
+        scoreModal += 8;
         break;
     }
 
     switch (cnpjModal) {
       case "Sim":
-        scoreModal += 27;
+        scoreModal += 25;
         break;
       case "Não, mas já estamos providenciando":
-        scoreModal += 6;
+        scoreModal += 4;
         break;
       case "Pessoa Física":
         scoreModal += 6;
@@ -204,39 +204,39 @@ finalizeRegistrationModal.addEventListener("click", (e) => {
 
     switch (collaboratorsOptionModal) {
       case "1 a 2":
-        scoreModal += 9;
+        scoreModal += 10;
         break;
       case "3 a 5":
-        scoreModal += 22;
+        scoreModal += 15;
         break;
       case "11 a 50":
-        scoreModal += 20;
+        scoreModal += 35;
         break;
       case "6 a 10":
-        scoreModal += 41;
+        scoreModal += 30;
         break;
       case "Mais de 50":
-        scoreModal += 37;
+        scoreModal += 40;
         break;
     }
 
-    scoreModal += 36;
+    scoreModal += 45;
 
 let hashModal = "";
 
-if (scoreModal < 50) {
+if (scoreModal >= 1 && scoreModal <= 80) {
   hashModal = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
-} else if (scoreModal >= 51 && scoreModal <= 60) {
+} else if (scoreModal <= 160) {
   hashModal = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
-} else if (scoreModal >= 61 && scoreModal <= 70) {
+} else if (scoreModal <= 220) {
   hashModal = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
-} else if (scoreModal >= 71 && scoreModal <= 80) {
+} else if (scoreModal <= 300) {
   hashModal = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
-} else if (scoreModal >= 81 && scoreModal <= 90) {
+} else if (scoreModal <= 400) {
   hashModal = "e3059d23-6294-459b-915b-377b6cb4a5e3";
-} else if (scoreModal >= 91 && scoreModal <= 100) {
+} else if (scoreModal <= 500) {
   hashModal = "95a90be8-a855-4328-9323-1e3166863903";
-} else if (scoreModal >= 101 && scoreModal <= 110) {
+} else if (scoreModal <= 600) {
   hashModal = "546b229e-2627-4e47-8502-552d14e8f42d";
 } else {
   hashModal = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";

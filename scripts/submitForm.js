@@ -164,13 +164,13 @@ finalizeRegistration.addEventListener("click", (e) => {
 
   switch (stage) {
     case "Já atuo no mercado há um certo tempo":
-      score += 27;
+      score += 60;
       break;
     case "Comecei recentemente":
-      score += 14;
+      score += 40;
       break;
     case "Estou me planejando para começar":
-      score += 6;
+      score += 3;
       break;
   }
 
@@ -179,19 +179,19 @@ finalizeRegistration.addEventListener("click", (e) => {
       score += 20;
       break;
     case "Ainda não. Está em fase de criação.":
-      score += 6;
+      score += 5;
       break;
-    case "Não. Pretendo registrar apenas um nome.":
-      score += 7;
+    case "Não. Pretendo registrar apenas o nome.":
+      score += 8;
       break;
   }
 
   switch (cnpj) {
     case "Sim":
-      score += 27;
+      score += 25;
       break;
     case "Não, mas já estamos providenciando":
-      score += 6;
+      score += 4;
       break;
     case "Pessoa Física":
       score += 6;
@@ -200,40 +200,36 @@ finalizeRegistration.addEventListener("click", (e) => {
 
   switch (collaboratorsOption) {
     case "1 a 2":
-      score += 9;
+      score += 10;
       break;
     case "3 a 5":
-      score += 22;
+      score += 15;
       break;
     case "11 a 50":
-      score += 20;
+      score += 35;
       break;
     case "6 a 10":
-      score += 41;
+      score += 30;
       break;
     case "Mais de 50":
-      score += 37;
+      score += 40;
       break;
   }
 
-  score += 36;
+  score += 45;
 
 let hash = "";
 
-if (score < 50) {
+if (score >= 1 && score <= 80) {
   hash = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
-} else if (score >= 51 && score <= 60) {
+} else if (score <= 160) {
   hash = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
-} else if (score >= 61 && score <= 70) {
+} else if (score <= 220) {
   hash = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
-} else if (score >= 71 && score <= 80) {
+} else if (score <= 300) {
   hash = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
-} else if (score >= 81 && score <= 90) {
+} else if (score <= 400) {
   hash = "e3059d23-6294-459b-915b-377b6cb4a5e3";
-} else if (score >= 91 && score <= 100) {
-  hash = "95a90be8-a855-4328-9323-1e3166863903";
-} else if (score >= 101 && score <= 110) {
-  hash = "546b229e-2627-4e47-8502-552d14e8f42d";
 } else {
   hash = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";
 }
@@ -250,7 +246,7 @@ if (score < 50) {
     },
   };
 
-  console.log(leadStep2);
+
 
   const dataToSendStep2 = {
     rules: {

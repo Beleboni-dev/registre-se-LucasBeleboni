@@ -172,13 +172,13 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
 
     switch (stageMiddle) {
       case "Já atuo no mercado há um certo tempo":
-        scoreMiddle += 27;
+        scoreMiddle += 60;
         break;
       case "Comecei recentemente":
-        scoreMiddle += 14;
+        scoreMiddle += 40;
         break;
       case "Estou me planejando para começar":
-        scoreMiddle += 6;
+        scoreMiddle += 3;
         break;
     }
 
@@ -187,19 +187,19 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
         scoreMiddle += 20;
         break;
       case "Ainda não. Está em fase de criação.":
-        scoreMiddle += 6;
+        scoreMiddle += 5;
         break;
-      case "Não. Pretendo registrar apenas um nome.":
-        scoreMiddle += 7;
+      case "Não. Pretendo registrar apenas o nome.":
+        scoreMiddle += 8;
         break;
     }
 
     switch (cnpjMiddle) {
       case "Sim":
-        scoreMiddle += 27;
+        scoreMiddle += 25;
         break;
       case "Não, mas já estamos providenciando":
-        scoreMiddle += 6;
+        scoreMiddle += 4;
         break;
       case "Pessoa Física":
         scoreMiddle += 6;
@@ -208,39 +208,39 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
 
     switch (collaboratorsOptionMiddle) {
       case "1 a 2":
-        scoreMiddle += 9;
+        scoreMiddle += 10;
         break;
       case "3 a 5":
-        scoreMiddle += 22;
+        scoreMiddle += 15;
         break;
       case "11 a 50":
-        scoreMiddle += 20;
+        scoreMiddle += 35;
         break;
       case "6 a 10":
-        scoreMiddle += 41;
+        scoreMiddle += 30;
         break;
       case "Mais de 50":
-        scoreMiddle += 37;
+        scoreMiddle += 40;
         break;
     }
 
-    scoreMiddle += 36;
+    scoreMiddle += 45;
     
 let hashMiddle = "";
 
-if (scoreMiddle < 50) {
+if (scoreMiddle >= 1 && scoreMiddle <= 80) {
   hashMiddle = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
-} else if (scoreMiddle >= 51 && scoreMiddle <= 60) {
+} else if (scoreMiddle <= 160) {
   hashMiddle = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
-} else if (scoreMiddle >= 61 && scoreMiddle <= 70) {
+} else if (scoreMiddle <= 220) {
   hashMiddle = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
-} else if (scoreMiddle >= 71 && scoreMiddle <= 80) {
+} else if (scoreMiddle <= 300) {
   hashMiddle = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
-} else if (scoreMiddle >= 81 && scoreMiddle <= 90) {
+} else if (scoreMiddle <= 400) {
   hashMiddle = "e3059d23-6294-459b-915b-377b6cb4a5e3";
-} else if (scoreMiddle >= 91 && scoreMiddle <= 100) {
+} else if (scoreMiddle <= 500) {
   hashMiddle = "95a90be8-a855-4328-9323-1e3166863903";
-} else if (scoreMiddle >= 101 && scoreMiddle <= 110) {
+} else if (scoreMiddle <= 600) {
   hashMiddle = "546b229e-2627-4e47-8502-552d14e8f42d";
 } else {
   hashMiddle = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";
