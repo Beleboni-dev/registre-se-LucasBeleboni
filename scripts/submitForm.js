@@ -270,6 +270,7 @@ if (score >= 1 && score <= 80) {
     .then((response) => {
       if (response.status === 200) {
         showToast("Cadastro concluído com sucesso!");
+        console.log(score)
         formWrapper.innerHTML = `
         
         <h3 class="form-title">
