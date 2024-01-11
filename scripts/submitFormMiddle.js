@@ -228,7 +228,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     
 let hashMiddle = "";
 
-if (scoreMiddle >= 1 && scoreMiddle <= 80) {
+if (scoreMiddle >= 1 && scoreMiddle <= 100) {
   hashMiddle = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
 } else if (scoreMiddle <= 160) {
   hashMiddle = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";

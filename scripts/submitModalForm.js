@@ -224,7 +224,7 @@ finalizeRegistrationModal.addEventListener("click", (e) => {
 
 let hashModal = "";
 
-if (scoreModal >= 1 && scoreModal <= 80) {
+if (scoreModal >= 1 && scoreModal <= 100) {
   hashModal = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
 } else if (scoreModal <= 160) {
   hashModal = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";

@@ -220,7 +220,7 @@ finalizeRegistration.addEventListener("click", (e) => {
 
 let hash = "";
 
-if (score >= 1 && score <= 80) {
+if (score >= 1 && score <= 100) {
   hash = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
 } else if (score <= 160) {
   hash = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
