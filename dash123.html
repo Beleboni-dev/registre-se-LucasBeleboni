@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/dash123</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="link-container">
+    <iframe id="dashboard-iframe" width="100%" height="600" frameborder="0"></iframe>
+  </div>
+
+  <script>
+    const dashboardLinks = [
+      "https://lookerstudio.google.com/u/0/reporting/3f256b2f-48a8-460d-883e-a1a6ad86582b/page/26EfD",
+      "https://lookerstudio.google.com/u/0/reporting/3f256b2f-48a8-460d-883e-a1a6ad86582b/page/p_ej3ik30oad",
+      "https://lookerstudio.google.com/u/0/reporting/3f256b2f-48a8-460d-883e-a1a6ad86582b/page/p_1iafbuktad",
+      "https://lookerstudio.google.com/u/0/reporting/3f256b2f-48a8-460d-883e-a1a6ad86582b/page/p_r0n1huktad",
+      "https://lookerstudio.google.com/u/0/reporting/3f256b2f-48a8-460d-883e-a1a6ad86582b/page/p_74xl47mtad",
+      "https://lookerstudio.google.com/u/0/reporting/3f256b2f-48a8-460d-883e-a1a6ad86582b/page/p_yn0ma8mtad"
+    ];
+
+    const iframe = document.getElementById('dashboard-iframe');
+    let currentLinkIndex = 0;
+
+    function updateDashboard() {
+      iframe.src = dashboardLinks[currentLinkIndex];
+      currentLinkIndex = (currentLinkIndex + 1) % dashboardLinks.length;
+    }
+
+    // Atualiza o dashboard inicialmente
+    updateDashboard();
+
+    // Configura a troca a cada 20 segundos
+    setInterval(updateDashboard, 20000);
+  </script>
+
+</body>
+</html>
