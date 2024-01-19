@@ -15,7 +15,7 @@
 }
 .third_section-google-reviews-wrapper {
 margin-top: 1.75rem;
-padding: 2rem;
+padding-bottom: 1rem;
 display: flex;
 gap: 2rem;
 overflow-x: auto;
@@ -50,20 +50,20 @@ p{
   }
 
 @media(max-width:31rem) {
-  .third_section a{
-    display: none;
-  }
   .third_section{
     padding: 1rem;
-
+    
+  }
+  #avaliacoes-img{
+    width: 100%;
   }
 }
 @media(min-width:768px){
-
   .third_section-google-reviews-wrapper{
     flex-wrap: wrap;
     justify-content: center;
-   max-width: 70rem;
+    max-width: 75rem;
     margin: 0 auto;
+    padding: 1.5rem;
   }
 }
