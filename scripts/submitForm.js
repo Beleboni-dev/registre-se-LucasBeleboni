@@ -1,16 +1,5 @@
 const nextStep1Button = document.getElementById("next-step-1");
 const finalizeRegistration = document.getElementById("finalize-registration");
-import floatingIcon from "../images/floating-whats.json"
-
-  const defaultOptions = {
-    container: document.getElementById('lottie-container'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    animationData: floatingIcon
-  };
-
-  const animation = lottie.loadAnimation(defaultOptions);
 
 function formatName(name) {
   return name
