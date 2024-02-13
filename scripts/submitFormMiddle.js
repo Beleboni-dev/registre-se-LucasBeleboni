@@ -228,7 +228,7 @@ finalizeRegistrationMiddle.addEventListener("click", (e) => {
     
 let hashMiddle = "";
 
-if (scoreMiddle >= 1 && scoreMiddle <= 100) {
+/*if (scoreMiddle >= 1 && scoreMiddle <= 100) {
   hashMiddle = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
 } else if (scoreMiddle <= 160) {
   hashMiddle = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
@@ -245,6 +245,25 @@ if (scoreMiddle >= 1 && scoreMiddle <= 100) {
 } else {
   hashMiddle = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";
 }
+*/
+
+  if (scoreMiddle <= 100) {
+    hashMiddle = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
+  } else if (scoreMiddle <= 110) {
+    hashMiddle = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
+  } else if (scoreMiddle <= 120) {
+    hashMiddle = "351704a7-da75-4872-b73f-f27e3fa4e412";
+  } else if (scoreMiddle <= 130) {
+    hashMiddle = "df73c8aa-8047-445c-8f79-abffc006ba4e";
+  } else if (scoreMiddle <= 140) {
+    hashMiddle = "f4eaa1e8-1761-4ba5-9921-f28dd6b13ebf";
+  } else if (scoreMiddle <= 160) {
+    hashMiddle = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
+  } else if (scoreMiddle <= 180) {
+    hashMiddle = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
+  } else {
+    hashMiddle = "e3059d23-6294-459b-915b-377b6cb4a5e3";
+  }
 
   const leadStep2Middle = {
     id: whatsappMiddle,

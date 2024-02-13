@@ -224,7 +224,7 @@ finalizeRegistrationModal.addEventListener("click", (e) => {
 
 let hashModal = "";
 
-if (scoreModal >= 1 && scoreModal <= 100) {
+/*if (scoreModal >= 1 && scoreModal <= 100) {
   hashModal = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
 } else if (scoreModal <= 160) {
   hashModal = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
@@ -241,6 +241,25 @@ if (scoreModal >= 1 && scoreModal <= 100) {
 } else {
   hashModal = "f9824a57-a0dd-4ef0-b1bc-4fa61737e9a8";
 }
+*/
+
+  if (scoreModal <= 100) {
+    hashModal = "da824ed6-15ea-4099-87a0-eafdd542e0cd";
+  } else if (scoreModal <= 110) {
+    hashModal = "68f9a9be-22b6-4be4-9ea8-e59542cb5993";
+  } else if (scoreModal <= 120) {
+    hashModal = "351704a7-da75-4872-b73f-f27e3fa4e412";
+  } else if (scoreModal <= 130) {
+    hashModal = "df73c8aa-8047-445c-8f79-abffc006ba4e";
+  } else if (scoreModal <= 140) {
+    hashModal = "f4eaa1e8-1761-4ba5-9921-f28dd6b13ebf";
+  } else if (scoreModal <= 160) {
+    hashModal = "f668bca1-f0d8-40a7-8bf7-ecf91f34a91e";
+  } else if (scoreModal <= 180) {
+    hashModal = "29a1eca5-93fb-4d44-ad11-ef12293d9a97";
+  } else {
+    hashModal = "e3059d23-6294-459b-915b-377b6cb4a5e3";
+  }
 
   const leadStep2Modal = {
     id: whatsappModal,
